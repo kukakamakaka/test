@@ -1615,34 +1615,76 @@ body {
 }
 
 
-
-
-.next-section {
+/* 1. Секцияның өзі - осы жерде теріс margin болуы керек */
+.about-section {
     position: relative;
     background-color: #FFFFFF;
     width: 100%;
     z-index: 25;
 
-    /* ДИВАЙДЕРДІ ЖОҒАРЫ КӨТЕРУ: */
-    /* Дивайдер биіктігінің жартысы мөлшерінде теріс margin береміз */
+    /* Секцияны жоғары көтеріп, қара фонмен түйістіреміз */
     margin-top: calc(clamp(40px, 6vw, 87.72px) / -2);
 
-    /* Егер бұл аз болса немесеreviews-section-да padding болса,
-       нақты пиксельмен де беріп көрсең болады: */
-    /* margin-top: -43px; */
+    /* Төбеден бос орын: дивайдер биіктігі + Фигмадағы контентке дейінгі қашықтық */
+    padding-top: clamp(80px, 10vw, 120px);
+    padding-bottom: 100px;
 }
 
+/* 2. Дивайдер - секцияның ең төбесінде */
 .section__divider {
     position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100.2%;
     height: clamp(40px, 6vw, 87.72px);
-    left: 50%;
-    /* Енді оны top: 0-де қалдырамыз, өйткені бүкіл секция жоғары көтерілді */
-    top: 0;
-    transform: translateX(-50%);
-
     background: #FFFFFF;
     border-top-left-radius: clamp(20px, 4vw, 50px);
     border-top-right-radius: clamp(20px, 4vw, 50px);
     z-index: 30;
+}
+
+/* 3. Контейнер - бұл жерден margin-top-ты алып тастаймыз */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1366px;
+    margin: 0 auto; /* Ортаға келтіру үшін */
+    padding-left: 38px;
+    padding-right: 75px;
+    box-sizing: border-box;
+}
+
+/* 4. Фото мен Мәтін блоктары (сенің өлшемдерің бойынша) */
+.about-image-wrapper {
+    width: 595.43px;
+    height: 430px;
+    flex-shrink: 0;
+}
+
+.about-content {
+    margin-left: 98.21px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title {
+    font-family: 'Nata Sans', sans-serif;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 100%;
+    color: #151515;
+    margin: 0;
+    transform: scaleY(0.9);
+    transform-origin: left bottom;
+}
+
+.about-description {
+    width: 556.67px;
+    margin-top: 35.13px;
+    font-family: 'Nata Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(119, 119, 119, 1);
 }

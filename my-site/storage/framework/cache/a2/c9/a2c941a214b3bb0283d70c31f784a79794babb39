@@ -1,4 +1,4 @@
-1774393187a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:10057:"title = "Home"
+1774394178a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:11441:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -255,12 +255,21 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="next-section">
-    <div class="section__divider"></div>
+<section class="about-section">
+    <div class="section__divider"></div> <div class="about-container">
+        <div class="about-image-wrapper">
+    <img src="{{ 'assets/images/Rectangle 2132.svg'|theme }}" alt="About Us" class="about-image">
+</div>
 
-    <div class="container">
+        <div class="about-content">
+            <h2 class="about-title">About Us</h2>
+            <p class="about-description">
+                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше.
+            </p>
         </div>
-</section>";s:5:"mtime";i:1774392560;s:6:"markup";s:9984:"<section class="hero">
+    </div>
+</section>";s:5:"mtime";i:1774393478;s:6:"markup";s:11368:"<section class="hero">
     <video autoplay muted loop playsinline class="hero-video">
         <source src="{{ 'assets/video/hero-bg.mp4'|theme }}" type="video/mp4">
     </video>
@@ -509,9 +518,18 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="next-section">
-    <div class="section__divider"></div>
+<section class="about-section">
+    <div class="section__divider"></div> <div class="about-container">
+        <div class="about-image-wrapper">
+    <img src="{{ 'assets/images/Rectangle 2132.svg'|theme }}" alt="About Us" class="about-image">
+</div>
 
-    <div class="container">
+        <div class="about-content">
+            <h2 class="about-title">About Us</h2>
+            <p class="about-description">
+                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше.
+            </p>
         </div>
+    </div>
 </section>";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:0:{}}}

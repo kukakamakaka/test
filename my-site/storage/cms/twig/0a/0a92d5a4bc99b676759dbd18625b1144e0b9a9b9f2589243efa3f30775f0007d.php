@@ -351,11 +351,23 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"next-section\">
-    <div class=\"section__divider\"></div>
+<section class=\"about-section\">
+    <div class=\"section__divider\"></div> <div class=\"about-container\">
+        <div class=\"about-image-wrapper\">
+    <img src=\"";
+        // line 253
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Rectangle 2132.svg");
+        echo "\" alt=\"About Us\" class=\"about-image\">
+</div>
 
-    <div class=\"container\">
+        <div class=\"about-content\">
+            <h2 class=\"about-title\">About Us</h2>
+            <p class=\"about-description\">
+                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше.
+            </p>
         </div>
+    </div>
 </section>";
     }
 
@@ -371,7 +383,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getDebugInfo()
     {
-        return array (  337 => 234,  328 => 228,  313 => 216,  304 => 210,  293 => 202,  287 => 199,  276 => 191,  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
+        return array (  359 => 253,  337 => 234,  328 => 228,  313 => 216,  304 => 210,  293 => 202,  287 => 199,  276 => 191,  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -625,11 +637,20 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"next-section\">
-    <div class=\"section__divider\"></div>
+<section class=\"about-section\">
+    <div class=\"section__divider\"></div> <div class=\"about-container\">
+        <div class=\"about-image-wrapper\">
+    <img src=\"{{ 'assets/images/Rectangle 2132.svg'|theme }}\" alt=\"About Us\" class=\"about-image\">
+</div>
 
-    <div class=\"container\">
+        <div class=\"about-content\">
+            <h2 class=\"about-title\">About Us</h2>
+            <p class=\"about-description\">
+                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше.
+            </p>
         </div>
+    </div>
 </section>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/pages/home.htm", "");
     }
     
