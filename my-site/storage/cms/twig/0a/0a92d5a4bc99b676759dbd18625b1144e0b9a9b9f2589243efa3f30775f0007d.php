@@ -62,6 +62,60 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Rectangle 1862.svg");
         echo "\" alt=\"divider\">
     </div>
+</section>
+
+<section class=\"why-section\">
+    <div class=\"container\">
+        <h2 class=\"why-section__title\">Why TI Moving?</h2>
+
+        </div>
+
+    <p class=\"why-section__text\">
+    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+</p>
+
+<div class=\"why-grid\">
+    <div class=\"why-card card-1\">
+    <div class=\"why-card__image\">
+        <img src=\"";
+        // line 38
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/benefit1.svg");
+        echo "\" alt=\"Service 1\">
+    </div>
+    <div class=\"why-card__content\">
+        <h3 class=\"why-card__title\">Licensed & Insured</h3>
+        <p class=\"why-card__description\">Your move is fully protected by certified professionals you can trust.</p>
+    </div>
+</div>
+
+    <div class=\"why-card card-2\">
+    <div class=\"why-card__image\">
+        <img src=\"";
+        // line 48
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/benefit2.svg");
+        echo "\" alt=\"Service 2\">
+    </div>
+    <div class=\"why-card__content\">
+        <h3 class=\"why-card__title\">Same-Day Moving</h3>
+        <p class=\"why-card__description\">Fast response and efficient relocation, even on short notice.</p>
+    </div>
+</div>
+
+    <div class=\"why-card card-3\">
+    <div class=\"why-card__image\">
+        <img src=\"";
+        // line 58
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/benefit3.svg");
+        echo "\" alt=\"Service 3\">
+    </div>
+    <div class=\"why-card__content\">
+        <h3 class=\"why-card__title\">Affordable Prices</h3>
+        <p class=\"why-card__description\">Premium moving service without the premium cost. Just contact us and we send you our price!</p>
+        </di
+</div>
+
 </section>";
     }
 
@@ -77,7 +131,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getDebugInfo()
     {
-        return array (  62 => 19,  43 => 3,  39 => 1,);
+        return array (  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -102,6 +156,51 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"hero__divider\">
         <img src=\"{{ 'assets/images/Rectangle 1862.svg'|theme }}\" alt=\"divider\">
     </div>
+</section>
+
+<section class=\"why-section\">
+    <div class=\"container\">
+        <h2 class=\"why-section__title\">Why TI Moving?</h2>
+
+        </div>
+
+    <p class=\"why-section__text\">
+    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+</p>
+
+<div class=\"why-grid\">
+    <div class=\"why-card card-1\">
+    <div class=\"why-card__image\">
+        <img src=\"{{ 'assets/images/benefit1.svg'|theme }}\" alt=\"Service 1\">
+    </div>
+    <div class=\"why-card__content\">
+        <h3 class=\"why-card__title\">Licensed & Insured</h3>
+        <p class=\"why-card__description\">Your move is fully protected by certified professionals you can trust.</p>
+    </div>
+</div>
+
+    <div class=\"why-card card-2\">
+    <div class=\"why-card__image\">
+        <img src=\"{{ 'assets/images/benefit2.svg'|theme }}\" alt=\"Service 2\">
+    </div>
+    <div class=\"why-card__content\">
+        <h3 class=\"why-card__title\">Same-Day Moving</h3>
+        <p class=\"why-card__description\">Fast response and efficient relocation, even on short notice.</p>
+    </div>
+</div>
+
+    <div class=\"why-card card-3\">
+    <div class=\"why-card__image\">
+        <img src=\"{{ 'assets/images/benefit3.svg'|theme }}\" alt=\"Service 3\">
+    </div>
+    <div class=\"why-card__content\">
+        <h3 class=\"why-card__title\">Affordable Prices</h3>
+        <p class=\"why-card__description\">Premium moving service without the premium cost. Just contact us and we send you our price!</p>
+        </di
+</div>
+
 </section>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/pages/home.htm", "");
     }
     
