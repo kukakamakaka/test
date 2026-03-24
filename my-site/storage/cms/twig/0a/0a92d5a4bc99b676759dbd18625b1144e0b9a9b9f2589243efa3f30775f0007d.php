@@ -267,51 +267,52 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <h2 class=\"reviews-title\">Real stories from real clients</h2>
 
     <div class=\"reviews-container\">
-        <div class=\"review-card card-tall\">
-    <div class=\"review-card__rating-wrapper\">
-        <span class=\"review-card__rating-value\">4,9/5</span>
 
-        <div class=\"review-card__stars\">
-            <img src=\"";
-        // line 192
+        <div class=\"review-card card-tall\">
+            <span class=\"review-card__rating-value\">4,9/5</span>
+            <div class=\"review-card__stars\">
+                <img src=\"";
+        // line 191
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/stars.svg");
         echo "\" alt=\"Stars\" class=\"review-card__stars-svg\">
-        </div>
-
-        <p class=\"review-card__experience-text\">
-            Learn more about our customer experience by visiting our Yelp and Google reviews.
-        </p>
-
-        <span class=\"review-card__total-count\">1000+ reviews</span>
-
-        <div class=\"review-card__links\">
-    <div class=\"review-icon-circle\">
-        <img src=\"";
-        // line 203
+            </div>
+            <p class=\"review-card__experience-text\">
+                Learn more about our customer experience by visiting our Yelp and Google reviews.
+            </p>
+            <span class=\"review-card__total-count\">1000+ reviews</span>
+            <div class=\"review-card__links\">
+                <div class=\"review-icon-circle\">
+                    <img src=\"";
+        // line 199
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/yelp.svg");
         echo "\" alt=\"Yelp\" class=\"review-icon-svg yelp-svg\">
-    </div>
-
-    <div class=\"review-icon-circle\">
-        <img src=\"";
-        // line 207
+                </div>
+                <div class=\"review-icon-circle\">
+                    <img src=\"";
+        // line 202
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/google.svg");
         echo "\" alt=\"Google\" class=\"review-icon-svg google-svg\">
-    </div>
-</div>
-
-    </div>
-</div>
+                </div>
+            </div>
+        </div>
 
         <div class=\"review-card card-short\">
-            <div class=\"review-card__content\">
-                </div>
-        </div>
+            <div class=\"review-card__stars\">
+                <img src=\"";
+        // line 209
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/stars.svg");
+        echo "\" alt=\"Stars\" class=\"review-card__stars-svg\">
+            </div>
+            </div>
 
         <div class=\"review-card card-medium\">
-            <div class=\"review-card__content\">
-                </div>
-        </div>
+            <div class=\"review-card__stars\">
+                <img src=\"";
+        // line 215
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/stars.svg");
+        echo "\" alt=\"Stars\" class=\"review-card__stars-svg\">
+            </div>
+            </div>
     </div>
 </section>";
     }
@@ -328,7 +329,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getDebugInfo()
     {
-        return array (  298 => 207,  291 => 203,  277 => 192,  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
+        return array (  312 => 215,  303 => 209,  293 => 202,  287 => 199,  276 => 191,  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -519,42 +520,37 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <h2 class=\"reviews-title\">Real stories from real clients</h2>
 
     <div class=\"reviews-container\">
+
         <div class=\"review-card card-tall\">
-    <div class=\"review-card__rating-wrapper\">
-        <span class=\"review-card__rating-value\">4,9/5</span>
-
-        <div class=\"review-card__stars\">
-            <img src=\"{{ 'assets/images/stars.svg'|theme }}\" alt=\"Stars\" class=\"review-card__stars-svg\">
+            <span class=\"review-card__rating-value\">4,9/5</span>
+            <div class=\"review-card__stars\">
+                <img src=\"{{ 'assets/images/stars.svg'|theme }}\" alt=\"Stars\" class=\"review-card__stars-svg\">
+            </div>
+            <p class=\"review-card__experience-text\">
+                Learn more about our customer experience by visiting our Yelp and Google reviews.
+            </p>
+            <span class=\"review-card__total-count\">1000+ reviews</span>
+            <div class=\"review-card__links\">
+                <div class=\"review-icon-circle\">
+                    <img src=\"{{ 'assets/images/yelp.svg'|theme }}\" alt=\"Yelp\" class=\"review-icon-svg yelp-svg\">
+                </div>
+                <div class=\"review-icon-circle\">
+                    <img src=\"{{ 'assets/images/google.svg'|theme }}\" alt=\"Google\" class=\"review-icon-svg google-svg\">
+                </div>
+            </div>
         </div>
-
-        <p class=\"review-card__experience-text\">
-            Learn more about our customer experience by visiting our Yelp and Google reviews.
-        </p>
-
-        <span class=\"review-card__total-count\">1000+ reviews</span>
-
-        <div class=\"review-card__links\">
-    <div class=\"review-icon-circle\">
-        <img src=\"{{ 'assets/images/yelp.svg'|theme }}\" alt=\"Yelp\" class=\"review-icon-svg yelp-svg\">
-    </div>
-
-    <div class=\"review-icon-circle\">
-        <img src=\"{{ 'assets/images/google.svg'|theme }}\" alt=\"Google\" class=\"review-icon-svg google-svg\">
-    </div>
-</div>
-
-    </div>
-</div>
 
         <div class=\"review-card card-short\">
-            <div class=\"review-card__content\">
-                </div>
-        </div>
+            <div class=\"review-card__stars\">
+                <img src=\"{{ 'assets/images/stars.svg'|theme }}\" alt=\"Stars\" class=\"review-card__stars-svg\">
+            </div>
+            </div>
 
         <div class=\"review-card card-medium\">
-            <div class=\"review-card__content\">
-                </div>
-        </div>
+            <div class=\"review-card__stars\">
+                <img src=\"{{ 'assets/images/stars.svg'|theme }}\" alt=\"Stars\" class=\"review-card__stars-svg\">
+            </div>
+            </div>
     </div>
 </section>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/pages/home.htm", "");
     }
