@@ -1012,6 +1012,40 @@ body {
     padding-right: clamp(20px, 4vw, 38px);
 }
 
+.service-card__title {
+    /* Шрифт параметрлері */
+    font-family: 'Nata Sans', sans-serif; /* Егер бұл шрифт қосылмаған болса, Manrope-қа ұқсайды */
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 100%; /* Жол арасы тығыз болуы үшін */
+    color: #FFFFFF;
+    text-align: center;
+
+    /* Центровка */
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    transform: scaleY(0.9);
+    transform-origin: center top;
+    /* Иконкадан қашықтық */
+    /* Егер 50.5px визуалды аз болса, 60px-70px беріп көр */
+    margin-top: 55px;
+
+    /* Мәтін тым ұзын болса, шеттерінен қыспау үшін */
+    padding: 0 20px;
+
+    /* Біркелкілік үшін */
+    text-transform: none;
+}
+
+/* Арнайы Office / Commercial Moving үшін (үш жол болғанда) */
+.service-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
 
 
 .services-slider-wrapper {
@@ -1043,7 +1077,7 @@ body {
     width: 100%;
     padding: 0 30px; /* Шеттерінен орын */
     text-align: center;
-    margin-top: -90px; /* Мәтінді иконкаға жақындату (керегінше ретте) */
+    margin-top: -20px; /* Мәтінді иконкаға жақындату (керегінше ретте) */
     z-index: 6; /* Иконкадан кейін көрінуі үшін */
 }
 

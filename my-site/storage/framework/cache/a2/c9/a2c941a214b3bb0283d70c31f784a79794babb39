@@ -1,4 +1,4 @@
-1774375726a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5847:"title = "Home"
+1774381800a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:6154:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -82,12 +82,13 @@ is_hidden = 0
         <div class="service-card empty-card">
     <div class="service-card__icon-container">
         <div class="service-card__icon-wrapper">
-            <img src="{{ 'assets/images/card1.svg'|theme }}" alt="Service 1" class="service-card__svg">
+            <img src="{{ 'assets/images/card.svg'|theme }}" alt="Service 1" class="service-card__svg">
         </div>
     </div>
 
     <div class="service-card__content">
-        </div>
+    <h3 class="service-card__title">Storage<br>Solutions</h3>
+</div>
 
     <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
@@ -101,11 +102,15 @@ is_hidden = 0
 <img src="{{ 'assets/images/card1.svg'|theme }}" alt="Service 2" class="service-card__svg">
                 </div>
             </div>
-            <div class="service-card__content"></div>
+
+            <div class="service-card__content">
+    <h3 class="service-card__title">Local Moving</h3>
+</div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
     </a>
+
         </div>
 
         <div class="service-card empty-card">
@@ -115,7 +120,9 @@ is_hidden = 0
 <img src="{{ 'assets/images/card2.svg'|theme }}" alt="Service 3" class="service-card__svg">
                 </div>
             </div>
-            <div class="service-card__content"></div>
+            <div class="service-card__content">
+    <h3 class="service-card__title">Long Distance Moving</h3>
+</div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
@@ -129,7 +136,8 @@ is_hidden = 0
 <img src="{{ 'assets/images/card3.svg'|theme }}" alt="Service 4" class="service-card__svg">
                 </div>
             </div>
-            <div class="service-card__content"></div>
+            <div class="service-card__content">
+    <h3 class="service-card__title">Packing Services</h3> </div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
@@ -140,10 +148,12 @@ is_hidden = 0
             <div class="service-card__icon-container">
                 <div class="service-card__glow"></div>
                 <div class="service-card__icon-wrapper">
-<img src="{{ 'assets/images/card3.svg'|theme }}" alt="Service 4" class="service-card__svg">
+<img src="{{ 'assets/images/card5.svg'|theme }}" alt="Service 4" class="service-card__svg">
                 </div>
             </div>
-            <div class="service-card__content"></div>
+            <div class="service-card__content">
+    <h3 class="service-card__title">Office /<br>Commercial<br>Moving</h3>
+</div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
@@ -160,7 +170,7 @@ is_hidden = 0
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
-</section>";s:5:"mtime";i:1774373765;s:6:"markup";s:5774:"<section class="hero">
+</section>";s:5:"mtime";i:1774381036;s:6:"markup";s:6081:"<section class="hero">
     <video autoplay muted loop playsinline class="hero-video">
         <source src="{{ 'assets/video/hero-bg.mp4'|theme }}" type="video/mp4">
     </video>
@@ -236,12 +246,13 @@ is_hidden = 0
         <div class="service-card empty-card">
     <div class="service-card__icon-container">
         <div class="service-card__icon-wrapper">
-            <img src="{{ 'assets/images/card1.svg'|theme }}" alt="Service 1" class="service-card__svg">
+            <img src="{{ 'assets/images/card.svg'|theme }}" alt="Service 1" class="service-card__svg">
         </div>
     </div>
 
     <div class="service-card__content">
-        </div>
+    <h3 class="service-card__title">Storage<br>Solutions</h3>
+</div>
 
     <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
@@ -255,11 +266,15 @@ is_hidden = 0
 <img src="{{ 'assets/images/card1.svg'|theme }}" alt="Service 2" class="service-card__svg">
                 </div>
             </div>
-            <div class="service-card__content"></div>
+
+            <div class="service-card__content">
+    <h3 class="service-card__title">Local Moving</h3>
+</div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
     </a>
+
         </div>
 
         <div class="service-card empty-card">
@@ -269,7 +284,9 @@ is_hidden = 0
 <img src="{{ 'assets/images/card2.svg'|theme }}" alt="Service 3" class="service-card__svg">
                 </div>
             </div>
-            <div class="service-card__content"></div>
+            <div class="service-card__content">
+    <h3 class="service-card__title">Long Distance Moving</h3>
+</div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
@@ -283,7 +300,8 @@ is_hidden = 0
 <img src="{{ 'assets/images/card3.svg'|theme }}" alt="Service 4" class="service-card__svg">
                 </div>
             </div>
-            <div class="service-card__content"></div>
+            <div class="service-card__content">
+    <h3 class="service-card__title">Packing Services</h3> </div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
@@ -294,10 +312,12 @@ is_hidden = 0
             <div class="service-card__icon-container">
                 <div class="service-card__glow"></div>
                 <div class="service-card__icon-wrapper">
-<img src="{{ 'assets/images/card3.svg'|theme }}" alt="Service 4" class="service-card__svg">
+<img src="{{ 'assets/images/card5.svg'|theme }}" alt="Service 4" class="service-card__svg">
                 </div>
             </div>
-            <div class="service-card__content"></div>
+            <div class="service-card__content">
+    <h3 class="service-card__title">Office /<br>Commercial<br>Moving</h3>
+</div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">

@@ -1,0 +1,19 @@
+<svg width="357" height="357" viewBox="0 0 357 357" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6" filter="url(#filter0_f_8098_496)">
+<path d="M130 178.5C130 151.714 151.714 130 178.5 130C205.286 130 227 151.714 227 178.5C227 205.286 205.286 227 178.5 227C151.714 227 130 205.286 130 178.5Z" fill="#C01F1F"/>
+</g>
+<path d="M168.5 195.167V165.167C168.5 164.283 168.851 163.435 169.476 162.81C170.101 162.185 170.949 161.833 171.833 161.833H185.167C186.051 161.833 186.899 162.185 187.524 162.81C188.149 163.435 188.5 164.283 188.5 165.167V195.167H168.5Z" stroke="#C01F1F" stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M168.5 178.5H165.167C164.283 178.5 163.435 178.851 162.81 179.476C162.185 180.101 161.833 180.949 161.833 181.833V191.833C161.833 192.717 162.185 193.565 162.81 194.19C163.435 194.815 164.283 195.167 165.167 195.167H168.5" stroke="#C01F1F" stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M188.5 173.5H191.833C192.717 173.5 193.565 173.851 194.19 174.476C194.815 175.101 195.167 175.949 195.167 176.833V191.833C195.167 192.717 194.815 193.565 194.19 194.19C193.565 194.815 192.717 195.167 191.833 195.167H188.5" stroke="#C01F1F" stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175.167 168.5H181.833" stroke="#C01F1F" stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175.167 175.167H181.833" stroke="#C01F1F" stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175.167 181.833H181.833" stroke="#C01F1F" stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175.167 188.5H181.833" stroke="#C01F1F" stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_f_8098_496" x="0" y="0" width="357" height="357" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="65" result="effect1_foregroundBlur_8098_496"/>
+</filter>
+</defs>
+</svg>
