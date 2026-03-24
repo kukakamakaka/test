@@ -1,4 +1,4 @@
-1774360565a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:3327:"title = "Home"
+1774366624a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5138:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -77,14 +77,61 @@ is_hidden = 0
     <h2 class="services-title">Our Services</h2>
 
     <div class="services-slider-wrapper">
-        <div class="services-track">
-            <div class="service-card empty-card"></div>
-            <div class="service-card empty-card"></div>
-            <div class="service-card empty-card"></div>
-            <div class="service-card empty-card"></div>
-            <div class="service-card empty-card"></div>
+    <div class="services-track">
+
+        <div class="service-card empty-card">
+            <div class="service-card__icon-container">
+                <div class="service-card__glow"></div>
+                <div class="service-card__icon-wrapper">
+<img src="{{ 'assets/images/card1.svg'|theme }}" alt="Service 1" class="service-card__svg">
+                </div>
+            </div>
+            <div class="service-card__content">
+                </div>
         </div>
+
+        <div class="service-card empty-card">
+            <div class="service-card__icon-container">
+                <div class="service-card__glow"></div>
+                <div class="service-card__icon-wrapper">
+<img src="{{ 'assets/images/card1.svg'|theme }}" alt="Service 2" class="service-card__svg">
+                </div>
+            </div>
+            <div class="service-card__content"></div>
+        </div>
+
+        <div class="service-card empty-card">
+            <div class="service-card__icon-container">
+                <div class="service-card__glow"></div>
+                <div class="service-card__icon-wrapper">
+<img src="{{ 'assets/images/card2.svg'|theme }}" alt="Service 3" class="service-card__svg">
+                </div>
+            </div>
+            <div class="service-card__content"></div>
+        </div>
+
+        <div class="service-card empty-card">
+            <div class="service-card__icon-container">
+                <div class="service-card__glow"></div>
+                <div class="service-card__icon-wrapper">
+<img src="{{ 'assets/images/card3.svg'|theme }}" alt="Service 4" class="service-card__svg">
+                </div>
+            </div>
+            <div class="service-card__content"></div>
+        </div>
+
+        <div class="service-card empty-card">
+            <div class="service-card__icon-container">
+                <div class="service-card__glow"></div>
+                <div class="service-card__icon-wrapper">
+<img src="{{ 'assets/images/card3.svg'|theme }}" alt="Service 4" class="service-card__svg">
+                </div>
+            </div>
+            <div class="service-card__content"></div>
+        </div>
+
     </div>
+</div>
 
     <div class="services-pagination">
         <span class="dot active"></span>
@@ -93,7 +140,7 @@ is_hidden = 0
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
-</section>";s:5:"mtime";i:1774358486;s:6:"markup";s:3254:"<section class="hero">
+</section>";s:5:"mtime";i:1774361063;s:6:"markup";s:5065:"<section class="hero">
     <video autoplay muted loop playsinline class="hero-video">
         <source src="{{ 'assets/video/hero-bg.mp4'|theme }}" type="video/mp4">
     </video>
@@ -164,14 +211,61 @@ is_hidden = 0
     <h2 class="services-title">Our Services</h2>
 
     <div class="services-slider-wrapper">
-        <div class="services-track">
-            <div class="service-card empty-card"></div>
-            <div class="service-card empty-card"></div>
-            <div class="service-card empty-card"></div>
-            <div class="service-card empty-card"></div>
-            <div class="service-card empty-card"></div>
+    <div class="services-track">
+
+        <div class="service-card empty-card">
+            <div class="service-card__icon-container">
+                <div class="service-card__glow"></div>
+                <div class="service-card__icon-wrapper">
+<img src="{{ 'assets/images/card1.svg'|theme }}" alt="Service 1" class="service-card__svg">
+                </div>
+            </div>
+            <div class="service-card__content">
+                </div>
         </div>
+
+        <div class="service-card empty-card">
+            <div class="service-card__icon-container">
+                <div class="service-card__glow"></div>
+                <div class="service-card__icon-wrapper">
+<img src="{{ 'assets/images/card1.svg'|theme }}" alt="Service 2" class="service-card__svg">
+                </div>
+            </div>
+            <div class="service-card__content"></div>
+        </div>
+
+        <div class="service-card empty-card">
+            <div class="service-card__icon-container">
+                <div class="service-card__glow"></div>
+                <div class="service-card__icon-wrapper">
+<img src="{{ 'assets/images/card2.svg'|theme }}" alt="Service 3" class="service-card__svg">
+                </div>
+            </div>
+            <div class="service-card__content"></div>
+        </div>
+
+        <div class="service-card empty-card">
+            <div class="service-card__icon-container">
+                <div class="service-card__glow"></div>
+                <div class="service-card__icon-wrapper">
+<img src="{{ 'assets/images/card3.svg'|theme }}" alt="Service 4" class="service-card__svg">
+                </div>
+            </div>
+            <div class="service-card__content"></div>
+        </div>
+
+        <div class="service-card empty-card">
+            <div class="service-card__icon-container">
+                <div class="service-card__glow"></div>
+                <div class="service-card__icon-wrapper">
+<img src="{{ 'assets/images/card3.svg'|theme }}" alt="Service 4" class="service-card__svg">
+                </div>
+            </div>
+            <div class="service-card__content"></div>
+        </div>
+
     </div>
+</div>
 
     <div class="services-pagination">
         <span class="dot active"></span>

@@ -122,14 +122,76 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <h2 class=\"services-title\">Our Services</h2>
 
     <div class=\"services-slider-wrapper\">
-        <div class=\"services-track\">
-            <div class=\"service-card empty-card\"></div>
-            <div class=\"service-card empty-card\"></div>
-            <div class=\"service-card empty-card\"></div>
-            <div class=\"service-card empty-card\"></div>
-            <div class=\"service-card empty-card\"></div>
+    <div class=\"services-track\">
+
+        <div class=\"service-card empty-card\">
+            <div class=\"service-card__icon-container\">
+                <div class=\"service-card__glow\"></div>
+                <div class=\"service-card__icon-wrapper\">
+<img src=\"";
+        // line 78
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card1.svg");
+        echo "\" alt=\"Service 1\" class=\"service-card__svg\">
+                </div>
+            </div>
+            <div class=\"service-card__content\">
+                </div>
         </div>
+
+        <div class=\"service-card empty-card\">
+            <div class=\"service-card__icon-container\">
+                <div class=\"service-card__glow\"></div>
+                <div class=\"service-card__icon-wrapper\">
+<img src=\"";
+        // line 89
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card1.svg");
+        echo "\" alt=\"Service 2\" class=\"service-card__svg\">
+                </div>
+            </div>
+            <div class=\"service-card__content\"></div>
+        </div>
+
+        <div class=\"service-card empty-card\">
+            <div class=\"service-card__icon-container\">
+                <div class=\"service-card__glow\"></div>
+                <div class=\"service-card__icon-wrapper\">
+<img src=\"";
+        // line 99
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card2.svg");
+        echo "\" alt=\"Service 3\" class=\"service-card__svg\">
+                </div>
+            </div>
+            <div class=\"service-card__content\"></div>
+        </div>
+
+        <div class=\"service-card empty-card\">
+            <div class=\"service-card__icon-container\">
+                <div class=\"service-card__glow\"></div>
+                <div class=\"service-card__icon-wrapper\">
+<img src=\"";
+        // line 109
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card3.svg");
+        echo "\" alt=\"Service 4\" class=\"service-card__svg\">
+                </div>
+            </div>
+            <div class=\"service-card__content\"></div>
+        </div>
+
+        <div class=\"service-card empty-card\">
+            <div class=\"service-card__icon-container\">
+                <div class=\"service-card__glow\"></div>
+                <div class=\"service-card__icon-wrapper\">
+<img src=\"";
+        // line 119
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card3.svg");
+        echo "\" alt=\"Service 4\" class=\"service-card__svg\">
+                </div>
+            </div>
+            <div class=\"service-card__content\"></div>
+        </div>
+
     </div>
+</div>
 
     <div class=\"services-pagination\">
         <span class=\"dot active\"></span>
@@ -153,7 +215,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getDebugInfo()
     {
-        return array (  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
+        return array (  186 => 119,  173 => 109,  160 => 99,  147 => 89,  133 => 78,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -229,14 +291,61 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <h2 class=\"services-title\">Our Services</h2>
 
     <div class=\"services-slider-wrapper\">
-        <div class=\"services-track\">
-            <div class=\"service-card empty-card\"></div>
-            <div class=\"service-card empty-card\"></div>
-            <div class=\"service-card empty-card\"></div>
-            <div class=\"service-card empty-card\"></div>
-            <div class=\"service-card empty-card\"></div>
+    <div class=\"services-track\">
+
+        <div class=\"service-card empty-card\">
+            <div class=\"service-card__icon-container\">
+                <div class=\"service-card__glow\"></div>
+                <div class=\"service-card__icon-wrapper\">
+<img src=\"{{ 'assets/images/card1.svg'|theme }}\" alt=\"Service 1\" class=\"service-card__svg\">
+                </div>
+            </div>
+            <div class=\"service-card__content\">
+                </div>
         </div>
+
+        <div class=\"service-card empty-card\">
+            <div class=\"service-card__icon-container\">
+                <div class=\"service-card__glow\"></div>
+                <div class=\"service-card__icon-wrapper\">
+<img src=\"{{ 'assets/images/card1.svg'|theme }}\" alt=\"Service 2\" class=\"service-card__svg\">
+                </div>
+            </div>
+            <div class=\"service-card__content\"></div>
+        </div>
+
+        <div class=\"service-card empty-card\">
+            <div class=\"service-card__icon-container\">
+                <div class=\"service-card__glow\"></div>
+                <div class=\"service-card__icon-wrapper\">
+<img src=\"{{ 'assets/images/card2.svg'|theme }}\" alt=\"Service 3\" class=\"service-card__svg\">
+                </div>
+            </div>
+            <div class=\"service-card__content\"></div>
+        </div>
+
+        <div class=\"service-card empty-card\">
+            <div class=\"service-card__icon-container\">
+                <div class=\"service-card__glow\"></div>
+                <div class=\"service-card__icon-wrapper\">
+<img src=\"{{ 'assets/images/card3.svg'|theme }}\" alt=\"Service 4\" class=\"service-card__svg\">
+                </div>
+            </div>
+            <div class=\"service-card__content\"></div>
+        </div>
+
+        <div class=\"service-card empty-card\">
+            <div class=\"service-card__icon-container\">
+                <div class=\"service-card__glow\"></div>
+                <div class=\"service-card__icon-wrapper\">
+<img src=\"{{ 'assets/images/card3.svg'|theme }}\" alt=\"Service 4\" class=\"service-card__svg\">
+                </div>
+            </div>
+            <div class=\"service-card__content\"></div>
+        </div>
+
     </div>
+</div>
 
     <div class=\"services-pagination\">
         <span class=\"dot active\"></span>
