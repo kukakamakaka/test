@@ -136,11 +136,14 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Storage<br>Solutions</h3>
+        <p class=\"service-card__description\">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
     <a href=\"#\" class=\"service-card__btn\">
         <img src=\"";
-        // line 86
+        // line 89
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
         echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
     </a>
@@ -151,7 +154,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
                 <div class=\"service-card__glow\"></div>
                 <div class=\"service-card__icon-wrapper\">
 <img src=\"";
-        // line 94
+        // line 97
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card1.svg");
         echo "\" alt=\"Service 2\" class=\"service-card__svg\">
                 </div>
@@ -159,11 +162,14 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
             <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Local Moving</h3>
+                <p class=\"service-card__description\">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
             <a href=\"#\" class=\"service-card__btn\">
         <img src=\"";
-        // line 103
+        // line 109
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
         echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
     </a>
@@ -175,18 +181,21 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
                 <div class=\"service-card__glow\"></div>
                 <div class=\"service-card__icon-wrapper\">
 <img src=\"";
-        // line 112
+        // line 118
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card2.svg");
         echo "\" alt=\"Service 3\" class=\"service-card__svg\">
                 </div>
             </div>
             <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Long Distance Moving</h3>
+                <p class=\"service-card__description\">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
             <a href=\"#\" class=\"service-card__btn\">
         <img src=\"";
-        // line 120
+        // line 129
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
         echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
     </a>
@@ -197,17 +206,21 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
                 <div class=\"service-card__glow\"></div>
                 <div class=\"service-card__icon-wrapper\">
 <img src=\"";
-        // line 128
+        // line 137
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card3.svg");
         echo "\" alt=\"Service 4\" class=\"service-card__svg\">
                 </div>
             </div>
             <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Packing Services</h3> </div>
+    <h3 class=\"service-card__title\">Commercial<br>(Office) Moving</h3>
+                <p class=\"service-card__description\">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
+            </div>
 
             <a href=\"#\" class=\"service-card__btn\">
         <img src=\"";
-        // line 135
+        // line 148
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
         echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
     </a>
@@ -218,18 +231,21 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
                 <div class=\"service-card__glow\"></div>
                 <div class=\"service-card__icon-wrapper\">
 <img src=\"";
-        // line 143
+        // line 156
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card5.svg");
         echo "\" alt=\"Service 4\" class=\"service-card__svg\">
                 </div>
             </div>
             <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Office /<br>Commercial<br>Moving</h3>
-</div>
+<p class=\"service-card__description\">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
+            </div>
 
             <a href=\"#\" class=\"service-card__btn\">
         <img src=\"";
-        // line 151
+        // line 167
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
         echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
     </a>
@@ -260,7 +276,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getDebugInfo()
     {
-        return array (  233 => 151,  222 => 143,  211 => 135,  201 => 128,  190 => 120,  179 => 112,  167 => 103,  155 => 94,  144 => 86,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
+        return array (  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -347,6 +363,9 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Storage<br>Solutions</h3>
+        <p class=\"service-card__description\">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
     <a href=\"#\" class=\"service-card__btn\">
@@ -364,6 +383,9 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
             <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Local Moving</h3>
+                <p class=\"service-card__description\">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
             <a href=\"#\" class=\"service-card__btn\">
@@ -381,6 +403,9 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
             </div>
             <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Long Distance Moving</h3>
+                <p class=\"service-card__description\">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
             <a href=\"#\" class=\"service-card__btn\">
@@ -396,7 +421,11 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
                 </div>
             </div>
             <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Packing Services</h3> </div>
+    <h3 class=\"service-card__title\">Commercial<br>(Office) Moving</h3>
+                <p class=\"service-card__description\">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
+            </div>
 
             <a href=\"#\" class=\"service-card__btn\">
         <img src=\"{{ 'assets/images/arrow.svg'|theme }}\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
@@ -412,7 +441,10 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
             </div>
             <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Office /<br>Commercial<br>Moving</h3>
-</div>
+<p class=\"service-card__description\">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
+            </div>
 
             <a href=\"#\" class=\"service-card__btn\">
         <img src=\"{{ 'assets/images/arrow.svg'|theme }}\" alt=\"Arrow\" class=\"service-card__btn-arrow\">

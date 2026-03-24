@@ -1038,13 +1038,37 @@ body {
     text-transform: none;
 }
 
+.service-card__description {
+    /* Шрифт параметрлері */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200; /* Light */
+    font-size: 17px;
+    line-height: 26px; /* 100% емес, еркін тыныс алуы үшін */
+    color: rgba(178, 178, 178, 0.73); /* background емес, бұл түсі (color) */
+    text-align: center;
+    transform: scaleY(1);
+    transform-origin: center top;
+    /* Өлшемдері */
+    max-width: 308px; /* 307.61px */
+    margin: 35px auto 0; /* Төбеден 34.87px (жуықтап 35px), оң-сол ортада */
+
+    /* Төменгі кнопкамен арақашықтық (шамамен) */
+    margin-bottom: 20px;
+
+    /* Мәтіннің "пирамида" болып түсуіне көмектеседі */
+    display: block;
+    word-wrap: break-word;
+}
+
 /* Арнайы Office / Commercial Moving үшін (үш жол болғанда) */
 .service-card__content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
+    /* Иконкадан кейінгі орынды бақылау үшін */
+    flex-grow: 1;
 }
 
 
@@ -1186,22 +1210,54 @@ body {
     margin-top: 30px;
 }
 
+.services-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Нүктелер арасындағы қашықтық */
+    gap: 28.55px;
+
+    /* Кнопкадан (карточканың астыңғы бөлігінен) отступ */
+    margin-top: -10px;
+
+    /* Жалпы контейнердің ені (Фигма бойынша) */
+    width: 100%;
+    max-width: 168.4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .services-pagination .dot {
-    width: 10px;
-    height: 10px;
-    background-color: rgba(255, 255, 255, 0.2); /* Белсенді емес нүкте */
+    /* Нүктелердің нақты өлшемі */
+    width: 13.84px;
+    height: 10.84px;
+
+    /* Белсенді емес нүкте түсі */
+    background-color: rgba(91, 91, 91, 1);
+
     border-radius: 50%;
-    transition: all 0.3s ease;
     cursor: pointer;
+    transition: all 0.3s ease;
+
+    /* Кездейсоқ жиектерді алып тастау */
+    border: none;
+    outline: none;
 }
 
+/* Белсенді нүкте стилі */
 .services-pagination .dot.active {
-    background-color: #FFFFFF; /* Белсенді нүкте */
-    transform: scale(1.2);
-    /* Аздап свечение қоссақ болады */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    /* Белсенді нүкте түсі (Ақ) */
+    background-color: rgba(255, 255, 255, 1);
+
+    /* Белсенді нүктені ерекшелеу үшін сәл свечение қосуға болады (опционально) */
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
+/* Ховер кезінде сәл жарықтандыру */
+.services-pagination .dot:hover:not(.active) {
+    background-color: rgba(150, 150, 150, 1);
+}
 
 /* --- Адаптивка (Мобильді нұсқа) --- */
 @media (max-width: 1200px) {

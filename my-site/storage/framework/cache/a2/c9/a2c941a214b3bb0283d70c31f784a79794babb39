@@ -1,4 +1,4 @@
-1774381800a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:6154:"title = "Home"
+1774382549a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:7297:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -88,6 +88,9 @@ is_hidden = 0
 
     <div class="service-card__content">
     <h3 class="service-card__title">Storage<br>Solutions</h3>
+        <p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
     <a href="#" class="service-card__btn">
@@ -105,6 +108,9 @@ is_hidden = 0
 
             <div class="service-card__content">
     <h3 class="service-card__title">Local Moving</h3>
+                <p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
             <a href="#" class="service-card__btn">
@@ -122,6 +128,9 @@ is_hidden = 0
             </div>
             <div class="service-card__content">
     <h3 class="service-card__title">Long Distance Moving</h3>
+                <p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
             <a href="#" class="service-card__btn">
@@ -137,7 +146,11 @@ is_hidden = 0
                 </div>
             </div>
             <div class="service-card__content">
-    <h3 class="service-card__title">Packing Services</h3> </div>
+    <h3 class="service-card__title">Commercial<br>(Office) Moving</h3>
+                <p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
+            </div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
@@ -153,7 +166,10 @@ is_hidden = 0
             </div>
             <div class="service-card__content">
     <h3 class="service-card__title">Office /<br>Commercial<br>Moving</h3>
-</div>
+<p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
+            </div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
@@ -170,7 +186,7 @@ is_hidden = 0
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
-</section>";s:5:"mtime";i:1774381036;s:6:"markup";s:6081:"<section class="hero">
+</section>";s:5:"mtime";i:1774381917;s:6:"markup";s:7224:"<section class="hero">
     <video autoplay muted loop playsinline class="hero-video">
         <source src="{{ 'assets/video/hero-bg.mp4'|theme }}" type="video/mp4">
     </video>
@@ -252,6 +268,9 @@ is_hidden = 0
 
     <div class="service-card__content">
     <h3 class="service-card__title">Storage<br>Solutions</h3>
+        <p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
     <a href="#" class="service-card__btn">
@@ -269,6 +288,9 @@ is_hidden = 0
 
             <div class="service-card__content">
     <h3 class="service-card__title">Local Moving</h3>
+                <p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
             <a href="#" class="service-card__btn">
@@ -286,6 +308,9 @@ is_hidden = 0
             </div>
             <div class="service-card__content">
     <h3 class="service-card__title">Long Distance Moving</h3>
+                <p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
 </div>
 
             <a href="#" class="service-card__btn">
@@ -301,7 +326,11 @@ is_hidden = 0
                 </div>
             </div>
             <div class="service-card__content">
-    <h3 class="service-card__title">Packing Services</h3> </div>
+    <h3 class="service-card__title">Commercial<br>(Office) Moving</h3>
+                <p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
+            </div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
@@ -317,7 +346,10 @@ is_hidden = 0
             </div>
             <div class="service-card__content">
     <h3 class="service-card__title">Office /<br>Commercial<br>Moving</h3>
-</div>
+<p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
+            </div>
 
             <a href="#" class="service-card__btn">
         <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
