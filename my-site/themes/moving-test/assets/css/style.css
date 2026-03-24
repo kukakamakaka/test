@@ -982,6 +982,63 @@ body {
 }
 
 /* ==========================================================================
-    Floating-icons
+    Services-section
    ========================================================================== */
 
+.services-section {
+    position: relative;
+    background-color: #151515; /* rgba(21, 21, 21, 1) */
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 100px;
+
+    /* МЫНА ЖЕРІ ЕҢ МАҢЫЗДЫСЫ: */
+    border-radius: 60px 60px 0 0; /* Суреттегідей үлкенірек дөңгелектеу */
+
+    /* Ақ секцияның үстіне басып кіру үшін теріс маржин */
+    /* 2-ші карточкадан кейінгі арақашықтықты осылай реттейміз */
+    margin-top: -90px;
+
+    /* Басқа элементтердің астында қалып қоймауы үшін */
+    z-index: 20;
+}
+
+.services-title {
+    font-family: 'Manrope', sans-serif !important;
+    font-weight: 500;
+    font-size: clamp(32px, 4vw, 45px);
+    line-height: 1;
+    color: #FFFFFF;
+
+    text-align: center;
+    margin: 0 auto;
+
+    /* Қара контейнердің ішіндегі тақырыпқа дейінгі бос орын */
+    padding-top: 90px;
+
+    transform: scaleY(0.9);
+    transform-origin: center top;
+
+    /* Біздің алтын ереже */
+    padding-left: clamp(20px, 4vw, 38px);
+    padding-right: clamp(20px, 4vw, 38px);
+}
+
+/* --- Адаптивка (Мобильді нұсқа үшін) --- */
+@media (max-width: 768px) {
+    .services-section {
+        /* Теріс маржинді азайтамыз, телефонда -90px тым көп */
+        margin-top: -40px;
+
+        /* Бұрыштардың дөңгеленуін де сәл кішірейтуге болады (опционально) */
+        border-radius: 40px 40px 0 0;
+    }
+
+    .services-title {
+        /* Тақырыптың үстінен сәл көбірек дем алдырамыз */
+        padding-top: 60px;
+
+        /* Шрифт өлшемін clamp-тан тыс сәл реттегің келсе */
+        font-size: 28px;
+    }
+}

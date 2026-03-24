@@ -113,9 +113,17 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"why-card__content\">
         <h3 class=\"why-card__title\">Affordable Prices</h3>
         <p class=\"why-card__description\">Premium moving service without the premium cost. Just contact us and we send you our price!</p>
-        </di
+        </div>
 </div>
 
+ </section>
+
+<section class=\"services-section\">
+    <div class=\"services-divider\"></div>
+
+    <div class=\"container\">
+        <h2 class=\"services-title\">Our Services</h2>
+    </div>
 </section>";
     }
 
@@ -198,9 +206,17 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"why-card__content\">
         <h3 class=\"why-card__title\">Affordable Prices</h3>
         <p class=\"why-card__description\">Premium moving service without the premium cost. Just contact us and we send you our price!</p>
-        </di
+        </div>
 </div>
 
+ </section>
+
+<section class=\"services-section\">
+    <div class=\"services-divider\"></div>
+
+    <div class=\"container\">
+        <h2 class=\"services-title\">Our Services</h2>
+    </div>
 </section>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/pages/home.htm", "");
     }
     
