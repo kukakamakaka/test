@@ -1013,61 +1013,43 @@ body {
 }
 
 .service-card__title {
-    /* Шрифт параметрлері */
-    font-family: 'Nata Sans', sans-serif; /* Егер бұл шрифт қосылмаған болса, Manrope-қа ұқсайды */
+    font-family: 'Nata Sans', sans-serif;
     font-weight: 500;
     font-size: 27px;
-    line-height: 100%; /* Жол арасы тығыз болуы үшін */
+    line-height: 100%;
     color: #FFFFFF;
     text-align: center;
-
-    /* Центровка */
-    margin: 0 auto;
     display: block;
     width: 100%;
     transform: scaleY(0.9);
     transform-origin: center top;
-    /* Иконкадан қашықтық */
-    /* Егер 50.5px визуалды аз болса, 60px-70px беріп көр */
     margin-top: 55px;
-
-    /* Мәтін тым ұзын болса, шеттерінен қыспау үшін */
     padding: 0 20px;
-
-    /* Біркелкілік үшін */
     text-transform: none;
 }
 
 .service-card__description {
-    /* Шрифт параметрлері */
     font-family: 'Manrope', sans-serif;
-    font-weight: 200; /* Light */
+    font-weight: 200;
     font-size: 17px;
-    line-height: 26px; /* 100% емес, еркін тыныс алуы үшін */
-    color: rgba(178, 178, 178, 0.73); /* background емес, бұл түсі (color) */
+    line-height: 26px;
+    color: rgba(178, 178, 178, 0.73);
     text-align: center;
     transform: scaleY(1);
     transform-origin: center top;
-    /* Өлшемдері */
-    max-width: 308px; /* 307.61px */
-    margin: 35px auto 0; /* Төбеден 34.87px (жуықтап 35px), оң-сол ортада */
-
-    /* Төменгі кнопкамен арақашықтық (шамамен) */
+    max-width: 308px;
+    margin: 35px auto 0;
     margin-bottom: 20px;
-
-    /* Мәтіннің "пирамида" болып түсуіне көмектеседі */
     display: block;
     word-wrap: break-word;
 }
 
-/* Арнайы Office / Commercial Moving үшін (үш жол болғанда) */
 .service-card__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    /* Иконкадан кейінгі орынды бақылау үшін */
     flex-grow: 1;
 }
 
@@ -1099,10 +1081,10 @@ body {
 
 .service-card__content {
     width: 100%;
-    padding: 0 30px; /* Шеттерінен орын */
+    padding: 0 30px;
     text-align: center;
-    margin-top: -20px; /* Мәтінді иконкаға жақындату (керегінше ретте) */
-    z-index: 6; /* Иконкадан кейін көрінуі үшін */
+    margin-top: -20px;
+    z-index: 6;
 }
 
 .service-card.empty-card {
@@ -1121,7 +1103,6 @@ body {
     overflow: visible !important;
 }
 
-/* ИКОНКА КОНТЕЙНЕРІ */
 .service-card__icon-container {
     overflow: visible !important;
     position: relative;
@@ -1135,7 +1116,6 @@ body {
     margin-bottom: 0;
 }
 
-/* ИКОНКА ӨЛШЕМІ */
 .service-card__icon-wrapper {
     position: relative;
     width: 290px;
@@ -1147,12 +1127,9 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* Егер әлі де кішкентай болса, мынаны қос: */
     transform: scale(1.2);
 }
 
-
-/* ХОВЕР ЭФФЕКТ */
 .service-card:hover {
     transform: translateY(-8px);
     border-color: rgba(255, 255, 255, 0.15);
@@ -1162,42 +1139,31 @@ body {
     background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
 }
 
-/* Кнопканың негізгі стилі */
 .service-card__btn {
     position: absolute;
-    /* Кнопка биіктігі 50px болса, жартысы -25px болады */
     bottom: -25px;
     left: 50%;
-    transform: translateX(-50%); /* Көлденеңінен дәл ортаға қою */
-
-    width: 65px; /* 49.86px-ке жақын */
+    transform: translateX(-50%);
+    width: 65px;
     height: 65px;
-    background-color: #C01F1F; /* rgba(192, 31, 31, 1) */
-
+    background-color: #C01F1F;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* Секцияның фонымен бірдей түстес қалыңдық (border) */
-    /* Бұл карточканы "ойып алғандай" эффект береді */
     border: 8px solid #151515;
-
     z-index: 15;
     transition: all 0.3s ease;
     text-decoration: none;
 }
 
-/* Стрелка SVG стилі */
 .service-card__btn-arrow {
-    width: 15px; /* 15.26px */
-    height: 23px; /* 23.25px */
+    width: 15px;
+    height: 23px;
     object-fit: contain;
-    /* Фигмадағы -38.11 deg бұрышы қажет болса: */
     transform: rotate(-38.11deg);
 }
 
-/* Ховер кезінде кнопканың реакциясы */
 .service-card__btn:hover {
     background-color: #d62828;
     transform: translateX(-50%) scale(1.1);
@@ -1214,14 +1180,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* Нүктелер арасындағы қашықтық */
     gap: 28.55px;
-
-    /* Кнопкадан (карточканың астыңғы бөлігінен) отступ */
     margin-top: 30px;
-    padding-bottom: 20px; /* Пагинациядан кейінгі аз ғана орын */
-    /* Жалпы контейнердің ені (Фигма бойынша) */
+    padding-bottom: 20px;
     width: 100%;
     max-width: 168.4px;
     margin-left: auto;
@@ -1229,51 +1190,39 @@ body {
 }
 
 .services-pagination .dot {
-    /* Нүктелердің нақты өлшемі */
     width: 13.84px;
     height: 10.84px;
-
-    /* Белсенді емес нүкте түсі */
     background-color: rgba(91, 91, 91, 1);
-
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
-
-    /* Кездейсоқ жиектерді алып тастау */
     border: none;
     outline: none;
 }
 
-/* Белсенді нүкте стилі */
 .services-pagination .dot.active {
-    /* Белсенді нүкте түсі (Ақ) */
     background-color: rgba(255, 255, 255, 1);
-
-    /* Белсенді нүктені ерекшелеу үшін сәл свечение қосуға болады (опционально) */
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
-/* Ховер кезінде сәл жарықтандыру */
 .services-pagination .dot:hover:not(.active) {
     background-color: rgba(150, 150, 150, 1);
 }
 
-/* --- Адаптивка (Мобильді нұсқа) --- */
+/* --- Адаптивка --- */
 @media (max-width: 1200px) {
     .service-card.empty-card {
-        /* Планшетте сәл кішірейтуге болады, бірақ пропорция сақталады */
         flex: 0 0 320px;
         width: 320px;
         height: 320px;
     }
     .service-card__icon-wrapper {
-        width: 240px; /* Иконканы кішірейту */
+        width: 240px;
         height: 240px;
     }
 
     .service-card__title {
-        font-size: 22px; /* Мәтін өлшемін азайту */
+        font-size: 22px;
         margin-top: 40px;
     }
 
@@ -1297,11 +1246,10 @@ body {
     }
 
     .services-slider-wrapper {
-        padding-top: 60px; /* Иконкалар сыюы үшін */
+        padding-top: 60px;
         padding-bottom: 40px;
     }
 
-    /* Карточканың мобильді нұсқасы */
     .service-card.empty-card {
         flex: 0 0 280px;
         width: 280px;
@@ -1309,7 +1257,7 @@ body {
     }
 
     .service-card__icon-container {
-        height: 140px; /* Контейнерді де кішірейтеміз */
+        height: 140px;
     }
 
     .service-card__icon-wrapper {
@@ -1327,14 +1275,12 @@ body {
         line-height: 20px;
         max-width: 240px;
         margin-top: 15px;
-        /* Мәтін 3 жолдан аспауы үшін */
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
 
-    /* Кнопканы да сәл кішірейту (опционально) */
     .service-card__btn {
         width: 50px;
         height: 50px;
@@ -1347,14 +1293,11 @@ body {
         height: 18px;
     }
 
-    /* Пагинация арақашықтығы */
     .services-pagination {
         gap: 15px;
         margin-top: 20px;
     }
 }
-
-
 
 /* ==========================================================================
     Reviews-section
@@ -1394,15 +1337,20 @@ body {
 }
 
 .review-card {
-    width: 410px;
+    width: 100%;
+    max-width: 410px;
     border-radius: 20px;
-    padding-left: 41.99px;
+    padding-left: clamp(20px, 4vw, 42px);
+    padding-right: clamp(20px, 4vw, 38px);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    transition: transform 0.3s ease;
-    position: relative;
     box-sizing: border-box;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .review-card.card-tall {
@@ -1440,11 +1388,6 @@ body {
     color: #FFFFFF;
     margin-left: 21.83px;
     white-space: nowrap;
-}
-
-.review-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
 }
 
 .review-card__rating-wrapper {
@@ -1598,50 +1541,65 @@ body {
     object-fit: cover;
 }
 
-
-
-
-@media (max-width: 768px) {
-    .review-card__total-count {
-        font-size: 20px;
-        line-height: 24px;
-        margin-top: 20px;
-    }
-    .review-card__links {
-        margin-top: 30px;
-        gap: 20px;
-    }
-    .review-icon-circle {
-        width: 65px;
-        height: 65px;
-    }
-    .review-icon-svg {
-        transform: scale(0.8);
-    }
-    .reviews-title {
-        padding-top: 20px;
-        font-size: 28px;
-    }
-    .review-card__experience-text {
-        font-size: 17px;
-        line-height: 26px;
-        max-width: 100%;
-    }
-}
-
-
 @media (max-width: 1200px) {
     .reviews-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .review-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 40px 20px;
         width: 100%;
-        max-width: 410px;
-        height: auto !important;
-        min-height: 250px;
+        box-sizing: border-box;
     }
 }
 
+@media (max-width: 768px) {
+    .review-card {
+        max-width: 100%;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .review-card.card-tall,
+    .review-card.card-short,
+    .review-card.card-medium {
+        height: auto !important;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .review-card__rating-value {
+        font-size: 48px;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+
+    .review-card__header {
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .review-card__user-name {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .review-card__user-avatar {
+        width: 45px;
+        height: 45px;
+        margin-left: 0 !important;
+    }
+
+    .review-card__text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 20px;
+        -webkit-line-clamp: unset;
+        max-width: 100%;
+    }
+
+    .review-card__links {
+        margin-top: 25px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
