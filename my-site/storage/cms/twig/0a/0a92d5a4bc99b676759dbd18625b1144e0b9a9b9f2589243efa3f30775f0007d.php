@@ -116,13 +116,27 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         </div>
 </div>
 
- </section>
+</section>
 
 <section class=\"services-section\">
-    <div class=\"services-divider\"></div>
+    <h2 class=\"services-title\">Our Services</h2>
 
-    <div class=\"container\">
-        <h2 class=\"services-title\">Our Services</h2>
+    <div class=\"services-slider-wrapper\">
+        <div class=\"services-track\">
+            <div class=\"service-card empty-card\"></div>
+            <div class=\"service-card empty-card\"></div>
+            <div class=\"service-card empty-card\"></div>
+            <div class=\"service-card empty-card\"></div>
+            <div class=\"service-card empty-card\"></div>
+        </div>
+    </div>
+
+    <div class=\"services-pagination\">
+        <span class=\"dot active\"></span>
+        <span class=\"dot\"></span>
+        <span class=\"dot\"></span>
+        <span class=\"dot\"></span>
+        <span class=\"dot\"></span>
     </div>
 </section>";
     }
@@ -209,13 +223,27 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         </div>
 </div>
 
- </section>
+</section>
 
 <section class=\"services-section\">
-    <div class=\"services-divider\"></div>
+    <h2 class=\"services-title\">Our Services</h2>
 
-    <div class=\"container\">
-        <h2 class=\"services-title\">Our Services</h2>
+    <div class=\"services-slider-wrapper\">
+        <div class=\"services-track\">
+            <div class=\"service-card empty-card\"></div>
+            <div class=\"service-card empty-card\"></div>
+            <div class=\"service-card empty-card\"></div>
+            <div class=\"service-card empty-card\"></div>
+            <div class=\"service-card empty-card\"></div>
+        </div>
+    </div>
+
+    <div class=\"services-pagination\">
+        <span class=\"dot active\"></span>
+        <span class=\"dot\"></span>
+        <span class=\"dot\"></span>
+        <span class=\"dot\"></span>
+        <span class=\"dot\"></span>
     </div>
 </section>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/pages/home.htm", "");
     }

@@ -1,4 +1,4 @@
-1774357283a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:2800:"title = "Home"
+1774360565a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:3327:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -71,15 +71,29 @@ is_hidden = 0
         </div>
 </div>
 
- </section>
+</section>
 
 <section class="services-section">
-    <div class="services-divider"></div>
+    <h2 class="services-title">Our Services</h2>
 
-    <div class="container">
-        <h2 class="services-title">Our Services</h2>
+    <div class="services-slider-wrapper">
+        <div class="services-track">
+            <div class="service-card empty-card"></div>
+            <div class="service-card empty-card"></div>
+            <div class="service-card empty-card"></div>
+            <div class="service-card empty-card"></div>
+            <div class="service-card empty-card"></div>
+        </div>
     </div>
-</section>";s:5:"mtime";i:1774356679;s:6:"markup";s:2727:"<section class="hero">
+
+    <div class="services-pagination">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>";s:5:"mtime";i:1774358486;s:6:"markup";s:3254:"<section class="hero">
     <video autoplay muted loop playsinline class="hero-video">
         <source src="{{ 'assets/video/hero-bg.mp4'|theme }}" type="video/mp4">
     </video>
@@ -144,12 +158,26 @@ is_hidden = 0
         </div>
 </div>
 
- </section>
+</section>
 
 <section class="services-section">
-    <div class="services-divider"></div>
+    <h2 class="services-title">Our Services</h2>
 
-    <div class="container">
-        <h2 class="services-title">Our Services</h2>
+    <div class="services-slider-wrapper">
+        <div class="services-track">
+            <div class="service-card empty-card"></div>
+            <div class="service-card empty-card"></div>
+            <div class="service-card empty-card"></div>
+            <div class="service-card empty-card"></div>
+            <div class="service-card empty-card"></div>
+        </div>
+    </div>
+
+    <div class="services-pagination">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
     </div>
 </section>";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:0:{}}}

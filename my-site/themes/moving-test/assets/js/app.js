@@ -98,17 +98,66 @@ mobileItems.forEach(item => {
         }
     }
 
-    // 5. SERVICES SLIDER
-    const servicesTrack = document.querySelector('.services-slider__track');
-    const servicesDots = document.querySelectorAll('.dot');
-    if (servicesTrack && servicesDots.length > 0) {
-        servicesTrack.addEventListener('scroll', () => {
-            const cardWidth = servicesTrack.querySelector('.service-card')?.offsetWidth || 414;
-            const index = Math.round(servicesTrack.scrollLeft / (cardWidth + 20)); // 20 - gap
-            servicesDots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
+// 5. SERVICES SLIDER (КҮШТІ НҰСҚА)
+const servicesSlider = document.querySelector('.services-slider-wrapper');
+const servicesTrack = document.querySelector('.services-track');
+const servicesDots = document.querySelectorAll('.services-pagination .dot');
+
+if (servicesSlider && servicesTrack) {
+    const cards = servicesTrack.querySelectorAll('.service-card');
+
+    const setInitialPosition = () => {
+        if (cards.length >= 3) {
+            const targetCard = cards[2]; // 3-ші карточка
+
+            // Нақты ортаға есептеу
+            const containerCenter = servicesSlider.offsetWidth / 2;
+            const cardCenter = targetCard.offsetLeft + (targetCard.offsetWidth / 2);
+            const scrollPos = cardCenter - containerCenter;
+
+            // Snap-ты уақытша алып тастау
+            servicesSlider.style.scrollSnapType = 'none';
+
+            // Тікелей жылжыту
+            servicesSlider.scrollLeft = scrollPos;
+
+            // Snap-ты 100мс-тан кейін қайта қосу
+            setTimeout(() => {
+                servicesSlider.style.scrollSnapType = 'x mandatory';
+                updateServicesDots();
+            }, 100);
+        }
+    };
+
+    const updateServicesDots = () => {
+        const sliderCenter = servicesSlider.scrollLeft + (servicesSlider.offsetWidth / 2);
+
+        let activeIndex = 0;
+        let minDiff = Infinity;
+
+        cards.forEach((card, index) => {
+            const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+            const diff = Math.abs(cardCenter - sliderCenter);
+            if (diff < minDiff) {
+                minDiff = diff;
+                activeIndex = index;
+            }
         });
-    }
+
+        servicesDots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === activeIndex);
+        });
+    };
+
+    servicesSlider.addEventListener('scroll', updateServicesDots);
+
+    // Бұл жері маңызды: бет толық жүктелгенше күтеміз
+    window.addEventListener('load', setInitialPosition);
+    // Қосымша тексеріс
+    setTimeout(setInitialPosition, 500);
+}
+
+
+
 });
 

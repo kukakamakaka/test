@@ -1024,6 +1024,98 @@ body {
     padding-right: clamp(20px, 4vw, 38px);
 }
 
+
+
+.services-slider-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 50px;
+    margin-top: 60px;
+
+    /* Snap-ты уақытша өшіріп тексеруге болады, бірақ ортаға келу үшін керек */
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    display: flex; /* Маңызды */
+    justify-content: flex-start;
+}
+
+.services-slider-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.services-track {
+    display: flex;
+    gap: 30px;
+    /* Мына отступтарды біздің алтын ережеге қайтарамыз */
+    padding-left: clamp(20px, 4vw, 38px);
+    padding-right: clamp(20px, 4vw, 38px);
+    width: max-content;
+}
+
+.service-card.empty-card {
+    flex: 0 0 384px;
+    width: 384px;
+    height: 383px;
+    background-color: rgba(32, 29, 29, 1);
+    border-radius: 15px;
+    /* Ортаға жабысу */
+    scroll-snap-align: center;
+}
+
+.services-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.services-pagination .dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.2); /* Белсенді емес нүкте */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.services-pagination .dot.active {
+    background-color: #FFFFFF; /* Белсенді нүкте */
+    transform: scale(1.2);
+    /* Аздап свечение қоссақ болады */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* --- Адаптивка (Мобильді нұсқа) --- */
+@media (max-width: 1200px) {
+    .service-card.empty-card {
+        /* Планшетте сәл кішірейтуге болады, бірақ пропорция сақталады */
+        flex: 0 0 320px;
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-slider-wrapper {
+        margin-top: 40px; /* Телефонда мәтінге жақынырақ */
+    }
+    .service-card.empty-card {
+        flex: 0 0 280px;
+        width: 280px;
+        height: 280px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* --- Адаптивка (Мобильді нұсқа үшін) --- */
 @media (max-width: 768px) {
     .services-section {
@@ -1042,3 +1134,4 @@ body {
         font-size: 28px;
     }
 }
+
