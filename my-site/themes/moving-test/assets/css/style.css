@@ -989,8 +989,8 @@ body {
     position: relative;
     background-color: #151515;
     width: 100%;
-    min-height: 100vh;
-    padding-bottom: 100px;
+    min-height: auto;
+    padding-bottom: 40px; /* 100px-тен 40px-ке азайттық */
     border-radius: 60px 60px 0 0;
     margin-top: -90px;
     z-index: 20;
@@ -1077,7 +1077,7 @@ body {
     overflow-x: auto;
     overflow-y: visible;
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     margin-top: 0;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
@@ -1219,8 +1219,8 @@ body {
     gap: 28.55px;
 
     /* Кнопкадан (карточканың астыңғы бөлігінен) отступ */
-    margin-top: -10px;
-
+    margin-top: 30px;
+    padding-bottom: 20px; /* Пагинациядан кейінгі аз ғана орын */
     /* Жалпы контейнердің ені (Фигма бойынша) */
     width: 100%;
     max-width: 168.4px;
@@ -1267,44 +1267,127 @@ body {
         width: 320px;
         height: 320px;
     }
+    .service-card__icon-wrapper {
+        width: 240px; /* Иконканы кішірейту */
+        height: 240px;
+    }
+
+    .service-card__title {
+        font-size: 22px; /* Мәтін өлшемін азайту */
+        margin-top: 40px;
+    }
+
+    .service-card__description {
+        font-size: 15px;
+        max-width: 260px;
+        margin-top: 20px;
+    }
 }
 
-@media (max-width: 768px) {
-    .services-slider-wrapper {
-        margin-top: 40px; /* Телефонда мәтінге жақынырақ */
-    }
-    .service-card.empty-card {
-        flex: 0 0 280px;
-        width: 280px;
-        height: 280px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* --- Адаптивка (Мобильді нұсқа үшін) --- */
 @media (max-width: 768px) {
     .services-section {
-        /* Теріс маржинді азайтамыз, телефонда -90px тым көп */
         margin-top: -40px;
-
-        /* Бұрыштардың дөңгеленуін де сәл кішірейтуге болады (опционально) */
         border-radius: 40px 40px 0 0;
+        padding-bottom: 30px;
     }
 
     .services-title {
-        /* Тақырыптың үстінен сәл көбірек дем алдырамыз */
         padding-top: 60px;
+        font-size: 28px;
+    }
 
-        /* Шрифт өлшемін clamp-тан тыс сәл реттегің келсе */
+    .services-slider-wrapper {
+        padding-top: 60px; /* Иконкалар сыюы үшін */
+        padding-bottom: 40px;
+    }
+
+    /* Карточканың мобильді нұсқасы */
+    .service-card.empty-card {
+        flex: 0 0 280px;
+        width: 280px;
+        height: 300px;
+    }
+
+    .service-card__icon-container {
+        height: 140px; /* Контейнерді де кішірейтеміз */
+    }
+
+    .service-card__icon-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    .service-card__title {
+        font-size: 19px;
+        margin-top: 30px;
+    }
+
+    .service-card__description {
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 240px;
+        margin-top: 15px;
+        /* Мәтін 3 жолдан аспауы үшін */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* Кнопканы да сәл кішірейту (опционально) */
+    .service-card__btn {
+        width: 50px;
+        height: 50px;
+        bottom: -20px;
+        border-width: 5px;
+    }
+
+    .service-card__btn-arrow {
+        width: 12px;
+        height: 18px;
+    }
+
+    /* Пагинация арақашықтығы */
+    .services-pagination {
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+
+
+
+/* ==========================================================================
+    Reviews-section
+   ========================================================================== */
+
+.reviews-section {
+    position: relative;
+    background-color: #151515;
+    width: 100%;
+    padding-bottom: 100px;
+    margin-top: -10px; /* Алдыңғы секцияға сәл жақындату */
+    z-index: 21;
+}
+
+.reviews-title {
+    padding-top: 20px; /* 50px-тен 20px-ке түсірдік */
+    margin-top: 0;
+    font-family: 'Manrope', sans-serif !important;
+    font-weight: 500;
+    font-size: clamp(32px, 4vw, 45px);
+    line-height: 1.1;
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scaleY(0.9);
+    transform-origin: center top;
+}
+
+/* Мобильді нұсқадағы түзетулер */
+@media (max-width: 768px) {
+    .reviews-title {
+        padding-top: 40px; /* Телефонда арақашықтық тығыз болуы үшін */
         font-size: 28px;
     }
 }

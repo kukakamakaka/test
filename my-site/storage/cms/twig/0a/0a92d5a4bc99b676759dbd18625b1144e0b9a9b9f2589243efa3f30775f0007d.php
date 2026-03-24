@@ -261,6 +261,15 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         <span class=\"dot\"></span>
         <span class=\"dot\"></span>
     </div>
+</section>
+
+<section class=\"reviews-section\">
+    <div class=\"container\">
+        <h2 class=\"reviews-title\">Real stories from real clients</h2>
+
+        <div class=\"reviews-content\">
+            </div>
+    </div>
 </section>";
     }
 
@@ -460,6 +469,15 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         <span class=\"dot\"></span>
         <span class=\"dot\"></span>
         <span class=\"dot\"></span>
+    </div>
+</section>
+
+<section class=\"reviews-section\">
+    <div class=\"container\">
+        <h2 class=\"reviews-title\">Real stories from real clients</h2>
+
+        <div class=\"reviews-content\">
+            </div>
     </div>
 </section>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/pages/home.htm", "");
     }
