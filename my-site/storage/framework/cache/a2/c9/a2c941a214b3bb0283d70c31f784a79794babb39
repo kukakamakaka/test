@@ -1,4 +1,4 @@
-1774384151a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:7510:"title = "Home"
+1774384642a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:7849:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -189,13 +189,25 @@ is_hidden = 0
 </section>
 
 <section class="reviews-section">
-    <div class="container">
-        <h2 class="reviews-title">Real stories from real clients</h2>
+    <h2 class="reviews-title">Real stories from real clients</h2>
 
-        <div class="reviews-content">
-            </div>
+    <div class="reviews-container">
+        <div class="review-card card-tall">
+            <div class="review-card__content">
+                </div>
+        </div>
+
+        <div class="review-card card-short">
+            <div class="review-card__content">
+                </div>
+        </div>
+
+        <div class="review-card card-medium">
+            <div class="review-card__content">
+                </div>
+        </div>
     </div>
-</section>";s:5:"mtime";i:1774382897;s:6:"markup";s:7437:"<section class="hero">
+</section>";s:5:"mtime";i:1774384025;s:6:"markup";s:7776:"<section class="hero">
     <video autoplay muted loop playsinline class="hero-video">
         <source src="{{ 'assets/video/hero-bg.mp4'|theme }}" type="video/mp4">
     </video>
@@ -378,10 +390,22 @@ is_hidden = 0
 </section>
 
 <section class="reviews-section">
-    <div class="container">
-        <h2 class="reviews-title">Real stories from real clients</h2>
+    <h2 class="reviews-title">Real stories from real clients</h2>
 
-        <div class="reviews-content">
-            </div>
+    <div class="reviews-container">
+        <div class="review-card card-tall">
+            <div class="review-card__content">
+                </div>
+        </div>
+
+        <div class="review-card card-short">
+            <div class="review-card__content">
+                </div>
+        </div>
+
+        <div class="review-card card-medium">
+            <div class="review-card__content">
+                </div>
+        </div>
     </div>
 </section>";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:0:{}}}

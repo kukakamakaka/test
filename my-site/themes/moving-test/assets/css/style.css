@@ -1384,10 +1384,70 @@ body {
     transform-origin: center top;
 }
 
+/* Контейнер */
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Барлығы төбесінен бір сызықта тұруы үшін */
+    gap: 30px; /* Карточкалар арасы */
+    padding: 40px 38px 0; /* Тақырыптан 55px, шеттерінен 38px */
+    width: 100%;
+    max-width: 1440px; /* Экранға байланысты */
+    margin: 0 auto;
+}
+
+/* Ортақ карточка стилі */
+.review-card {
+    width: 410px;
+    border-radius: 20px;
+    padding: 30px; /* Ішкі текст үшін */
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Әр карточканың жеке өлшемдері мен түстері */
+.review-card.card-tall {
+    height: 501.5px;
+    background: rgba(255, 255, 255, 0.2); /* Бірінші карточка 0.2 */
+}
+
+.review-card.card-short {
+    height: 375.7px;
+    background: rgba(255, 255, 255, 0.1); /* Қалғандары 0.1 */
+}
+
+.review-card.card-medium {
+    height: 440px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Ховер эффект (сәл көтерілу) */
+.review-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Мобильді нұсқа (Планшет/Телефон) */
+@media (max-width: 1200px) {
+    .reviews-container {
+        flex-wrap: wrap; /* Карточкалар астына түсуі үшін */
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .review-card {
+        width: 100%;
+        max-width: 410px;
+        height: auto !important; /* Мобильді де текстке қарай биіктік алсын */
+        min-height: 250px;
+    }
+}
+
 /* Мобильді нұсқадағы түзетулер */
 @media (max-width: 768px) {
     .reviews-title {
-        padding-top: 40px; /* Телефонда арақашықтық тығыз болуы үшін */
+        padding-top: 20px; /* Телефонда арақашықтық тығыз болуы үшін */
         font-size: 28px;
     }
 }

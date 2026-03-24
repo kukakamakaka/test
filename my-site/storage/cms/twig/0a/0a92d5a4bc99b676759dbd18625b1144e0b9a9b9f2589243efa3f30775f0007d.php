@@ -264,11 +264,23 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 </section>
 
 <section class=\"reviews-section\">
-    <div class=\"container\">
-        <h2 class=\"reviews-title\">Real stories from real clients</h2>
+    <h2 class=\"reviews-title\">Real stories from real clients</h2>
 
-        <div class=\"reviews-content\">
-            </div>
+    <div class=\"reviews-container\">
+        <div class=\"review-card card-tall\">
+            <div class=\"review-card__content\">
+                </div>
+        </div>
+
+        <div class=\"review-card card-short\">
+            <div class=\"review-card__content\">
+                </div>
+        </div>
+
+        <div class=\"review-card card-medium\">
+            <div class=\"review-card__content\">
+                </div>
+        </div>
     </div>
 </section>";
     }
@@ -473,11 +485,23 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 </section>
 
 <section class=\"reviews-section\">
-    <div class=\"container\">
-        <h2 class=\"reviews-title\">Real stories from real clients</h2>
+    <h2 class=\"reviews-title\">Real stories from real clients</h2>
 
-        <div class=\"reviews-content\">
-            </div>
+    <div class=\"reviews-container\">
+        <div class=\"review-card card-tall\">
+            <div class=\"review-card__content\">
+                </div>
+        </div>
+
+        <div class=\"review-card card-short\">
+            <div class=\"review-card__content\">
+                </div>
+        </div>
+
+        <div class=\"review-card card-medium\">
+            <div class=\"review-card__content\">
+                </div>
+        </div>
     </div>
 </section>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/pages/home.htm", "");
     }
