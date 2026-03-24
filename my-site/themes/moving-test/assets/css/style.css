@@ -994,6 +994,7 @@ body {
     border-radius: 60px 60px 0 0;
     margin-top: -90px;
     z-index: 20;
+    overflow: hidden;
 }
 
 .services-title {
@@ -1018,6 +1019,7 @@ body {
     overflow-x: auto;
     overflow-y: visible;
     padding-top: 80px;
+    padding-bottom: 60px;
     margin-top: 0;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
@@ -1037,6 +1039,14 @@ body {
     width: max-content;
 }
 
+.service-card__content {
+    width: 100%;
+    padding: 0 30px; /* Шеттерінен орын */
+    text-align: center;
+    margin-top: -90px; /* Мәтінді иконкаға жақындату (керегінше ретте) */
+    z-index: 6; /* Иконкадан кейін көрінуі үшін */
+}
+
 .service-card.empty-card {
     flex: 0 0 384px;
     width: 384px;
@@ -1049,6 +1059,8 @@ body {
     align-items: center;
     position: relative;
     transition: transform 0.3s ease;
+    justify-content: flex-start;
+    overflow: visible !important;
 }
 
 /* ИКОНКА КОНТЕЙНЕРІ */
@@ -1061,6 +1073,8 @@ body {
     margin-top: -50px;
     transform: translateY(-10px);
     z-index: 5;
+    height: 180px;
+    margin-bottom: 0;
 }
 
 /* ИКОНКА ӨЛШЕМІ */
@@ -1090,6 +1104,47 @@ body {
     background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
 }
 
+/* Кнопканың негізгі стилі */
+.service-card__btn {
+    position: absolute;
+    /* Кнопка биіктігі 50px болса, жартысы -25px болады */
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%); /* Көлденеңінен дәл ортаға қою */
+
+    width: 65px; /* 49.86px-ке жақын */
+    height: 65px;
+    background-color: #C01F1F; /* rgba(192, 31, 31, 1) */
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Секцияның фонымен бірдей түстес қалыңдық (border) */
+    /* Бұл карточканы "ойып алғандай" эффект береді */
+    border: 8px solid #151515;
+
+    z-index: 15;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Стрелка SVG стилі */
+.service-card__btn-arrow {
+    width: 15px; /* 15.26px */
+    height: 23px; /* 23.25px */
+    object-fit: contain;
+    /* Фигмадағы -38.11 deg бұрышы қажет болса: */
+    transform: rotate(-38.11deg);
+}
+
+/* Ховер кезінде кнопканың реакциясы */
+.service-card__btn:hover {
+    background-color: #d62828;
+    transform: translateX(-50%) scale(1.1);
+}
+
 .services-pagination {
     display: flex;
     justify-content: center;
@@ -1112,6 +1167,7 @@ body {
     /* Аздап свечение қоссақ болады */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
+
 
 /* --- Адаптивка (Мобильді нұсқа) --- */
 @media (max-width: 1200px) {
