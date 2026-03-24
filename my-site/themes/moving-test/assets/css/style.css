@@ -1307,7 +1307,13 @@ body {
     position: relative;
     background-color: #151515;
     width: 100%;
-    padding-bottom: 100px;
+    margin-bottom: 0 !important;
+
+    /* 135.85px-тен дивайдер биіктігінің жартысын (43.86px) азайтамыз */
+    /* Шамамен 92px болады. Осылайша қара фон мен дивайдердің ортасы түйіседі */
+    padding-bottom: 92px;
+
+    overflow: visible;
     margin-top: -10px;
     z-index: 21;
 }
@@ -1553,6 +1559,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .reviews-section {
+       padding-bottom: 55px;
+    }
+
     .review-card {
         max-width: 100%;
         padding-left: 20px !important;
@@ -1602,4 +1612,37 @@ body {
         justify-content: flex-start;
         width: 100%;
     }
+}
+
+
+
+
+.next-section {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 100%;
+    z-index: 25;
+
+    /* ДИВАЙДЕРДІ ЖОҒАРЫ КӨТЕРУ: */
+    /* Дивайдер биіктігінің жартысы мөлшерінде теріс margin береміз */
+    margin-top: calc(clamp(40px, 6vw, 87.72px) / -2);
+
+    /* Егер бұл аз болса немесеreviews-section-да padding болса,
+       нақты пиксельмен де беріп көрсең болады: */
+    /* margin-top: -43px; */
+}
+
+.section__divider {
+    position: absolute;
+    width: 100.2%;
+    height: clamp(40px, 6vw, 87.72px);
+    left: 50%;
+    /* Енді оны top: 0-де қалдырамыз, өйткені бүкіл секция жоғары көтерілді */
+    top: 0;
+    transform: translateX(-50%);
+
+    background: #FFFFFF;
+    border-top-left-radius: clamp(20px, 4vw, 50px);
+    border-top-right-radius: clamp(20px, 4vw, 50px);
+    z-index: 30;
 }

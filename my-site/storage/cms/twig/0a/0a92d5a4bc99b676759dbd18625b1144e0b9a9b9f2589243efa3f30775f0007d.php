@@ -348,8 +348,14 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
 </div>
 
-
     </div>
+</section>
+
+<section class=\"next-section\">
+    <div class=\"section__divider\"></div>
+
+    <div class=\"container\">
+        </div>
 </section>";
     }
 
@@ -616,8 +622,14 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
 </div>
 
-
     </div>
+</section>
+
+<section class=\"next-section\">
+    <div class=\"section__divider\"></div>
+
+    <div class=\"container\">
+        </div>
 </section>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/pages/home.htm", "");
     }
     
