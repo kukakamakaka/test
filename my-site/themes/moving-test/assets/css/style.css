@@ -1365,12 +1365,12 @@ body {
     background-color: #151515;
     width: 100%;
     padding-bottom: 100px;
-    margin-top: -10px; /* Алдыңғы секцияға сәл жақындату */
+    margin-top: -10px;
     z-index: 21;
 }
 
 .reviews-title {
-    padding-top: 20px; /* 50px-тен 20px-ке түсірдік */
+    padding-top: 20px;
     margin-top: 0;
     font-family: 'Manrope', sans-serif !important;
     font-weight: 500;
@@ -1384,98 +1384,94 @@ body {
     transform-origin: center top;
 }
 
-/* Контейнер */
 .reviews-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 30.5px; /* Карточкалар арасындағы 30.5 отступ */
+    gap: 30.5px;
     padding: 55px 38px;
     width: 100%;
 }
 
-/* Ортақ карточка стилі */
 .review-card {
     width: 410px;
     border-radius: 20px;
-    padding-left: 41.99px; /* Сол жақтан бірдей басталады */
+    padding-left: 41.99px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     transition: transform 0.3s ease;
     position: relative;
-    box-sizing: border-box; /* Өлшемдер дәл болуы үшін */
-}
-
-/* Әр карточканың жеке өлшемдері мен түстері */
-.review-card.card-tall {
-    height: 501.5px;
-    background: rgba(255, 255, 255, 0.2);
-    /* Жалпы мазмұнды жоғары көтеру үшін padding-top-ты азайттық */
-    padding-top: 40px;
+    box-sizing: border-box;
 }
 
 .review-card.card-tall {
     height: 501.5px;
     background: rgba(255, 255, 255, 0.2);
-    /* Фигма бойынша төбеден 52.55px + рейтинг мәтіні */
-    padding-top: 52.55px;
+    padding-top: 45.42px;
+    margin-top: 0 !important;
 }
 
 .review-card.card-short {
+    margin-top: 0 !important;
+    padding-top: 45.42px;
     height: 375.7px;
-    background: rgba(255, 255, 255, 0.1); /* Қалғандары 0.1 */
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .review-card.card-medium {
+    margin-top: 0 !important;
+    padding-top: 45.42px;
     height: 440px;
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Ховер эффект (сәл көтерілу) */
+.review-card__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    height: 54.58px;
+}
+
+.review-card__user-name {
+    font-family: 'Manrope', sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-left: 21.83px;
+    white-space: nowrap;
+}
+
 .review-card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.15);
 }
 
-/* Рейтинг контейнері (отступтарды сақтау үшін) */
 .review-card__rating-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Слева 41.99px болуы үшін */
-
-    /* Отступтар (Фигма бойынша) */
-    padding-top: 5px;   /* сверху */
-    padding-left: 5px;  /* слева */
+    align-items: flex-start;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 .review-card__rating-value {
     font-family: 'Nata Sans', sans-serif;
     font-weight: 500;
     font-size: 62px;
-    line-height: 0.8; /* Жол биіктігін азайттық, сонда жұлдызшалар жақындайды */
+    line-height: 0.8;
     color: #FFFFFF;
     display: block;
     transform: scaleY(0.9);
     transform-origin: left top;
-    /* Сан мен жұлдызша арасы (32.45px-тен сәл аз қылсаң болады, визуалды тексер) */
     margin-bottom: 25px;
 }
 
-/* 2 және 3 КАРТОЧКАЛАР (Short & Medium) */
-.review-card.card-short,
-.review-card.card-medium {
-    /* Бірінші карточкадағы жұлдыздармен бір деңгейде болуы үшін */
-    /* 40px (padding) + ~50px (санның визуалды биіктігі) + 25px (margin) = ~115px */
-    padding-top: 115px;
-}
-
-/* Жұлдызшалар мен одан кейінгі текст арасы */
 .review-card__stars {
     display: flex;
     align-items: center;
     margin-top: 0;
-    margin-bottom: 0px; /* Жұлдызшадан кейінгі текстке дейінгі қашықтық */
+    margin-bottom: 0;
 }
 
 .review-card__stars-svg {
@@ -1484,75 +1480,72 @@ body {
     object-fit: contain;
 }
 
-/* Бұрынғы қате берілген margin-дерді өшіру */
 .card-short .review-card__stars,
 .card-medium .review-card__stars {
     margin-top: 0 !important;
 }
 
 .review-card__experience-text {
-    /* Шрифт параметрлері */
     font-family: 'Manrope', sans-serif;
-    font-weight: 400; /* Regular */
+    font-weight: 400;
     font-size: 20px;
     line-height: 33px;
-    color: rgba(192, 192, 192, 1); /* Сен берген түс */
-
-    /* Өлшемдері */
+    color: rgba(192, 192, 192, 1);
     width: 100%;
     max-width: 295.41px;
-    height: auto; /* Текст еркін сыюы үшін */
-
-    /* Отступ (Жұлдызшалардан кейін, рейтинг пен жұлдызша арасындағыдай) */
-    /* Сен 32.45px немесе 40px қолдандың ба, соны сақта */
+    height: auto;
     margin-top: 32.45px;
-
-    text-align: left; /* Сол жақ шетке бағыттау */
+    text-align: left;
     opacity: 1;
-
-    /* Тексттің "пирамида" немесе жинақы түсуі үшін */
     display: block;
 }
 
-/* Мобильді нұсқадағы түзету */
-@media (max-width: 768px) {
-    .review-card__experience-text {
-        font-size: 17px;
-        line-height: 26px;
-        max-width: 100%; /* Телефонда карточка еніне жайылсын */
-    }
+.review-card__text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    color: rgba(192, 192, 192, 1);
+    width: 100%;
+    max-width: 338.58px;
+    height: auto;
+    margin-top: 38.54px;
+    text-align: left;
+    opacity: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
+.card-medium .review-card__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: auto;
+}
 
 .review-card__total-count {
-    /* Шрифт параметрлері */
     font-family: 'Manrope', sans-serif;
     font-weight: 400; /* Regular */
     font-size: 26px;
     line-height: 30px;
-    color: rgba(255, 255, 255, 1); /* Ақ түс */
-
-    /* Өлшемдері */
+    color: rgba(255, 255, 255, 1);
     display: block;
     width: 169px;
-    height: 19px; /* Фигмадағы биіктік */
-
-    /* Тексттен кейінгі отступ (арақашықтықты сақтау) */
+    height: 19px;
     margin-top: 32.45px;
-
     opacity: 1;
     text-align: left;
-    white-space: nowrap; /* Бір жолда тұруы үшін */
+    white-space: nowrap;
 }
 
 .review-card__links {
     display: flex;
-    gap: 16.93px; /* 193.37px - 77.31px - 81.39px = шамамен осы қашықтық */
-
-    /* "1000+ reviews" жазуынан кейінгі отступ (1.5 есе көп) */
-    margin-top: 48.67px; /* 32.45 * 1.5 */
-
-    padding-left: 0; /* Контейнердің ішкі padding-іне байланысты */
+    gap: 16.93px;
+    margin-top: 48.67px;
+    padding-left: 0;
 }
 
 .review-icon-circle {
@@ -1570,28 +1563,50 @@ body {
     cursor: pointer;
 }
 
-/* Yelp Иконкасының өлшемі */
 .yelp-svg {
     width: 41.11px;
     height: 51.75px;
     object-fit: contain;
 }
 
-/* Google Иконкасының өлшемі */
 .google-svg {
     width: 44.93px;
     height: 44.93px;
     object-fit: contain;
 }
 
-/* Ховер эффект (сәл жарықтандыру) */
 .review-icon-circle:hover {
     border-color: rgba(255, 255, 255, 0.5);
     background: rgba(255, 255, 255, 0.05);
 }
 
-/* Мобильді нұсқа */
+.review-card__user-avatar {
+    width: 54.58px;
+    height: 54.58px;
+    margin-left: -2.68px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
 @media (max-width: 768px) {
+    .review-card__total-count {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
     .review-card__links {
         margin-top: 30px;
         gap: 20px;
@@ -1603,21 +1618,21 @@ body {
     .review-icon-svg {
         transform: scale(0.8);
     }
-}
-
-/* Мобильді нұсқада сәл жинақтау */
-@media (max-width: 768px) {
-    .review-card__total-count {
-        font-size: 20px;
-        line-height: 24px;
-        margin-top: 20px;
+    .reviews-title {
+        padding-top: 20px;
+        font-size: 28px;
+    }
+    .review-card__experience-text {
+        font-size: 17px;
+        line-height: 26px;
+        max-width: 100%;
     }
 }
 
-/* Мобильді нұсқа (Планшет/Телефон) */
+
 @media (max-width: 1200px) {
     .reviews-container {
-        flex-wrap: wrap; /* Карточкалар астына түсуі үшін */
+        flex-wrap: wrap;
         justify-content: center;
         padding-left: 20px;
         padding-right: 20px;
@@ -1625,16 +1640,8 @@ body {
     .review-card {
         width: 100%;
         max-width: 410px;
-        height: auto !important; /* Мобильді де текстке қарай биіктік алсын */
+        height: auto !important;
         min-height: 250px;
-    }
-}
-
-/* Мобильді нұсқадағы түзетулер */
-@media (max-width: 768px) {
-    .reviews-title {
-        padding-top: 20px; /* Телефонда арақашықтық тығыз болуы үшін */
-        font-size: 28px;
     }
 }
 

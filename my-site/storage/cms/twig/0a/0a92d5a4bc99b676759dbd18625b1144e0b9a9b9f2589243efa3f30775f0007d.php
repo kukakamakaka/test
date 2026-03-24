@@ -297,22 +297,58 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         </div>
 
         <div class=\"review-card card-short\">
-            <div class=\"review-card__stars\">
-                <img src=\"";
-        // line 209
+    <div class=\"review-card__header\">
+        <div class=\"review-card__user-avatar\">
+            <img src=\"";
+        // line 210
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/avatar.svg");
+        echo "\" alt=\"User\" class=\"avatar-svg\">
+        </div>
+        <span class=\"review-card__user-name\">Michael R.</span>
+    </div>
+
+    <div class=\"review-card__stars\">
+        <img src=\"";
+        // line 216
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/stars.svg");
         echo "\" alt=\"Stars\" class=\"review-card__stars-svg\">
-            </div>
-            </div>
+    </div>
+
+     <p class=\"review-card__text\">
+        Excellent experience with TI Moving. Communication was clear, the movers were professional, and the entire process went exactly as planned.
+    </p>
+
+</div>
 
         <div class=\"review-card card-medium\">
-            <div class=\"review-card__stars\">
-                <img src=\"";
-        // line 215
+    <div class=\"review-card__header\">
+        <div class=\"review-card__user-avatar\">
+            <img src=\"";
+        // line 228
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/avatar.svg");
+        echo "\" alt=\"User\" class=\"avatar-svg\">
+        </div>
+        <span class=\"review-card__user-name\">Michael R.</span>
+    </div>
+
+    <div class=\"review-card__stars\">
+        <img src=\"";
+        // line 234
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/stars.svg");
         echo "\" alt=\"Stars\" class=\"review-card__stars-svg\">
-            </div>
-            </div>
+    </div>
+
+    <div class=\"review-card__text-wrapper\">
+        <p class=\"review-card__text medium-text\">
+        We used TI Moving for a residential move and were very satisfied with the service.
+        The team arrived on time, packed everything carefully, and handled our furniture with great care.
+        The move was smooth and stress-free.
+    </p>
+    </div>
+
+</div>
+
+
     </div>
 </section>";
     }
@@ -329,7 +365,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getDebugInfo()
     {
-        return array (  312 => 215,  303 => 209,  293 => 202,  287 => 199,  276 => 191,  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
+        return array (  337 => 234,  328 => 228,  313 => 216,  304 => 210,  293 => 202,  287 => 199,  276 => 191,  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -541,16 +577,46 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         </div>
 
         <div class=\"review-card card-short\">
-            <div class=\"review-card__stars\">
-                <img src=\"{{ 'assets/images/stars.svg'|theme }}\" alt=\"Stars\" class=\"review-card__stars-svg\">
-            </div>
-            </div>
+    <div class=\"review-card__header\">
+        <div class=\"review-card__user-avatar\">
+            <img src=\"{{ 'assets/images/avatar.svg'|theme }}\" alt=\"User\" class=\"avatar-svg\">
+        </div>
+        <span class=\"review-card__user-name\">Michael R.</span>
+    </div>
+
+    <div class=\"review-card__stars\">
+        <img src=\"{{ 'assets/images/stars.svg'|theme }}\" alt=\"Stars\" class=\"review-card__stars-svg\">
+    </div>
+
+     <p class=\"review-card__text\">
+        Excellent experience with TI Moving. Communication was clear, the movers were professional, and the entire process went exactly as planned.
+    </p>
+
+</div>
 
         <div class=\"review-card card-medium\">
-            <div class=\"review-card__stars\">
-                <img src=\"{{ 'assets/images/stars.svg'|theme }}\" alt=\"Stars\" class=\"review-card__stars-svg\">
-            </div>
-            </div>
+    <div class=\"review-card__header\">
+        <div class=\"review-card__user-avatar\">
+            <img src=\"{{ 'assets/images/avatar.svg'|theme }}\" alt=\"User\" class=\"avatar-svg\">
+        </div>
+        <span class=\"review-card__user-name\">Michael R.</span>
+    </div>
+
+    <div class=\"review-card__stars\">
+        <img src=\"{{ 'assets/images/stars.svg'|theme }}\" alt=\"Stars\" class=\"review-card__stars-svg\">
+    </div>
+
+    <div class=\"review-card__text-wrapper\">
+        <p class=\"review-card__text medium-text\">
+        We used TI Moving for a residential move and were very satisfied with the service.
+        The team arrived on time, packed everything carefully, and handled our furniture with great care.
+        The move was smooth and stress-free.
+    </p>
+    </div>
+
+</div>
+
+
     </div>
 </section>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/pages/home.htm", "");
     }
