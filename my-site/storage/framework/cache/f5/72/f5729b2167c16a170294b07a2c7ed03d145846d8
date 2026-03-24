@@ -1,0 +1,68 @@
+1774347371a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:904:"description = "Main Layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ this.page.title }} | TI Moving</title>
+
+<link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}?v={{ random() }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+    {% styles %}
+</head>
+<body>
+
+    <header id="layout-header">
+        {% partial 'site/header' %}
+    </header>
+
+    <main id="layout-content">
+        {% page %}
+    </main>
+
+    <footer id="layout-footer">
+        {% partial 'site/footer' %}
+    </footer>
+
+    <script src="{{ 'assets/js/app.js' | theme }}"></script>
+
+    {% scripts %}
+</body>
+</html>
+";s:5:"mtime";i:1774345464;s:6:"markup";s:872:"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ this.page.title }} | TI Moving</title>
+
+<link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}?v={{ random() }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+    {% styles %}
+</head>
+<body>
+
+    <header id="layout-header">
+        {% partial 'site/header' %}
+    </header>
+
+    <main id="layout-content">
+        {% page %}
+    </main>
+
+    <footer id="layout-footer">
+        {% partial 'site/footer' %}
+    </footer>
+
+    <script src="{{ 'assets/js/app.js' | theme }}"></script>
+
+    {% scripts %}
+</body>
+</html>";s:4:"code";N;s:11:"description";s:11:"Main Layout";}}
