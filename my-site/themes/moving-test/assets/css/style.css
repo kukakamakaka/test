@@ -36,7 +36,9 @@ body {
     width: 100%;
     max-width: 1366px;
     margin: 0 auto;
-    padding: 0 38px;
+    /* как в  Hero */
+    padding-left: clamp(20px, 4vw, 38px);
+    padding-right: clamp(20px, 4vw, 38px);
 }
 
 /* ==========================================================================
@@ -675,14 +677,18 @@ body {
 
 .hero__divider {
     position: absolute;
-    bottom: -43.86px;
-    left: 0;
-    width: 100%;
-    height: 87.72px;
+    width: 100.2%;
+    height: clamp(40px, 6vw, 87.72px);
+    /* Дивайдерді ровно по центру будет*/
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(clamp(40px, 6vw, 87.72px) / -2);
     background: #FFFFFF;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    /* Скругление пропорция */
+    border-top-left-radius: clamp(20px, 4vw, 50px);
+    border-top-right-radius: clamp(20px, 4vw, 50px);
     z-index: 10;
+    overflow: hidden;
 }
 
 /* Контейнер, который держит общую сетку сайта */
@@ -693,20 +699,22 @@ body {
     margin: 0 auto;
     width: 100%;
     height: 100%;
+    padding-left: clamp(20px, 4vw, 38px);
+    padding-right: clamp(20px, 4vw, 38px);
 }
 
 .hero__content {
     padding-top: 40vh;
-    padding-left: 38px;
+    padding-left: 0;
 }
 
 .hero__title {
     font-family: 'Manrope', sans-serif !important;
     font-weight: 500 !important;
-    font-size: 75px;
-    line-height: 1;
+    font-size: clamp(40px, 5.5vw, 75px);
+    line-height: 1.1;
     color: #FFFFFF;
-    width: 719px;
+    width: 90%;
     margin: 0;
     transform: scaleY(0.9);
     transform-origin: left top;
@@ -716,11 +724,11 @@ body {
 .hero__subtitle {
     font-family: 'Manrope', sans-serif !important;
     font-weight: 500 !important;
-    font-size: 67px;
-    line-height: 1;
+    font-size: clamp(32px, 4.8vw, 67px);
+    line-height: 1.1;
     color: #FFFFFF;
-    width: 686px;
-    margin-top: 15px;
+    width: 90%;
+    margin-top: clamp(10px, 2vw, 15px);
     transform: scaleY(0.9);
     transform-origin: left top;
     display: block;
@@ -729,18 +737,14 @@ body {
 .hero__text {
     font-family: 'Manrope', sans-serif !important;
     font-weight: 400 !important;
-    font-size: 26px;
-    line-height: 1;
+    font-size: clamp(16px, 1.8vw, 26px);
+    line-height: 1.2;
     color: rgba(227, 227, 227, 1);
-    width: auto;
-    max-width: 700px;
-    white-space: nowrap;
-    margin-top: 30px;
-    padding: 0;
-    opacity: 1;
+    max-width: 613px;
+    white-space: normal;
+    margin-top: clamp(20px, 3vw, 30px);
     transform: scaleY(0.9);
     transform-origin: left top;
-    letter-spacing: -0.01em;
     display: block;
 }
 
@@ -748,21 +752,14 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 251.28px;
-    height: 48.34px;
+    width: clamp(180px, 18vw, 251px);
+    height: clamp(40px, 4vw, 48px);
     background-color: #FFFFFF !important;
     color: #151515 !important;
     border-radius: 300px;
-    font-family: 'Manrope', sans-serif !important;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 1;
+    font-size: clamp(14px, 1.2vw, 17px);
+    margin-top: clamp(25px, 4vw, 42px);
     text-decoration: none;
-    text-align: center;
-    margin-top: 42.85px;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
 }
 
 .btn-hero-quote:hover {
