@@ -80,25 +80,46 @@ class __TwigTemplate_09d32d4cecfed06cdb6a8d94926636c95152f8a77dc8dd66b307b81d262
         // line 23
         echo "    </main>
 
+    <div class=\"floating-icons\">
+    <a href=\"https://wa.me/yournumber\" target=\"_blank\" class=\"icon-link\">
+        <img src=\"";
+        // line 27
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Group 4375.svg");
+        echo "\" alt=\"WhatsApp\">
+    </a>
+    <a href=\"https://instagram.com/yourprofile\" target=\"_blank\" class=\"icon-link\">
+        <img src=\"";
+        // line 30
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/insta100.svg");
+        echo "\" alt=\"Instagram\">
+    </a>
+    <a href=\"#next-section\" class=\"icon-link scroll-down\">
+        <img src=\"";
+        // line 33
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Group 1597878299.svg");
+        echo "\" alt=\"Scroll Down\">
+    </a>
+</div>
+
     <footer id=\"layout-footer\">
         ";
-        // line 26
+        // line 38
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 27
+        // line 39
         echo "    </footer>
 
     <script src=\"";
-        // line 29
+        // line 41
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/app.js");
         echo "\"></script>
 
     ";
-        // line 31
+        // line 43
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 32
+        // line 44
         echo "</body>
 </html>";
     }
@@ -115,7 +136,7 @@ class __TwigTemplate_09d32d4cecfed06cdb6a8d94926636c95152f8a77dc8dd66b307b81d262
 
     public function getDebugInfo()
     {
-        return array (  102 => 32,  99 => 31,  94 => 29,  90 => 27,  86 => 26,  81 => 23,  79 => 22,  74 => 19,  70 => 18,  64 => 14,  61 => 13,  51 => 8,  46 => 6,  39 => 1,);
+        return array (  123 => 44,  120 => 43,  115 => 41,  111 => 39,  107 => 38,  99 => 33,  93 => 30,  87 => 27,  81 => 23,  79 => 22,  74 => 19,  70 => 18,  64 => 14,  61 => 13,  51 => 8,  46 => 6,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -144,6 +165,18 @@ class __TwigTemplate_09d32d4cecfed06cdb6a8d94926636c95152f8a77dc8dd66b307b81d262
         {% page %}
     </main>
 
+    <div class=\"floating-icons\">
+    <a href=\"https://wa.me/yournumber\" target=\"_blank\" class=\"icon-link\">
+        <img src=\"{{ 'assets/images/Group 4375.svg'|theme }}\" alt=\"WhatsApp\">
+    </a>
+    <a href=\"https://instagram.com/yourprofile\" target=\"_blank\" class=\"icon-link\">
+        <img src=\"{{ 'assets/images/insta100.svg'|theme }}\" alt=\"Instagram\">
+    </a>
+    <a href=\"#next-section\" class=\"icon-link scroll-down\">
+        <img src=\"{{ 'assets/images/Group 1597878299.svg'|theme }}\" alt=\"Scroll Down\">
+    </a>
+</div>
+
     <footer id=\"layout-footer\">
         {% partial 'site/footer' %}
     </footer>
@@ -157,7 +190,7 @@ class __TwigTemplate_09d32d4cecfed06cdb6a8d94926636c95152f8a77dc8dd66b307b81d262
     
     public function checkSecurity()
     {
-        static $tags = array("styles" => 13, "partial" => 18, "page" => 22, "scripts" => 31);
+        static $tags = array("styles" => 13, "partial" => 18, "page" => 22, "scripts" => 43);
         static $filters = array("escape" => 6, "theme" => 8);
         static $functions = array("random" => 8);
 
