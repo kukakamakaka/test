@@ -987,19 +987,12 @@ body {
 
 .services-section {
     position: relative;
-    background-color: #151515; /* rgba(21, 21, 21, 1) */
+    background-color: #151515;
     width: 100%;
     min-height: 100vh;
     padding-bottom: 100px;
-
-    /* МЫНА ЖЕРІ ЕҢ МАҢЫЗДЫСЫ: */
-    border-radius: 60px 60px 0 0; /* Суреттегідей үлкенірек дөңгелектеу */
-
-    /* Ақ секцияның үстіне басып кіру үшін теріс маржин */
-    /* 2-ші карточкадан кейінгі арақашықтықты осылай реттейміз */
+    border-radius: 60px 60px 0 0;
     margin-top: -90px;
-
-    /* Басқа элементтердің астында қалып қоймауы үшін */
     z-index: 20;
 }
 
@@ -1009,17 +1002,11 @@ body {
     font-size: clamp(32px, 4vw, 45px);
     line-height: 1;
     color: #FFFFFF;
-
     text-align: center;
     margin: 0 auto;
-
-    /* Қара контейнердің ішіндегі тақырыпқа дейінгі бос орын */
     padding-top: 90px;
-
     transform: scaleY(0.9);
     transform-origin: center top;
-
-    /* Біздің алтын ереже */
     padding-left: clamp(20px, 4vw, 38px);
     padding-right: clamp(20px, 4vw, 38px);
 }
@@ -1029,13 +1016,12 @@ body {
 .services-slider-wrapper {
     width: 100%;
     overflow-x: auto;
-    padding-bottom: 50px;
-    margin-top: 60px;
-
-    /* Snap-ты уақытша өшіріп тексеруге болады, бірақ ортаға келу үшін керек */
+    overflow-y: visible;
+    padding-top: 80px;
+    margin-top: 0;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
-    display: flex; /* Маңызды */
+    display: flex;
     justify-content: flex-start;
 }
 
@@ -1046,13 +1032,11 @@ body {
 .services-track {
     display: flex;
     gap: 30px;
-    /* Мына отступтарды біздің алтын ережеге қайтарамыз */
     padding-left: clamp(20px, 4vw, 38px);
     padding-right: clamp(20px, 4vw, 38px);
     width: max-content;
 }
 
-/* КАРТОЧКА ҚОРЖЫНЫ */
 .service-card.empty-card {
     flex: 0 0 384px;
     width: 384px;
@@ -1060,21 +1044,21 @@ body {
     background-color: rgba(32, 29, 29, 1);
     border-radius: 15px;
     scroll-snap-align: center;
-
     display: flex;
     flex-direction: column;
-    align-items: center; /* Контентті ортаға жинау */
+    align-items: center;
     position: relative;
     transition: transform 0.3s ease;
 }
 
 /* ИКОНКА КОНТЕЙНЕРІ */
 .service-card__icon-container {
+    overflow: visible !important;
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -55px;
+    margin-top: -50px;
     transform: translateY(-10px);
     z-index: 5;
 }
@@ -1082,9 +1066,8 @@ body {
 /* ИКОНКА ӨЛШЕМІ */
 .service-card__icon-wrapper {
     position: relative;
-    /* 65px-тің орнына 80px-100px беріп көр, сонда свечение сыймай қалмайды */
-    width: 300px;
-    height: 300px;
+    width: 290px;
+    height: 290px;
     z-index: 10;
 }
 
