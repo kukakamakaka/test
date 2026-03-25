@@ -2024,28 +2024,127 @@ body {
     z-index: 1;
 }
 
-/* Қараңғы қабат (Overlay) */
+/* Overlay-ді өзгертеміз: мазмұнды сол жақ жоғарыға итереміз */
 .contact-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(24, 24, 24, 0.65); /* Сен берген қараңғылық */
-    z-index: 2; /* Суреттің үстінде тұрады */
+    background: rgba(24, 24, 24, 0.65);
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
+    align-items: flex-start; /* Сол жаққа жинау */
+    justify-content: flex-start; /* Жоғарыдан бастау */
+    padding-top: 73.92px;    /* Төбесінен оступ */
+    padding-left: 107.79px;  /* Сол жақтан оступ */
 }
 
-.contact-title {
-    font-family: 'Manrope', sans-serif;
+
+
+.contact-content-wrapper {
+    /* 1. Енін 442px-ден 650px-ге дейін ұлғайтамыз, сонда "contact" сыяды */
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-main-text {
+    transform: scaleY(0.9);
+    font-family: 'Nata Sans', sans-serif;
     font-weight: 500;
-    font-size: 44px; /* Біздің стандарт */
+    font-size: 44px;
+    line-height: 1.3;
     color: #FFFFFF;
+    text-align: left;
     margin: 0;
-    z-index: 3;
+    /* 2. Әріптер арасын сәл тығыздаймыз, бұл сөздердің сыюына көмектеседі */
+    letter-spacing: -0.02em;
+    /* 3. Мәтін өздігінен үзілмеуі үшін */
+    white-space: normal;
 }
 
+.contact-bold-wrapper {
+    position: relative;
+    /* inline-block орнына жай ғана inline немесе inline-flex */
+    display: inline-flex;
+    vertical-align: baseline;
+}
+
+.contact-bold {
+    font-weight: 900;
+}
+
+.contact-vector {
+    position: absolute;
+    bottom: -4px; /* Сөздің астына дәлдеу */
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Мәтін мен инпуттардың арасы */
+.contact-form-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 189.99px); /* 3 баған */
+    gap: 10px; /* Карточкалар арасындағы қашықтық */
+    width: max-content;
+}
+
+.form-item {
+    width: 189.99px;
+    height: 48.33px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px); /* Safari үшін */
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-item input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    /* Текст стильдері */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFFFFF;
+    line-height: 100%;
+
+    /* Сен берген ішкі отступтар (padding) */
+    padding-top: 18.17px;
+    padding-bottom: 18.17px;
+    padding-left: 15.74px;
+    padding-right: 10px; /* Оң жақтан текст сыюы үшін */
+}
+
+/* Placeholder түсі ақ болуы үшін */
+.form-item input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Manrope', sans-serif;
+    font-size: 17px;
+}
+
+/* Мобильді нұсқада 3-тен сыймаса, 1-ден немесе 2-ден тіземіз */
+@media (max-width: 768px) {
+    .contact-form-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .form-item {
+        width: 100%;
+    }
+}

@@ -1,4 +1,4 @@
-1774425283a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:13187:"title = "Home"
+1774428675a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:13995:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -310,12 +310,31 @@ is_hidden = 0
         <div class="contact-banner">
             <img src="{{ 'assets/images/Rectangle.svg'|theme }}" alt="Contact Background" class="contact-bg-img">
 
-            <div class="contact-overlay">
-                <h2 class="contact-title">Contact Us</h2>
-            </div>
+<div class="contact-overlay">
+    <div class="contact-content-wrapper">
+        <h2 class="contact-main-text">
+            Feel free to
+            <span class="contact-bold-wrapper">
+                <span class="contact-bold">contact</span>
+                <img src="{{ 'assets/images/vector-line.svg'|theme }}" class="contact-vector" alt="">
+            </span> <br> us to learn more
+        </h2>
+
+        <div class="contact-form-grid">
+    <div class="form-item"><input type="text" placeholder="Your Name*"></div>
+    <div class="form-item"><input type="text" placeholder="Phone*"></div>
+    <div class="form-item"><input type="email" placeholder="Email"></div>
+    <div class="form-item"><input type="text" placeholder="From Address*"></div>
+    <div class="form-item"><input type="text" placeholder="To Address*"></div>
+    <div class="form-item"><input type="text" placeholder="Date*"></div>
+</div>
+
+    </div>
+</div>
+
         </div>
     </div>
-</section>";s:5:"mtime";i:1774424681;s:6:"markup";s:13114:"<section class="hero">
+</section>";s:5:"mtime";i:1774428054;s:6:"markup";s:13922:"<section class="hero">
     <video autoplay muted loop playsinline class="hero-video">
         <source src="{{ 'assets/video/hero-bg.mp4'|theme }}" type="video/mp4">
     </video>
@@ -619,9 +638,28 @@ is_hidden = 0
         <div class="contact-banner">
             <img src="{{ 'assets/images/Rectangle.svg'|theme }}" alt="Contact Background" class="contact-bg-img">
 
-            <div class="contact-overlay">
-                <h2 class="contact-title">Contact Us</h2>
-            </div>
+<div class="contact-overlay">
+    <div class="contact-content-wrapper">
+        <h2 class="contact-main-text">
+            Feel free to
+            <span class="contact-bold-wrapper">
+                <span class="contact-bold">contact</span>
+                <img src="{{ 'assets/images/vector-line.svg'|theme }}" class="contact-vector" alt="">
+            </span> <br> us to learn more
+        </h2>
+
+        <div class="contact-form-grid">
+    <div class="form-item"><input type="text" placeholder="Your Name*"></div>
+    <div class="form-item"><input type="text" placeholder="Phone*"></div>
+    <div class="form-item"><input type="email" placeholder="Email"></div>
+    <div class="form-item"><input type="text" placeholder="From Address*"></div>
+    <div class="form-item"><input type="text" placeholder="To Address*"></div>
+    <div class="form-item"><input type="text" placeholder="Date*"></div>
+</div>
+
+    </div>
+</div>
+
         </div>
     </div>
 </section>";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:0:{}}}

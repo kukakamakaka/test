@@ -310,9 +310,28 @@ is_hidden = 0
         <div class="contact-banner">
             <img src="{{ 'assets/images/Rectangle.svg'|theme }}" alt="Contact Background" class="contact-bg-img">
 
-            <div class="contact-overlay">
-                <h2 class="contact-title">Contact Us</h2>
-            </div>
+<div class="contact-overlay">
+    <div class="contact-content-wrapper">
+        <h2 class="contact-main-text">
+            Feel free to
+            <span class="contact-bold-wrapper">
+                <span class="contact-bold">contact</span>
+                <img src="{{ 'assets/images/vector-line.svg'|theme }}" class="contact-vector" alt="">
+            </span> <br> us to learn more
+        </h2>
+
+        <div class="contact-form-grid">
+    <div class="form-item"><input type="text" placeholder="Your Name*"></div>
+    <div class="form-item"><input type="text" placeholder="Phone*"></div>
+    <div class="form-item"><input type="email" placeholder="Email"></div>
+    <div class="form-item"><input type="text" placeholder="From Address*"></div>
+    <div class="form-item"><input type="text" placeholder="To Address*"></div>
+    <div class="form-item"><input type="text" placeholder="Date*"></div>
+</div>
+
+    </div>
+</div>
+
         </div>
     </div>
 </section>
