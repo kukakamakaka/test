@@ -452,6 +452,8 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
         <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
     </div>
+
+            <button class=\"contact-submit-btn\">Get a Quote</button>
 </div>
 
     </div>
@@ -805,6 +807,8 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
         <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
     </div>
+
+            <button class=\"contact-submit-btn\">Get a Quote</button>
 </div>
 
     </div>

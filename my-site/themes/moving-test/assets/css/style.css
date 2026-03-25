@@ -2037,7 +2037,7 @@ body {
     flex-direction: column;
     align-items: flex-start; /* Сол жаққа жинау */
     justify-content: flex-start; /* Жоғарыдан бастау */
-    padding-top: 73.92px;    /* Төбесінен оступ */
+    padding-top: 70.92px;    /* Төбесінен оступ */
     padding-left: 107.79px;  /* Сол жақтан оступ */
 }
 
@@ -2150,6 +2150,44 @@ body {
     color: rgba(255, 255, 255, 0.8);
     font-family: 'Manrope', sans-serif;
     font-size: 17px;
+}
+
+.contact-submit-btn {
+    /* Өлшемдері мен орны */
+    width: 189.99px;
+    height: 48.33px;
+    margin-top: 10px;
+    grid-column: 1; /* Бірінші бағанда тұруы үшін */
+
+    /* Түсі мен формасы */
+    background: rgba(192, 31, 31, 1);
+    border-radius: 300px;
+    border: none;
+    cursor: pointer;
+
+    /* Текст стильдері */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #FFFFFF;
+    line-height: 100%;
+    text-align: center;
+
+    /* МӘТІНДІ БІР ЖОЛҒА КҮШТЕУ */
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Padding-ті аздап азайттық, сонда мәтін еркін сыяды */
+    padding: 0 20px;
+
+    transition: opacity 0.3s ease;
+}
+
+/* Grid-тің ішінде батырманың тек бірінші бағанда тұруын қадағалау */
+.contact-submit-btn {
+    grid-column: 1;
 }
 
 /* Мобильді нұсқада 3-тен сыймаса, 1-ден немесе 2-ден тіземіз */
