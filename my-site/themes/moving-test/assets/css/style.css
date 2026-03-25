@@ -1643,23 +1643,25 @@ body {
 
 .about-container {
     display: flex;
-    flex-direction: row; /* Desktop-та қатар тұрады */
-    flex-wrap: wrap;    /* Экран тар болса, астына түседі */
+    flex-direction: row;
+    flex-wrap: wrap; /* Маңызды: сыймаса астына түсуі үшін */
     align-items: flex-start;
-    justify-content: space-between; /* Арақашықтықты автоматты сақтау */
+    justify-content: center; /* Элементтер ортада жиналуы үшін */
     max-width: 1366px;
-    margin: 130px auto 0; /* Margin-top осында */
+    margin: 130px auto 0;
     padding-left: clamp(20px, 4vw, 38px);
     padding-right: clamp(20px, 4vw, 75px);
     box-sizing: border-box;
+    /* margin-left-тің орнына gap қолдансақ, ол экранмен бірге кішірейеді */
+    gap: 98.21px;
 }
 
 /* 4. Фото мен Мәтін блоктары (сенің өлшемдерің бойынша) */
 .about-image-wrapper {
-    flex: 0 1 595.43px; /* 595.43px-тен аспайды, бірақ кішірейе алады */
-    min-width: 300px;    /* Ең кіші шегі */
-    height: auto;       /* Биіктік пропорционалды болуы үшін */
-    aspect-ratio: 595 / 430; /* ПК-дағы пропорцияны сақтайды */
+    flex: 0 1 595.43px; /* 1 дегеніміз - кішірейе алады деген сөз */
+    min-width: 320px; /* Телефонда сурет тым кішкентай болып кетпеуі үшін */
+    height: auto;
+    aspect-ratio: 595 / 430;
     margin-top: -30px;
     position: relative;
     z-index: 35;
@@ -1674,10 +1676,10 @@ body {
 
 /* Мәтін блогы өз орнында қалады */
 .about-content {
-    /* Мәтін блогының ені қатаң 556.67px */
     flex: 0 1 556.67px;
-    /* СЕНІҢ ТАЛАБЫҢ: Қатаң 98.21px арақашықтық */
-    margin-left: 98.21px;
+    min-width: 320px;
+    /* Бұл жерден margin-left-ті алып тастаймыз, өйткені контейнерде gap бар */
+    margin-left: 0 !important;
     display: flex;
     flex-direction: column;
 }
@@ -1720,12 +1722,13 @@ body {
     }
 
     .about-container {
+        gap: 40px; /* Арақашықтықты азайтамыз, сонда олар ұзақ уақыт қатар тұра алады */
+        margin-top: 100px;
         flex-direction: column; /* Сурет пен мәтін бірінің астына бірі түседі */
         align-items: center;
         /* Сенің алтын ережең: шеткі отступтар басқа секциялармен бірдей */
         padding-left: clamp(20px, 4vw, 38px);
         padding-right: clamp(20px, 4vw, 38px);
-        margin-top: 80px; /* Мобильді де дивайдерден кейінгі қашықтық */
     }
 
     .about-image-wrapper {
@@ -1776,5 +1779,29 @@ body {
     .about-description {
         /* Өте кішкентай экрандарда мәтін сол жақтан басталғаны дұрыс болуы мүмкін */
         text-align: left;
+    }
+}
+
+@media (max-width: 1100px) {
+    .about-container {
+        flex-direction: column; /* Енді адемілеп бірінің астына бірін қоямыз */
+        align-items: center;
+        text-align: center;
+        padding-right: clamp(20px, 4vw, 38px); /* Оң жақ отступты сол жақпен теңестіру */
+    }
+
+    .about-image-wrapper {
+        margin-top: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-content {
+        align-items: center; /* Мәтінді ортаға жинаймыз */
+        width: 100%;
+    }
+
+    .about-title {
+        margin-top: 0; /* Мобильді де теріс margin-сыз дұрыс */
     }
 }
