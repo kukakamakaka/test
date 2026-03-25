@@ -157,7 +157,40 @@ if (servicesSlider && servicesTrack) {
     setTimeout(setInitialPosition, 500);
 }
 
+// MOVERS SLIDER LOGIC
+const moversSlider = document.querySelector('.movers-slider-wrapper');
+const moversTrack = document.querySelector('.movers-track');
 
+if (moversSlider && moversTrack) {
+    const mCards = moversTrack.querySelectorAll('.mover-card');
+
+    const setMoversPosition = () => {
+        if (mCards.length >= 3) {
+            const targetMover = mCards[2]; // 3-ші карточка
+
+            // Нақты ортаға есептеу
+            const mContainerCenter = moversSlider.offsetWidth / 2;
+            const mCardCenter = targetMover.offsetLeft + (targetMover.offsetWidth / 2);
+            const mScrollPos = mCardCenter - mContainerCenter;
+
+            // Snap-ты уақытша алып тастау
+            moversSlider.style.scrollSnapType = 'none';
+
+            // Тікелей жылжыту
+            moversSlider.scrollLeft = mScrollPos;
+
+            // Snap-ты қайта қосу
+            setTimeout(() => {
+                moversSlider.style.scrollSnapType = 'x mandatory';
+            }, 100);
+        }
+    };
+
+    // Services-тегідей бірнеше рет тексеру (сенімді болу үшін)
+    window.addEventListener('load', setMoversPosition);
+    setTimeout(setMoversPosition, 500);
+    window.addEventListener('resize', setMoversPosition);
+}
 
 });
 

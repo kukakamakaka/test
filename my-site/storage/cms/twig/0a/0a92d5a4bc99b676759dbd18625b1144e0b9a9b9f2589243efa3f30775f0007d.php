@@ -368,6 +368,47 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
             </p>
         </div>
     </div>
+</section>
+
+<section class=\"movers-section\">
+    <div class=\"movers-container\">
+        <h2 class=\"movers-title\">See Our Movers in Action</h2>
+
+        <div class=\"movers-slider-wrapper\">
+            <div class=\"movers-track\">
+                <div class=\"mover-card\">
+                    <img src=\"";
+        // line 273
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers.svg");
+        echo "\" alt=\"Mover Action\" class=\"mover-img\">
+                </div>
+                <div class=\"mover-card\">
+                    <img src=\"";
+        // line 276
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers.svg");
+        echo "\" alt=\"Mover Action\" class=\"mover-img\">
+                </div>
+                <div class=\"mover-card\">
+                    <img src=\"";
+        // line 279
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers1.svg");
+        echo "\" alt=\"Mover Action\" class=\"mover-img\">
+                </div>
+                <div class=\"mover-card\">
+                    <img src=\"";
+        // line 282
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers2.svg");
+        echo "\" alt=\"Mover Action\" class=\"mover-img\">
+                </div>
+                <div class=\"mover-card\">
+                    <img src=\"";
+        // line 285
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers2.svg");
+        echo "\" alt=\"Mover Action\" class=\"mover-img\">
+                </div>
+            </div>
+        </div>
+    </div>
 </section>";
     }
 
@@ -383,7 +424,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getDebugInfo()
     {
-        return array (  359 => 253,  337 => 234,  328 => 228,  313 => 216,  304 => 210,  293 => 202,  287 => 199,  276 => 191,  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
+        return array (  406 => 285,  400 => 282,  394 => 279,  388 => 276,  382 => 273,  359 => 253,  337 => 234,  328 => 228,  313 => 216,  304 => 210,  293 => 202,  287 => 199,  276 => 191,  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -649,6 +690,32 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
                 Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
                 Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше.
             </p>
+        </div>
+    </div>
+</section>
+
+<section class=\"movers-section\">
+    <div class=\"movers-container\">
+        <h2 class=\"movers-title\">See Our Movers in Action</h2>
+
+        <div class=\"movers-slider-wrapper\">
+            <div class=\"movers-track\">
+                <div class=\"mover-card\">
+                    <img src=\"{{ 'assets/images/movers.svg'|theme }}\" alt=\"Mover Action\" class=\"mover-img\">
+                </div>
+                <div class=\"mover-card\">
+                    <img src=\"{{ 'assets/images/movers.svg'|theme }}\" alt=\"Mover Action\" class=\"mover-img\">
+                </div>
+                <div class=\"mover-card\">
+                    <img src=\"{{ 'assets/images/movers1.svg'|theme }}\" alt=\"Mover Action\" class=\"mover-img\">
+                </div>
+                <div class=\"mover-card\">
+                    <img src=\"{{ 'assets/images/movers2.svg'|theme }}\" alt=\"Mover Action\" class=\"mover-img\">
+                </div>
+                <div class=\"mover-card\">
+                    <img src=\"{{ 'assets/images/movers2.svg'|theme }}\" alt=\"Mover Action\" class=\"mover-img\">
+                </div>
+            </div>
         </div>
     </div>
 </section>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/pages/home.htm", "");
