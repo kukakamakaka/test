@@ -1626,7 +1626,7 @@ body {
     margin-top: calc(clamp(40px, 6vw, 87.72px) / -1);
 
     /* Дивайдерден кейін отступ болмауы үшін padding-top: 0 */
-    padding-top: 0;
+    padding-top: 0 !important;
     padding-bottom: 100px;
 }
 
@@ -1650,8 +1650,11 @@ body {
     align-items: flex-start;
     max-width: 1366px;
     margin: 0 auto;
-    /* Контентті дивайдерден сәл төмен түсіру үшін margin-top қолданамыз */
-    margin-top: 60px;
+
+    /* Осы жердегі margin-top суреттің дивайдерден қашықтығын реттейді */
+    /* Егер 0 жасасаң, сурет дивайдердің дәл астынан басталады */
+    margin-top: 130px;
+
     padding-left: 38px;
     padding-right: 75px;
 }
@@ -1661,12 +1664,22 @@ body {
     width: 595.43px;
     height: 430px;
     flex-shrink: 0;
+
+    /* ТЕК СУРЕТТІ ЖОҒАРЫ КӨТЕРУ: */
+    /* Фигмадағы қажетті биіктікке қарай осы санды өзгертіп көр */
+    margin-top: -30px;
+
+    /* Суреттің орналасуы дұрыс болуы үшін */
+    position: relative;
+    z-index: 35; /* Дивайдердің үстінде немесе астында тұруын реттейді */
 }
 
+/* Мәтін блогы өз орнында қалады */
 .about-content {
     margin-left: 98.21px;
     display: flex;
     flex-direction: column;
+    margin-top: 0; /* Мәтін төмендеу болып көрінуі үшін оны 0-де қалдырамыз */
 }
 
 .about-title {
@@ -1682,10 +1695,31 @@ body {
 
 .about-description {
     width: 556.67px;
-    margin-top: 35.13px;
+    /* Фигма бойынша 35.13px немесе өзің реттеген 30px */
+    margin-top: 30px;
+
+    /* Шрифт параметрлері */
     font-family: 'Nata Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 400; /* Regular */
     font-size: 18px;
-    line-height: 24px;
+
+    /* Фигмада 24px болса, дәл солай жазу керек */
+    line-height: 25px;
+
+    /* Түсі мен мөлдірлігі */
     color: rgba(119, 119, 119, 1);
+
+    /* Фигмада letter-spacing: 0% болса, 0 немесе normal */
+    letter-spacing: 0;
+
+    /* Тексттің реті мен орналасуы */
+    text-align: left;
+
+    /* Егер шрифт тым "биік" немесе "жалпақ" көрінсе, scaleY қолдан */
+    /* Бірақ Фигмада 100% болса, бұл қажет емес */
+    transform: none;
+
+    /* "Leading-trim" эффектісін беру үшін (артық жоғарғы бос орынды алу) */
+    display: block;
 }
+
