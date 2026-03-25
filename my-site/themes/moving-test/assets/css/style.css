@@ -1836,7 +1836,7 @@ body {
     background-color: #FFFFFF;
     width: 100%;
     padding-top: 76px;
-    padding-bottom: 100px;
+    padding-bottom: 86px;
     position: relative;
     overflow: hidden;
 }
@@ -1985,5 +1985,67 @@ body {
 }
 
 /* ==========================================================================
-    Movers-section
+    Contact-section
    ========================================================================== */
+
+.contact-section {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-bottom: 100px;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding-left: clamp(20px, 4vw, 38px);
+    padding-right: clamp(20px, 4vw, 38px);
+    display: flex;
+    justify-content: center;
+}
+
+.contact-banner {
+    width: 100%;
+    max-width: 1290.2px;
+    height: 492.82px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden; /* Сурет шетінен шықпауы үшін */
+}
+
+/* Фондық суреттің стилі */
+.contact-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Суретті созбай, бүкіл ауданды жабады */
+    z-index: 1;
+}
+
+/* Қараңғы қабат (Overlay) */
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 24, 24, 0.65); /* Сен берген қараңғылық */
+    z-index: 2; /* Суреттің үстінде тұрады */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.contact-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 44px; /* Біздің стандарт */
+    color: #FFFFFF;
+    margin: 0;
+    z-index: 3;
+}
+
