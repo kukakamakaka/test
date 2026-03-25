@@ -35,6 +35,30 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
+        // line 1
+        echo "<footer class=\"footer\">
+    <div class=\"footer-vector-wrapper\">
+        <div class=\"f-vector v-left\"></div>
+        <div class=\"f-vector v-right\"></div>
+    </div>
+
+    <div class=\"footer-container\">
+        <div class=\"footer-logo\">
+            <img src=\"assets/images/footer-logo.svg\" alt=\"Logo\">
+        </div>
+
+        <nav class=\"footer-nav\">
+            <a href=\"#\">Main</a>
+            <a href=\"#\">About</a>
+            <a href=\"#\">Services</a>
+            <a href=\"#\">Contact</a>
+        </nav>
+
+        <div class=\"footer-bottom\">
+            <p>© 2026 All rights reserved.</p>
+        </div>
+    </div>
+</footer>";
     }
 
     public function getTemplateName()
@@ -44,12 +68,34 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
 
     public function getDebugInfo()
     {
-        return array ();
+        return array (  39 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/partials/site/footer.htm", "");
+        return new Source("<footer class=\"footer\">
+    <div class=\"footer-vector-wrapper\">
+        <div class=\"f-vector v-left\"></div>
+        <div class=\"f-vector v-right\"></div>
+    </div>
+
+    <div class=\"footer-container\">
+        <div class=\"footer-logo\">
+            <img src=\"assets/images/footer-logo.svg\" alt=\"Logo\">
+        </div>
+
+        <nav class=\"footer-nav\">
+            <a href=\"#\">Main</a>
+            <a href=\"#\">About</a>
+            <a href=\"#\">Services</a>
+            <a href=\"#\">Contact</a>
+        </nav>
+
+        <div class=\"footer-bottom\">
+            <p>© 2026 All rights reserved.</p>
+        </div>
+    </div>
+</footer>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/partials/site/footer.htm", "");
     }
     
     public function checkSecurity()
