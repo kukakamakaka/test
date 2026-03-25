@@ -441,22 +441,62 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         </h2>
 
         <div class=\"contact-form-grid\">
-    <div class=\"form-item\"><input type=\"text\" placeholder=\"Your Name*\"></div>
-    <div class=\"form-item\"><input type=\"text\" placeholder=\"Phone*\"></div>
-    <div class=\"form-item\"><input type=\"email\" placeholder=\"Email\"></div>
-    <div class=\"form-item\"><input type=\"text\" placeholder=\"From Address*\"></div>
-    <div class=\"form-item\"><input type=\"text\" placeholder=\"To Address*\"></div>
-    <div class=\"form-item\"><input type=\"text\" placeholder=\"Date*\"></div>
+            <div class=\"form-item\"><input type=\"text\" placeholder=\"Your Name*\"></div>
+            <div class=\"form-item\"><input type=\"text\" placeholder=\"Phone*\"></div>
+            <div class=\"form-item\"><input type=\"email\" placeholder=\"Email\"></div>
+            <div class=\"form-item\"><input type=\"text\" placeholder=\"From Address*\"></div>
+            <div class=\"form-item\"><input type=\"text\" placeholder=\"To Address*\"></div>
+            <div class=\"form-item\"><input type=\"text\" placeholder=\"Date*\"></div>
 
-    <div class=\"form-row-last\">
-        <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
-        <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
+            <div class=\"form-row-last\">
+                <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
+                <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
+            </div>
+        </div>
+
+        <button class=\"contact-submit-btn\">Get a Quote</button>
     </div>
 
-            <button class=\"contact-submit-btn\">Get a Quote</button>
+    <div class=\"contact-right-icon\">
+        <img src=\"";
+        // line 333
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/your-icon.svg");
+        echo "\" alt=\"icon\">
+    </div>
+    <div class=\"contact-address-label\">Address:</div>
+    <div class=\"contact-address-text\">
+        1234 NW 45th Ave, <br>
+        Fort Lauderdale, FL 33309
+    </div>
+    <a href=\"#\" class=\"contact-map-btn\">
+        <img src=\"";
+        // line 341
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/map-button.svg");
+        echo "\" alt=\"View on map\">
+    </a>
+
+    <div class=\"contact-right-icon phone-icon\">
+        <img src=\"";
+        // line 345
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/phonee-icon.svg");
+        echo "\" alt=\"phone icon\">
+    </div>
+    <div class=\"contact-address-label phone-label\">Phone:</div>
+    <div class=\"contact-phone-text\">+7 (777) 777 77 77</div>
+
+    <div class=\"contact-right-icon email-icon\">
+    <img src=\"";
+        // line 351
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/email-icon.svg");
+        echo "\" alt=\"email icon\">
 </div>
 
-    </div>
+<div class=\"contact-address-label email-label\">Email:</div>
+
+<div class=\"contact-email-text\">examplemail.kz@mail.ru</div>
+
+</div>
+
 </div>
 
         </div>
@@ -476,7 +516,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getDebugInfo()
     {
-        return array (  438 => 311,  427 => 303,  406 => 285,  400 => 282,  394 => 279,  388 => 276,  382 => 273,  359 => 253,  337 => 234,  328 => 228,  313 => 216,  304 => 210,  293 => 202,  287 => 199,  276 => 191,  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
+        return array (  490 => 351,  481 => 345,  474 => 341,  463 => 333,  438 => 311,  427 => 303,  406 => 285,  400 => 282,  394 => 279,  388 => 276,  382 => 273,  359 => 253,  337 => 234,  328 => 228,  313 => 216,  304 => 210,  293 => 202,  287 => 199,  276 => 191,  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -796,22 +836,50 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         </h2>
 
         <div class=\"contact-form-grid\">
-    <div class=\"form-item\"><input type=\"text\" placeholder=\"Your Name*\"></div>
-    <div class=\"form-item\"><input type=\"text\" placeholder=\"Phone*\"></div>
-    <div class=\"form-item\"><input type=\"email\" placeholder=\"Email\"></div>
-    <div class=\"form-item\"><input type=\"text\" placeholder=\"From Address*\"></div>
-    <div class=\"form-item\"><input type=\"text\" placeholder=\"To Address*\"></div>
-    <div class=\"form-item\"><input type=\"text\" placeholder=\"Date*\"></div>
+            <div class=\"form-item\"><input type=\"text\" placeholder=\"Your Name*\"></div>
+            <div class=\"form-item\"><input type=\"text\" placeholder=\"Phone*\"></div>
+            <div class=\"form-item\"><input type=\"email\" placeholder=\"Email\"></div>
+            <div class=\"form-item\"><input type=\"text\" placeholder=\"From Address*\"></div>
+            <div class=\"form-item\"><input type=\"text\" placeholder=\"To Address*\"></div>
+            <div class=\"form-item\"><input type=\"text\" placeholder=\"Date*\"></div>
 
-    <div class=\"form-row-last\">
-        <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
-        <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
+            <div class=\"form-row-last\">
+                <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
+                <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
+            </div>
+        </div>
+
+        <button class=\"contact-submit-btn\">Get a Quote</button>
     </div>
 
-            <button class=\"contact-submit-btn\">Get a Quote</button>
+    <div class=\"contact-right-icon\">
+        <img src=\"{{ 'assets/images/your-icon.svg'|theme }}\" alt=\"icon\">
+    </div>
+    <div class=\"contact-address-label\">Address:</div>
+    <div class=\"contact-address-text\">
+        1234 NW 45th Ave, <br>
+        Fort Lauderdale, FL 33309
+    </div>
+    <a href=\"#\" class=\"contact-map-btn\">
+        <img src=\"{{ 'assets/images/map-button.svg'|theme }}\" alt=\"View on map\">
+    </a>
+
+    <div class=\"contact-right-icon phone-icon\">
+        <img src=\"{{ 'assets/images/phonee-icon.svg'|theme }}\" alt=\"phone icon\">
+    </div>
+    <div class=\"contact-address-label phone-label\">Phone:</div>
+    <div class=\"contact-phone-text\">+7 (777) 777 77 77</div>
+
+    <div class=\"contact-right-icon email-icon\">
+    <img src=\"{{ 'assets/images/email-icon.svg'|theme }}\" alt=\"email icon\">
 </div>
 
-    </div>
+<div class=\"contact-address-label email-label\">Email:</div>
+
+<div class=\"contact-email-text\">examplemail.kz@mail.ru</div>
+
+</div>
+
 </div>
 
         </div>

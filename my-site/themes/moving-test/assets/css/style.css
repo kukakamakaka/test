@@ -2037,7 +2037,7 @@ body {
     flex-direction: column;
     align-items: flex-start; /* Сол жаққа жинау */
     justify-content: flex-start; /* Жоғарыдан бастау */
-    padding-top: 70.92px;    /* Төбесінен оступ */
+    padding-top: 57px;    /* Төбесінен оступ */
     padding-left: 107.79px;  /* Сол жақтан оступ */
 }
 
@@ -2156,7 +2156,7 @@ body {
     /* Өлшемдері мен орны */
     width: 189.99px;
     height: 48.33px;
-    margin-top: 10px;
+    margin-top: 20px;
     grid-column: 1; /* Бірінші бағанда тұруы үшін */
 
     /* Түсі мен формасы */
@@ -2188,6 +2188,219 @@ body {
 /* Grid-тің ішінде батырманың тек бірінші бағанда тұруын қадағалау */
 .contact-submit-btn {
     grid-column: 1;
+    position: relative; /* ::after дұрыс жұмыс істеуі үшін міндетті */
+    overflow: hidden;    /* "Найзағай" эффектісі батырмадан шығып кетпеуі үшін */
+    transition: all 0.3s ease;
+}
+
+/* 1. Тышқанды үстіне әкелгенде (Hover) */
+.contact-submit-btn:hover {
+    background-color: #D12525; /* Сәл ашық түс */
+    transform: translateY(-3px) scale(1.03); /* Жоғары көтеріліп, сәл үлкейеді */
+    box-shadow: 0 8px 25px rgba(192, 31, 31, 0.4); /* Көлеңке қосылады */
+}
+
+/* 2. Батырманы басқан сәтте (Active) */
+.contact-submit-btn:active {
+    transform: translateY(-1px) scale(0.98); /* Кішкене басылады */
+    box-shadow: 0 4px 10px rgba(192, 31, 31, 0.3);
+}
+
+/* 3. "Найзағай" эффектісі (Shimmer effect) */
+.contact-submit-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3), /* Ақ сәуле */
+        transparent
+    );
+    transition: 0.5s;
+}
+
+/* 4. Hover кезінде сәуленің жүріп өтуі */
+.contact-submit-btn:hover::after {
+    left: 100%;
+}
+
+/* Оң жақтағы иконка */
+.contact-right-icon {
+    position: absolute;
+    width: 30.77px;
+    height: 30.77px;
+    top: 61.38px;
+
+    /* Осы мәнді Address-пен бірдей қыламыз */
+    left: 816.08px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.contact-right-icon img {
+    width: 100%;
+    /* 110% жасасаң, сурет контейнерден шығып кетеді, 100% жақсырақ */
+    height: 100%;
+    display: block;
+}
+
+/* Address жазуы */
+.contact-address-label {
+    position: absolute;
+    width: 63px;
+    height: 13px;
+
+    /* Иконкадан 14.68px төмен */
+    top: 110.83px;
+
+    /* ИКОНКАМЕН БІРДЕЙ СОЛ ЖАҚ ОСТУП (Енді ровно тұрады) */
+    left: 816.08px;
+
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+    white-space: nowrap;
+
+    /* Сығымдау (scale) дизайнда болса қос, болмаса алып таста */
+    transform-origin: top left;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+/* 1. Нақты мекен-жай (Address-тен кейін) */
+.contact-address-text {
+    position: absolute;
+    width: 224.29px;
+    height: auto; /* Екі жол болғандықтан авто */
+
+    /* ОРНАЛАСУЫ: Address-тен төмен (сен берген top: 4299.42px негізінде) */
+    top: 132.83px;
+    left: 816.08px;
+
+    /* СТИЛЬДЕРІ */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 1;
+    text-align: left;
+}
+
+/* 2. SVG Батырма (Фото) */
+.contact-map-btn {
+    position: absolute;
+    width: 129.40px;
+    height: 18.36px;
+
+    /* ОРНАЛАСУЫ: Мекен-жайдан төмен (сен берген top: 4346.75px негізінде) */
+    top: 180px;
+    left: 814.08px;
+
+    display: block;
+    opacity: 1;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.contact-map-btn img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.contact-map-btn:hover {
+    transform: translateY(-2px); /* Басқанда немесе жақындағанда кішкене эффект */
+}
+
+/* 1. Phone Иконкасы */
+.phone-icon {
+    top: 224.67px !important; /* 180 + 18.36 + 26.31 */
+    left: 816.08px;
+}
+
+/* 2. Phone: жазуы (Иконкадан 14.68px төмен) */
+.phone-label {
+    position: absolute;
+    width: 63px;
+    height: 13px;
+    top: 270.12px; /* 224.67 + 30.77 + 14.68 */
+    left: 816.08px;
+
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+/* 3. Нақты телефон нөмірі (Label-ден 22px төмен, сен берген top: 4462.92 негізінде) */
+.contact-phone-text {
+    position: absolute;
+    width: 167px;
+    height: 15px;
+    top: 290px;
+    left: 816.08px;
+
+    /* Текст стильдері */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 1;
+    white-space: nowrap;
+}
+
+/* 1. Email Иконкасы */
+.email-icon {
+    /* Алдыңғы телефон блогының иконкасынан бастап есептегенде */
+    top: 348.15px !important; /* Phone-нан кейінгі нақты орын */
+    left: 816.08px;
+}
+
+/* 2. Email: жазуы (Иконкадан 14.68px төмен) */
+.email-label {
+    position: absolute;
+    width: 63px;
+    height: 13px;
+    top: 393.60px; /* 348.15 + 30.77 + 14.68 */
+    left: 816.08px;
+
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+/* 3. Нақты Email мәтіні (Label-ден ровно астында) */
+.contact-email-text {
+    position: absolute;
+    width: auto;
+    height: 15px;
+    top: 410px; /* Label-ден кейін 22px */
+    left: 816.08px;
+
+    /* Текст стильдері */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 21px; /* Телефонмен бірдей стиль */
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 1;
+    white-space: nowrap;
 }
 
 /* Мобильді нұсқада 3-тен сыймаса, 1-ден немесе 2-ден тіземіз */
