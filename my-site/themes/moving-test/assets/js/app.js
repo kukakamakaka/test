@@ -191,6 +191,49 @@ if (moversSlider && moversTrack) {
     setTimeout(setMoversPosition, 500);
     window.addEventListener('resize', setMoversPosition);
 }
+// MOVERS PAGINATION LOGIC
+const mDots = document.querySelectorAll('.movers-pagination .m-dot');
+
+if (moversSlider && moversTrack && mDots.length > 0) {
+    const mCards = moversTrack.querySelectorAll('.mover-card');
+
+    const updateMoversDots = () => {
+        const sliderCenter = moversSlider.scrollLeft + (moversSlider.offsetWidth / 2);
+
+        let activeIndex = 0;
+        let minDiff = Infinity;
+
+        mCards.forEach((card, index) => {
+            const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+            const diff = Math.abs(cardCenter - sliderCenter);
+            if (diff < minDiff) {
+                minDiff = diff;
+                activeIndex = index;
+            }
+        });
+
+        // Нүктелерді жаңарту
+        mDots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === activeIndex);
+        });
+    };
+
+    // Скролл болғанда нүктелерді жаңарту
+    moversSlider.addEventListener('scroll', updateMoversDots);
+
+    // Нүктені басқанда сол карточкаға скролл жасау (Optional)
+    mDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            const targetCard = mCards[index];
+            const scrollPos = targetCard.offsetLeft - (moversSlider.offsetWidth / 2) + (targetCard.offsetWidth / 2);
+
+            moversSlider.scrollTo({
+                left: scrollPos,
+                behavior: 'smooth'
+            });
+        });
+    });
+}
 
 });
 

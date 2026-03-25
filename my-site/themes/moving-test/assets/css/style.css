@@ -1867,3 +1867,91 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+.movers-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28.54px; /* Нүктелер арасы */
+    margin-top: 25px; /* Карточкалардан кейінгі отступ */
+    width: 100%;
+}
+
+.m-dot {
+    width: 10.84px;
+    height: 10.84px;
+    background-color: rgba(173, 173, 173, 1); /* Неактивті: сұр */
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.m-dot.active {
+    background-color: rgba(255, 0, 9, 1); /* Активті: қызыл */
+    /* Егер активті нүкте сәл үлкенірек немесе көлеңкелі болсын десең, осында қосуға болады */
+}
+
+.m-dot:hover:not(.active) {
+    background-color: rgba(130, 130, 130, 1);
+}
+
+/* Планшеттер мен кіші экрандар (1024px-тен төмен) */
+@media (max-width: 1024px) {
+    .movers-section {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .movers-title {
+        font-size: 32px; /* Тақырыпты сәл кішірейтеміз */
+        margin-bottom: 40px;
+    }
+
+    .mover-card {
+        flex: 0 0 320px; /* Карточка ені сәл азаяды */
+        height: 360px;
+    }
+
+    .movers-pagination {
+        margin-top: 35px;
+        gap: 20px; /* Нүктелер арасы мобильдіде жинақырақ */
+    }
+}
+
+/* Телефондар (768px-тен төмен) */
+@media (max-width: 768px) {
+    .movers-section {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .movers-title {
+        font-size: 28px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .movers-track {
+        gap: 15px; /* Карточкалар арасы жақындайды */
+        /* Мобильді отступ 20px (clamp-тың ең кіші мәні) */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .mover-card {
+        flex: 0 0 260px; /* Телефон үшін ыңғайлы өлшем */
+        height: 300px;
+    }
+
+    .movers-pagination {
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .m-dot {
+        width: 8px; /* Нүктелер де сәл кішірейеді */
+        height: 8px;
+    }
+}
