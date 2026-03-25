@@ -1621,13 +1621,9 @@ body {
     background-color: #FFFFFF;
     width: 100%;
     z-index: 25;
-
-    /* Секцияны жоғары көтереміз, сонда дивайдер қара фонның үстіне шығады */
     margin-top: calc(clamp(40px, 6vw, 87.72px) / -1);
-
-    /* Дивайдерден кейін отступ болмауы үшін padding-top: 0 */
     padding-top: 0 !important;
-    padding-bottom: 100px;
+    padding-bottom: clamp(60px, 8vw, 100px); /* Төменгі отступ та адаптивті */
 }
 
 .section__divider {
@@ -1647,39 +1643,43 @@ body {
 
 .about-container {
     display: flex;
+    flex-direction: row; /* Desktop-та қатар тұрады */
+    flex-wrap: wrap;    /* Экран тар болса, астына түседі */
     align-items: flex-start;
+    justify-content: space-between; /* Арақашықтықты автоматты сақтау */
     max-width: 1366px;
-    margin: 0 auto;
-
-    /* Осы жердегі margin-top суреттің дивайдерден қашықтығын реттейді */
-    /* Егер 0 жасасаң, сурет дивайдердің дәл астынан басталады */
-    margin-top: 130px;
-
-    padding-left: 38px;
-    padding-right: 75px;
+    margin: 130px auto 0; /* Margin-top осында */
+    padding-left: clamp(20px, 4vw, 38px);
+    padding-right: clamp(20px, 4vw, 75px);
+    box-sizing: border-box;
 }
 
 /* 4. Фото мен Мәтін блоктары (сенің өлшемдерің бойынша) */
 .about-image-wrapper {
-    width: 595.43px;
-    height: 430px;
-    flex-shrink: 0;
-
-    /* ТЕК СУРЕТТІ ЖОҒАРЫ КӨТЕРУ: */
-    /* Фигмадағы қажетті биіктікке қарай осы санды өзгертіп көр */
+    flex: 0 1 595.43px; /* 595.43px-тен аспайды, бірақ кішірейе алады */
+    min-width: 300px;    /* Ең кіші шегі */
+    height: auto;       /* Биіктік пропорционалды болуы үшін */
+    aspect-ratio: 595 / 430; /* ПК-дағы пропорцияны сақтайды */
     margin-top: -30px;
-
-    /* Суреттің орналасуы дұрыс болуы үшін */
     position: relative;
-    z-index: 35; /* Дивайдердің үстінде немесе астында тұруын реттейді */
+    z-index: 35;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 /* Мәтін блогы өз орнында қалады */
 .about-content {
+    /* Мәтін блогының ені қатаң 556.67px */
+    flex: 0 1 556.67px;
+    /* СЕНІҢ ТАЛАБЫҢ: Қатаң 98.21px арақашықтық */
     margin-left: 98.21px;
     display: flex;
     flex-direction: column;
-    margin-top: 0; /* Мәтін төмендеу болып көрінуі үшін оны 0-де қалдырамыз */
 }
 
 .about-title {
@@ -1689,37 +1689,92 @@ body {
     line-height: 100%;
     color: #151515;
     margin: 0;
+
+    /* ТАҚЫРЫПТЫ ЖОҒАРЫ КӨТЕРУ: */
+    /* -20px-тен бастап, өзіңе ыңғайлы болғанша азайтып көр (мысалы, -30px немесе -40px) */
+    margin-top: 5px;
+
     transform: scaleY(0.9);
     transform-origin: left bottom;
-}
-
-.about-description {
-    width: 556.67px;
-    /* Фигма бойынша 35.13px немесе өзің реттеген 30px */
-    margin-top: 30px;
-
-    /* Шрифт параметрлері */
-    font-family: 'Nata Sans', sans-serif;
-    font-weight: 400; /* Regular */
-    font-size: 18px;
-
-    /* Фигмада 24px болса, дәл солай жазу керек */
-    line-height: 25px;
-
-    /* Түсі мен мөлдірлігі */
-    color: rgba(119, 119, 119, 1);
-
-    /* Фигмада letter-spacing: 0% болса, 0 немесе normal */
-    letter-spacing: 0;
-
-    /* Тексттің реті мен орналасуы */
-    text-align: left;
-
-    /* Егер шрифт тым "биік" немесе "жалпақ" көрінсе, scaleY қолдан */
-    /* Бірақ Фигмада 100% болса, бұл қажет емес */
-    transform: none;
-
-    /* "Leading-trim" эффектісін беру үшін (артық жоғарғы бос орынды алу) */
     display: block;
 }
 
+.about-description {
+    width: 100%; /* Контейнер ішінде 100% жайылады */
+    max-width: 556.67px;
+    margin-top: 25px;
+    font-family: 'Nata Sans', sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 1.5vw, 18px); /* Шрифт те аздап кішірейеді */
+    line-height: 1.4; /* Фигмадағы 24px-ке жақын */
+    color: rgba(119, 119, 119, 1);
+    text-align: left;
+    word-wrap: break-word; /* Ұзын сөздерді кеседі */
+}
+
+@media (max-width: 1024px) {
+    .about-section {
+        /* Мобильді нұсқада дивайдерге сәйкес margin-ды аздап реттейміз */
+        margin-top: calc(clamp(40px, 6vw, 87.72px) * -1);
+        padding-bottom: 60px;
+    }
+
+    .about-container {
+        flex-direction: column; /* Сурет пен мәтін бірінің астына бірі түседі */
+        align-items: center;
+        /* Сенің алтын ережең: шеткі отступтар басқа секциялармен бірдей */
+        padding-left: clamp(20px, 4vw, 38px);
+        padding-right: clamp(20px, 4vw, 38px);
+        margin-top: 80px; /* Мобильді де дивайдерден кейінгі қашықтық */
+    }
+
+    .about-image-wrapper {
+        /* Сурет экран еніне қарай созылады, бірақ макс. өлшемінен аспайды */
+        width: 100%;
+        max-width: 595.43px;
+        height: auto; /* Пропорцияны сақтау үшін */
+        aspect-ratio: 595 / 430; /* ПК-дағы пропорциясын сақтайды */
+        margin-top: 0; /* Мобильді де теріс margin қажет емес немесе аздап қана */
+        margin-bottom: 40px; /* Мәтінге дейінгі қашықтық */
+    }
+
+    .about-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about-content {
+        margin-left: 0; /* Оң жаққа жылжытуды алып тастаймыз */
+        align-items: center; /* Мәтінді ортаға келтіру (қалауың бойынша) */
+        width: 100%;
+    }
+
+    .about-title {
+        text-align: center;
+        font-size: clamp(28px, 5vw, 36px); /* Экранға қарай кішірейеді */
+        width: auto;
+        height: auto;
+    }
+
+    .about-description {
+        width: 100%; /* Мәтін контейнер енін толық алады */
+        max-width: 556.67px;
+        height: auto; /* Мәтін жолдары шектелмейді */
+        text-align: center; /* Ортаға келтіру әдемі көрінеді */
+        font-size: 16px; /* Телефонда оқуға ыңғайлы */
+        line-height: 22px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        margin-top: 60px;
+    }
+
+    .about-description {
+        /* Өте кішкентай экрандарда мәтін сол жақтан басталғаны дұрыс болуы мүмкін */
+        text-align: left;
+    }
+}
