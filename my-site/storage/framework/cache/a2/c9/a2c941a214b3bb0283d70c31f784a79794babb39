@@ -1,4 +1,4 @@
-1774428675a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:13995:"title = "Home"
+1774431882a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:14230:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -327,6 +327,11 @@ is_hidden = 0
     <div class="form-item"><input type="text" placeholder="From Address*"></div>
     <div class="form-item"><input type="text" placeholder="To Address*"></div>
     <div class="form-item"><input type="text" placeholder="Date*"></div>
+
+    <div class="form-row-last">
+        <div class="form-item form-item-wide"><input type="text" placeholder="Move Type*"></div>
+        <div class="form-item form-item-wide"><input type="text" placeholder="Volume*"></div>
+    </div>
 </div>
 
     </div>
@@ -334,7 +339,7 @@ is_hidden = 0
 
         </div>
     </div>
-</section>";s:5:"mtime";i:1774428054;s:6:"markup";s:13922:"<section class="hero">
+</section>";s:5:"mtime";i:1774430283;s:6:"markup";s:14157:"<section class="hero">
     <video autoplay muted loop playsinline class="hero-video">
         <source src="{{ 'assets/video/hero-bg.mp4'|theme }}" type="video/mp4">
     </video>
@@ -655,6 +660,11 @@ is_hidden = 0
     <div class="form-item"><input type="text" placeholder="From Address*"></div>
     <div class="form-item"><input type="text" placeholder="To Address*"></div>
     <div class="form-item"><input type="text" placeholder="Date*"></div>
+
+    <div class="form-row-last">
+        <div class="form-item form-item-wide"><input type="text" placeholder="Move Type*"></div>
+        <div class="form-item form-item-wide"><input type="text" placeholder="Volume*"></div>
+    </div>
 </div>
 
     </div>

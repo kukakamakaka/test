@@ -2090,6 +2090,7 @@ body {
 
 /* Мәтін мен инпуттардың арасы */
 .contact-form-grid {
+    grid-template-rows: auto auto auto;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 189.99px); /* 3 баған */
@@ -2129,6 +2130,19 @@ body {
     padding-bottom: 18.17px;
     padding-left: 15.74px;
     padding-right: 10px; /* Оң жақтан текст сыюы үшін */
+}
+
+.form-row-last {
+    grid-column: 1 / 4; /* 3 бағанның енін толық алады */
+    display: flex !important;
+    justify-content: space-between !important; /* Екі шетке айырады */
+    width: 100%;
+    margin-top: 0; /* Алдыңғы жолмен арасы */
+}
+
+.form-item-wide {
+    width: 289.95px !important;
+    display: flex !important; /* Ішіндегі input дұрыс тұруы үшін */
 }
 
 /* Placeholder түсі ақ болуы үшін */

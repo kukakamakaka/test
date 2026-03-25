@@ -447,6 +447,11 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"form-item\"><input type=\"text\" placeholder=\"From Address*\"></div>
     <div class=\"form-item\"><input type=\"text\" placeholder=\"To Address*\"></div>
     <div class=\"form-item\"><input type=\"text\" placeholder=\"Date*\"></div>
+
+    <div class=\"form-row-last\">
+        <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
+        <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
+    </div>
 </div>
 
     </div>
@@ -795,6 +800,11 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"form-item\"><input type=\"text\" placeholder=\"From Address*\"></div>
     <div class=\"form-item\"><input type=\"text\" placeholder=\"To Address*\"></div>
     <div class=\"form-item\"><input type=\"text\" placeholder=\"Date*\"></div>
+
+    <div class=\"form-row-last\">
+        <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
+        <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
+    </div>
 </div>
 
     </div>
