@@ -43,21 +43,11 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
     </div>
 
     <div class=\"footer-container\">
-        <div class=\"footer-logo\">
-            <img src=\"assets/images/footer-logo.svg\" alt=\"Logo\">
+    <div class=\"footer-top-row\">
+        <h2 class=\"footer-title\">Have a Questions?</h2>
         </div>
+</div>
 
-        <nav class=\"footer-nav\">
-            <a href=\"#\">Main</a>
-            <a href=\"#\">About</a>
-            <a href=\"#\">Services</a>
-            <a href=\"#\">Contact</a>
-        </nav>
-
-        <div class=\"footer-bottom\">
-            <p>© 2026 All rights reserved.</p>
-        </div>
-    </div>
 </footer>";
     }
 
@@ -80,21 +70,11 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
     </div>
 
     <div class=\"footer-container\">
-        <div class=\"footer-logo\">
-            <img src=\"assets/images/footer-logo.svg\" alt=\"Logo\">
+    <div class=\"footer-top-row\">
+        <h2 class=\"footer-title\">Have a Questions?</h2>
         </div>
+</div>
 
-        <nav class=\"footer-nav\">
-            <a href=\"#\">Main</a>
-            <a href=\"#\">About</a>
-            <a href=\"#\">Services</a>
-            <a href=\"#\">Contact</a>
-        </nav>
-
-        <div class=\"footer-bottom\">
-            <p>© 2026 All rights reserved.</p>
-        </div>
-    </div>
 </footer>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/partials/site/footer.htm", "");
     }
     

@@ -1,45 +1,25 @@
-1774492343a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:623:"<footer class="footer">
+1774493649a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:321:"<footer class="footer">
     <div class="footer-vector-wrapper">
         <div class="f-vector v-left"></div>
         <div class="f-vector v-right"></div>
     </div>
 
     <div class="footer-container">
-        <div class="footer-logo">
-            <img src="assets/images/footer-logo.svg" alt="Logo">
+    <div class="footer-top-row">
+        <h2 class="footer-title">Have a Questions?</h2>
         </div>
+</div>
 
-        <nav class="footer-nav">
-            <a href="#">Main</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
-
-        <div class="footer-bottom">
-            <p>© 2026 All rights reserved.</p>
-        </div>
-    </div>
-</footer>";s:5:"mtime";i:1774449927;s:6:"markup";s:623:"<footer class="footer">
+</footer>";s:5:"mtime";i:1774493046;s:6:"markup";s:321:"<footer class="footer">
     <div class="footer-vector-wrapper">
         <div class="f-vector v-left"></div>
         <div class="f-vector v-right"></div>
     </div>
 
     <div class="footer-container">
-        <div class="footer-logo">
-            <img src="assets/images/footer-logo.svg" alt="Logo">
+    <div class="footer-top-row">
+        <h2 class="footer-title">Have a Questions?</h2>
         </div>
+</div>
 
-        <nav class="footer-nav">
-            <a href="#">Main</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
-
-        <div class="footer-bottom">
-            <p>© 2026 All rights reserved.</p>
-        </div>
-    </div>
 </footer>";s:4:"code";N;}}

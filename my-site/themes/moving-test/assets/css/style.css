@@ -2634,11 +2634,32 @@ body {
 .footer {
     position: relative;
     width: 100%;
+    /* min-height-ті контейнерге берген соң, бұл жерде тек фон қалсын */
     background: rgba(21, 21, 21, 1);
-    padding: 100px 0 40px 0;
     z-index: 10;
-    /* Бұл жерді өзгерт: hidden орнына visible немесе мүлдем алып таста */
     overflow: visible;
+    display: block; /* Flex-ті алып тастасаң, контейнер еркін орналасады */
+}
+
+.footer-container {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* ❌ justify-content: center; - БҰНЫ ӨШІРУ КЕРЕК */
+    /* ✅ ОРНЫНА: */
+    justify-content: flex-start;
+    align-items: flex-start; /* Контент сол жақтан басталсын */
+
+    min-height: 384px; /* Футер биіктігін осында бекіткен дұрыс */
+    position: relative;
+    z-index: 20;
+}
+
+.f-vector {
+    position: absolute;
+    background-repeat: no-repeat; /* Бұл жерде бір рет жазса жеткілікті */
 }
 
 /* СЕНІҢ ИДЕАЛ ВЕКТОР КОДТАРЫҢ */
@@ -2681,59 +2702,43 @@ body {
     top: 5px;
 }
 
-.f-vector {
-    position: absolute;
-    background-repeat: no-repeat;
-}
-
-
-
-/* ФУТЕРДІҢ ІШКІ КОНТЕНТІ */
-.footer-container {
-    max-width: 1366px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Барлығын ортаға жинаймыз */
-    text-align: center;
-    position: relative;
-    z-index: 20; /* Векторлардан төмен, бірақ фоннан биік */
-}
-
-.footer-logo img {
-    width: 150px; /* Логотип өлшемін ретте */
-    margin-bottom: 30px;
-}
-
-.footer-nav {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.footer-nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'Manrope', sans-serif;
-    font-size: 16px;
-    opacity: 0.8;
-    transition: opacity 0.3s;
-}
-
-.footer-nav a:hover {
-    opacity: 1;
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+.footer-top-row {
     width: 100%;
-    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* Фигма бойынша нақты отступ */
+    padding-top: 54.29px;
+    padding-left: 39px;
+    box-sizing: border-box;
 }
 
-.footer-bottom p {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
+.footer-title {
+    font-family: 'Nata Sans', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin: 0;
+
+    /* Созылғанда жоғары қарай жылжымауы үшін */
+    transform: scaleY(0.9);
+    transform-origin: top left;
+
+    /* Тігінен туралау үшін */
+    display: block;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* 1. ПЛАНШЕТТЕР ҮШІН (1024px-ден төмен) */
 @media (max-width: 1024px) {
