@@ -1352,18 +1352,13 @@ body {
     background-color: #151515;
     width: 100%;
     margin-bottom: 0 !important;
-
-    /* 135.85px-тен дивайдер биіктігінің жартысын (43.86px) азайтамыз */
-    /* Шамамен 92px болады. Осылайша қара фон мен дивайдердің ортасы түйіседі */
     padding-bottom: 70px;
-
     overflow: visible;
     margin-top: -10px;
     z-index: 21;
 }
 
 .reviews-title {
-    /* Базалық стильдер (Desktop - 44px) */
     font-family: 'Manrope', sans-serif !important;
     font-weight: 500;
     font-size: clamp(28px, 3.5vw, 44px);
@@ -1396,7 +1391,7 @@ body {
     align-items: flex-start;
     box-sizing: border-box;
     position: relative;
-    overflow: hidden; /* Жарық карточка шетінен шығып кетпеуі үшін */
+    overflow: hidden;
     transition: all 0.4s ease;
 }
 
@@ -1407,19 +1402,17 @@ body {
     width: 100%;
     height: 100%;
     background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
-    pointer-events: none; /* Жарық мәтінді басуға кедергі жасамауы керек */
+    pointer-events: none;
     transition: background 0.4s ease;
     z-index: 1;
 }
 
-/* 3. ХОВЕР ЭФФЕКТІ ✅ */
 .review-card:hover {
-    transform: translateY(-8px) !important; /* Жоғары көтерілуі */
-    background: rgba(255, 255, 255, 0.12) !important; /* Сәл ашықтау фон */
+    transform: translateY(-8px) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
     border-color: rgba(255, 255, 255, 0.15) !important;
 }
 
-/* 4. ХОВЕР КЕЗІНДЕГІ ЖАРҚЫРАУ ✅ */
 .review-card:hover .review-card__glow {
     background: radial-gradient(
         circle at center,
@@ -1619,24 +1612,20 @@ body {
 @media (max-width: 1200px) and (min-width: 769px) {
 
     .reviews-section {
-        /* 70px-ден 45px-ке дейін экран еніне қарай плавно азаяды */
         padding-bottom: clamp(30px, 4vw, 50px) !important;
-        /* Секцияның төбесіндегі оступты да сәл жинақы қылуға болады */
         margin-top: -5px;
     }
 
-    /* 1. Контейнер: stretch-ті flex-start-қа ауыстырдық ✅ */
     .reviews-container {
         display: flex !important;
         flex-direction: row !important;
         justify-content: center;
-        align-items: flex-start; /* Карточкалар өз биіктігімен тұрады */
+        align-items: flex-start;
         gap: clamp(15px, 2vw, 30.5px);
         padding-left: clamp(20px, 4vw, 38px) !important;
         padding-right: clamp(20px, 4vw, 38px) !important;
     }
 
-    /* 2. Карточка: Биіктікті контентке тәуелді қылу */
     .review-card,
     .review-card.card-tall,
     .review-card.card-short,
@@ -1647,54 +1636,48 @@ body {
         width: 100% !important;
         max-width: 410px;
         height: auto !important;
-        /* МЫНА ЖЕРДІ ӨЗГЕРТТІК: min-height-ті барынша азайттық ✅ */
         min-height: auto !important;
         padding: clamp(25px, 3vw, 45px) clamp(15px, 2.5vw, 35px) 30px !important;
     }
 
     .review-card.card-tall {
         padding-top: clamp(30px, 4vw, 45px) !important;
-        min-height: 420px !important; /* Тым созылып кетпеуі үшін */
+        min-height: 420px !important;
     }
 
     .review-card__rating-value {
-        /* ПК-да 62px болса, 769px-де 42px-ге дейін плавно түседі */
         font-size: clamp(42px, 5vw, 62px) !important;
         margin-bottom: clamp(10px, 1.5vw, 25px) !important;
         line-height: 0.9 !important;
     }
 
     .review-card__stars-svg {
-        /* ПК-да 134px болса, экран тарылғанда 105px-ке дейін кішірейеді */
         width: clamp(105px, 11vw, 134px) !important;
         height: auto !important;
     }
 
     .review-card__experience-text {
-        /* ПК-да 20px -> 769px-де 16px */
         font-size: clamp(15px, 1.6vw, 17px) !important;
         line-height: 1.4 !important;
         margin-top: clamp(15px, 2vw, 32px) !important;
-        max-width: 90% !important; /* Контейнерден шығып кетпеуі үшін */
+        max-width: 90% !important;
     }
 
     .review-card__total-count {
-        /* ПК-да 26px -> 769px-де 19px */
         font-size: clamp(19px, 2vw, 26px) !important;
         margin-top: clamp(15px, 2vw, 32px) !important;
-        height: auto !important; /* Биіктігі контентке сай */
+        height: auto !important;
     }
 
-    /* 4. Мәтін мен Сілтемелер (Тығыз орналасу) */
     .review-card__text {
         font-size: clamp(14.5px, 1.5vw, 16px) !important;
         line-height: 1.5 !important;
         margin-top: 15px !important;
-        margin-bottom: 0 !important; /* Артық оступ жоқ */
+        margin-bottom: 0 !important;
     }
 
     .review-card__links {
-        margin-top: 25px !important; /* auto емес, нақты оступ ✅ */
+        margin-top: 25px !important;
         padding-top: 0;
         gap: clamp(10px, 1.2vw, 16px) !important;
     }
@@ -1708,20 +1691,16 @@ body {
         font-size: clamp(19px, 2vw, 26px) !important;
     }
 
-    /* 3. Иконкалардың (логотиптердің) өзін кішірейту */
     .yelp-svg {
-        /* ПК-да 41px болса, 769px-де 30px-ге дейін плавно түседі */
         width: clamp(30px, 3.5vw, 41px) !important;
         height: auto !important;
     }
 
     .google-svg {
-        /* ПК-да 45px болса, 769px-де 32px-ге дейін плавно түседі */
         width: clamp(32px, 3.8vw, 45px) !important;
         height: auto !important;
     }
 
-    /* Иконкалардың шеңбер ішінде ровно тұруын қадағалау */
     .review-icon-circle {
         display: flex !important;
         justify-content: center !important;
@@ -1731,14 +1710,12 @@ body {
     }
 
     .reviews-title {
-        /* 769px-де 24px-ге жақындайды, 1024px-де 28px */
         font-size: clamp(24px, 3vw, 40px) !important;
         margin-bottom: -10px !important;
     }
 }
 
 @media (max-width: 768px) {
-    /* 1. Секция мен Тақырып */
     .reviews-section { padding-bottom: 10px !important; }
     .reviews-title {
         font-size: 24px !important;
@@ -1747,25 +1724,18 @@ body {
         text-align: center !important;
     }
 
-    /* 2. Контейнер: Карточкалардың арақашықтығы (gap) */
     .reviews-container {
         flex-direction: column !important;
         align-items: center !important;
-        /* Мына жерде 20px — бұл экран қандай болса да өзгермейтін шеткі қашықтық */
         padding: 0 30px 40px 30px !important;
         gap: 20px !important;
         width: 100% !important;
-        box-sizing: border-box !important; /* Оступ ішке есептелуі үшін */
+        box-sizing: border-box !important;
     }
 
-    /* 3. Карточка: Жалпы параметрлер */
     .review-card {
-        /* width: 100% карточканы контейнердің ішінде барынша жаяды */
         width: 100% !important;
-        /* max-width: none қоямыз, сонда ол 490px-те тоқтап қалмай, шетке дейін созылады ✅ */
         max-width: none !important;
-
-        /* Бірақ мазмұны (текст, иконка) тым жайылып кетпеуі үшін ішкі оступтарды қолданамыз */
         padding: 30px 20px !important;
         display: flex !important;
         flex-direction: column !important;
@@ -1775,77 +1745,66 @@ body {
         box-sizing: border-box !important;
     }
 
-    /* 4. БІРІНШІ КАРТОЧКА (Rating) */
     .review-card__rating-value {
         font-size: 40px !important;
-        margin-bottom: 8px !important; /* Сан мен жұлдыз арасы */
+        margin-bottom: 8px !important;
     }
 
-    /* 5. ЕКІНШІ ЖӘНЕ ҮШІНШІ КАРТОЧКА (User Header) */
     .review-card__header {
-        margin-bottom: 15px !important; /* Аватар мен жұлдыз арасы */
+        margin-bottom: 15px !important;
     }
 
-    /* 6. ЖҰЛДЫЗДАР: Сен сұраған оступ осы жерде ✅ */
     .review-card__stars {
-        /* Жұлдыздардың үстінен оступ қосу (тек 2-ші, 3-ші карточка үшін) */
         margin-top: 10px !important;
-        margin-bottom: 12px !important; /* Жұлдыз бен мәтін арасы */
+        margin-bottom: 12px !important;
     }
 
     .review-card__stars-svg {
-        width: 95px !important; /* Жұлдыздар өлшемі */
+        width: 95px !important;
     }
 
-    /* 7. МӘТІНДЕР (Experience & Review text) */
     .review-card__experience-text,
     .review-card__text {
         font-size: 15px !important;
         line-height: 1.5 !important;
         margin-top: 10px !important;
-        text-align: center !important; /* Мәтін бағыты ортада ✅ */
-        width: 100% !important;        /* Ені толық болуы керек центровка үшін */
+        text-align: center !important;
+        width: 100% !important;
         display: block !important;
         max-width: 100% !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        -webkit-line-clamp: initial !important; /* Мәтін кесілмесін */
+        -webkit-line-clamp: initial !important;
     }
 
-    /* 8. ТӨМЕНГІ ЭЛЕМЕНТТЕР (Total count & Links) */
     .review-card__total-count {
         margin-top: 15px !important;
         font-size: 18px !important;
     }
 
     .review-icon-circle {
-        width: 45px !important;  /* Шеңбердің ені */
-        height: 45px !important; /* Шеңбердің биіктігі */
-        border: 1px solid rgba(88, 88, 88, 1) !important; /* Жиегі */
+        width: 45px !important;
+        height: 45px !important;
+        border: 1px solid rgba(88, 88, 88, 1) !important;
     }
 
-    /* 2. ИКОНКАЛАРДЫҢ ӨЗІ (SVG суреттер) */
-
-    /* Yelp иконкасының өлшемі */
     .yelp-svg {
-        width: 25px !important;  /* Өзіңе керек енін қой */
+        width: 25px !important;
         height: auto !important;
         object-fit: contain !important;
     }
 
-    /* Google иконкасының өлшемі */
     .google-svg {
-        width: 26px !important;  /* Өзіңе керек енін қой */
+        width: 26px !important;
         height: auto !important;
         object-fit: contain !important;
     }
 
-    /* 3. ИКОНКАЛАРДЫҢ АРАҚАШЫҚТЫҒЫ */
     .review-card__links {
         display: flex !important;
-        justify-content: center !important; /* Ортаға қою */
-        gap: 15px !important;     /* Екі иконканың арасы */
-        margin-top: 25px !important; /* Мәтіннен төмен түсуі */
+        justify-content: center !important;
+        gap: 15px !important;
+        margin-top: 25px !important;
     }
 }
 
