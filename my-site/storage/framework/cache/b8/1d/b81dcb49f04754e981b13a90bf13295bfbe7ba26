@@ -1,4 +1,4 @@
-1774542917a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:2646:"<footer class="footer">
+1774553680a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:3258:"<footer class="footer">
     <div class="footer-vector-wrapper">
         <div class="f-vector v-left"></div>
         <div class="f-vector v-right"></div>
@@ -58,8 +58,24 @@
         </div>
 
     </div>
+
+    <div id="quoteModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 class="modal-title">Get a Quote</h2>
+        <p class="modal-subtitle">Leave your details and we will call you back</p>
+
+        <form class="modal-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <textarea placeholder="Tell us about your move..."></textarea>
+            <button type="submit" class="modal-submit-btn">Send Request</button>
+        </form>
+    </div>
+</div>
+
 </footer>
-";s:5:"mtime";i:1774542308;s:6:"markup";s:2645:"<footer class="footer">
+";s:5:"mtime";i:1774543226;s:6:"markup";s:3257:"<footer class="footer">
     <div class="footer-vector-wrapper">
         <div class="f-vector v-left"></div>
         <div class="f-vector v-right"></div>
@@ -119,4 +135,20 @@
         </div>
 
     </div>
+
+    <div id="quoteModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 class="modal-title">Get a Quote</h2>
+        <p class="modal-subtitle">Leave your details and we will call you back</p>
+
+        <form class="modal-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <textarea placeholder="Tell us about your move..."></textarea>
+            <button type="submit" class="modal-submit-btn">Send Request</button>
+        </form>
+    </div>
+</div>
+
 </footer>";s:4:"code";N;}}

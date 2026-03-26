@@ -38,219 +38,127 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         // line 1
         echo "<section id=\"hero\" class=\"hero\">
     <video autoplay muted loop playsinline class=\"hero-video\">
-        <source src=\"";
+        ";
         // line 3
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/video/hero-bg.mp4");
-        echo "\" type=\"video/mp4\">
-    </video>
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("hero/bg.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 4
+        echo "    </video>
     <div class=\"hero-overlay\"></div>
 
     <div class=\"hero__container\">
-      <div class=\"hero__content\">
-    <h1 class=\"hero__title\">Your Seamless Move</h1>
-    <h2 class=\"hero__subtitle\">Starts With TI Moving</h2>
-    <p class=\"hero__text\">Licensed, insured, stress-free moves across Florida</p>
-
-    <a href=\"#\" class=\"btn-hero-quote\">Get a Quote</a>
-</div>
-
+        <div class=\"hero__content\">
+            ";
+        // line 9
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("hero/info.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 10
+        echo "
+            <a href=\"#\" class=\"btn-hero-quote\">Get a Quote</a>
+        </div>
     </div>
 
     <div class=\"hero__divider\">
-        <img src=\"";
-        // line 19
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Rectangle 1862.svg");
-        echo "\" alt=\"divider\">
-    </div>
+        ";
+        // line 16
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("hero/divider.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 17
+        echo "    </div>
 </section>
 
 <section id=\"why\" class=\"why-section\">
     <div class=\"container\">
-        <h2 class=\"why-section__title\">Why TI Moving?</h2>
+        ";
+        // line 22
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("why/section-title.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 23
+        echo "    </div>
 
-        </div>
+    ";
+        // line 25
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("why/main-description.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 26
+        echo "
+    <div class=\"why-grid\">
+        <div class=\"why-card card-1\">
+            ";
+        // line 29
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("why/card-1.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 30
+        echo "        </div>
 
-    <p class=\"why-section__text\">
-    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-</p>
+        <div class=\"why-card card-2\">
+            ";
+        // line 33
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("why/card-2.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 34
+        echo "        </div>
 
-<div class=\"why-grid\">
-    <div class=\"why-card card-1\">
-    <div class=\"why-card__image\">
-        <img src=\"";
+        <div class=\"why-card card-3\">
+            ";
+        // line 37
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("why/card-3.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
         // line 38
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/benefit1.svg");
-        echo "\" alt=\"Service 1\">
+        echo "        </div>
     </div>
-    <div class=\"why-card__content\">
-        <h3 class=\"why-card__title\">Licensed & Insured</h3>
-        <p class=\"why-card__description\">Your move is fully protected by certified professionals you can trust.</p>
-    </div>
-</div>
-
-    <div class=\"why-card card-2\">
-    <div class=\"why-card__image\">
-        <img src=\"";
-        // line 48
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/benefit2.svg");
-        echo "\" alt=\"Service 2\">
-    </div>
-    <div class=\"why-card__content\">
-        <h3 class=\"why-card__title\">Same-Day Moving</h3>
-        <p class=\"why-card__description\">Fast response and efficient relocation, even on short notice.</p>
-    </div>
-</div>
-
-    <div class=\"why-card card-3\">
-    <div class=\"why-card__image\">
-        <img src=\"";
-        // line 58
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/benefit3.svg");
-        echo "\" alt=\"Service 3\">
-    </div>
-    <div class=\"why-card__content\">
-        <h3 class=\"why-card__title\">Affordable Prices</h3>
-        <p class=\"why-card__description\">Premium moving service without the premium cost. Just contact us and we send you our price!</p>
-        </div>
-</div>
-
- </section>
+</section>
 
 <section id=\"services\" class=\"services-section\">
-    <h2 class=\"services-title\">Our Services</h2>
+    <h2 class=\"services-title\">";
+        // line 43
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("services/title.txt"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</h2>
 
     <div class=\"services-slider-wrapper\">
-    <div class=\"services-track\">
-
-        <div class=\"service-card empty-card\">
-    <div class=\"service-card__icon-container\">
-        <div class=\"service-card__icon-wrapper\">
-            <img src=\"";
-        // line 77
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card.svg");
-        echo "\" alt=\"Service 1\" class=\"service-card__svg\">
+        <div class=\"services-track\">
+            <div class=\"service-card empty-card\">";
+        // line 47
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("services/card-1.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</div>
+            <div class=\"service-card empty-card\">";
+        // line 48
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("services/card-2.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</div>
+            <div class=\"service-card empty-card\">";
+        // line 49
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("services/card-3.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</div>
+            <div class=\"service-card empty-card\">";
+        // line 50
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("services/card-4.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</div>
+            <div class=\"service-card empty-card\">";
+        // line 51
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("services/card-5.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</div>
         </div>
     </div>
-
-    <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Storage<br>Solutions</h3>
-        <p class=\"service-card__description\">
-    </p>
-</div>
-
-    <a href=\"#\" class=\"service-card__btn\">
-        <img src=\"";
-        // line 88
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
-        echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
-    </a>
-</div>
-
-        <div class=\"service-card empty-card\">
-            <div class=\"service-card__icon-container\">
-                <div class=\"service-card__glow\"></div>
-                <div class=\"service-card__icon-wrapper\">
-<img src=\"";
-        // line 96
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card1.svg");
-        echo "\" alt=\"Service 2\" class=\"service-card__svg\">
-                </div>
-            </div>
-
-            <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Local Moving</h3>
-                <p class=\"service-card__description\">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    </p>
-</div>
-
-            <a href=\"#\" class=\"service-card__btn\">
-        <img src=\"";
-        // line 108
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
-        echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
-    </a>
-
-        </div>
-
-        <div class=\"service-card empty-card\">
-            <div class=\"service-card__icon-container\">
-                <div class=\"service-card__glow\"></div>
-                <div class=\"service-card__icon-wrapper\">
-<img src=\"";
-        // line 117
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card2.svg");
-        echo "\" alt=\"Service 3\" class=\"service-card__svg\">
-                </div>
-            </div>
-            <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Long Distance Moving</h3>
-                <p class=\"service-card__description\">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    </p>
-</div>
-
-            <a href=\"#\" class=\"service-card__btn\">
-        <img src=\"";
-        // line 128
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
-        echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
-    </a>
-        </div>
-
-        <div class=\"service-card empty-card\">
-            <div class=\"service-card__icon-container\">
-                <div class=\"service-card__glow\"></div>
-                <div class=\"service-card__icon-wrapper\">
-<img src=\"";
-        // line 136
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card3.svg");
-        echo "\" alt=\"Service 4\" class=\"service-card__svg\">
-                </div>
-            </div>
-            <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Commercial<br>(Office) Moving</h3>
-                <p class=\"service-card__description\">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    </p>
-            </div>
-
-            <a href=\"#\" class=\"service-card__btn\">
-        <img src=\"";
-        // line 147
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
-        echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
-    </a>
-        </div>
-
-        <div class=\"service-card empty-card\">
-            <div class=\"service-card__icon-container\">
-                <div class=\"service-card__glow\"></div>
-                <div class=\"service-card__icon-wrapper\">
-<img src=\"";
-        // line 155
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card5.svg");
-        echo "\" alt=\"Service 4\" class=\"service-card__svg\">
-                </div>
-            </div>
-            <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Office /<br>Commercial<br>Moving</h3>
-<p class=\"service-card__description\">
-    </p>
-            </div>
-
-            <a href=\"#\" class=\"service-card__btn\">
-        <img src=\"";
-        // line 165
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
-        echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
-    </a>
-        </div>
-
-    </div>
-</div>
 
     <div class=\"services-pagination\">
         <span class=\"dot active\"></span>
@@ -262,158 +170,117 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 </section>
 
 <section id=\"reviews\" class=\"reviews-section\">
-    <h2 class=\"reviews-title\">Real stories from real clients</h2>
+    <h2 class=\"reviews-title\">";
+        // line 65
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("reviews/title.txt"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</h2>
 
     <div class=\"reviews-container\">
-
         <div class=\"review-card card-tall\">
-            <span class=\"review-card__rating-value\">4,9/5</span>
-            <div class=\"review-card__stars\">
-                <img src=\"";
-        // line 189
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/stars.svg");
-        echo "\" alt=\"Stars\" class=\"review-card__stars-svg\">
-            </div>
-            <p class=\"review-card__experience-text\">
-                Learn more about our customer experience by visiting our Yelp and Google reviews.
-            </p>
-            <span class=\"review-card__total-count\">1000+ reviews</span>
-            <div class=\"review-card__links\">
-                <div class=\"review-icon-circle\">
-                    <img src=\"";
-        // line 197
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/yelp.svg");
-        echo "\" alt=\"Yelp\" class=\"review-icon-svg yelp-svg\">
-                </div>
-                <div class=\"review-icon-circle\">
-                    <img src=\"";
-        // line 200
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/google.svg");
-        echo "\" alt=\"Google\" class=\"review-icon-svg google-svg\">
-                </div>
-            </div>
-        </div>
+            ";
+        // line 69
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("reviews/stats-card.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 70
+        echo "        </div>
 
         <div class=\"review-card card-short\">
-    <div class=\"review-card__header\">
-        <div class=\"review-card__user-avatar\">
-            <img src=\"";
-        // line 208
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/avatar.svg");
-        echo "\" alt=\"User\" class=\"avatar-svg\">
-        </div>
-        <span class=\"review-card__user-name\">Michael R.</span>
-    </div>
-
-    <div class=\"review-card__stars\">
-        <img src=\"";
-        // line 214
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/stars.svg");
-        echo "\" alt=\"Stars\" class=\"review-card__stars-svg\">
-    </div>
-
-     <p class=\"review-card__text\">
-        Excellent experience with TI Moving. Communication was clear, the movers were professional, and the entire process went exactly as planned.
-    </p>
-
-</div>
+            ";
+        // line 73
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("reviews/review-1.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 74
+        echo "        </div>
 
         <div class=\"review-card card-medium\">
-    <div class=\"review-card__header\">
-        <div class=\"review-card__user-avatar\">
-            <img src=\"";
-        // line 226
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/avatar.svg");
-        echo "\" alt=\"User\" class=\"avatar-svg\">
-        </div>
-        <span class=\"review-card__user-name\">Michael R.</span>
-    </div>
-
-    <div class=\"review-card__stars\">
-        <img src=\"";
-        // line 232
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/stars.svg");
-        echo "\" alt=\"Stars\" class=\"review-card__stars-svg\">
-    </div>
-
-    <div class=\"review-card__text-wrapper\">
-        <p class=\"review-card__text medium-text\">
-        We used TI Moving for a residential move and were very satisfied with the service.
-        The team arrived on time, packed everything carefully, and handled our furniture with great care.
-        The move was smooth and stress-free.
-    </p>
-    </div>
-
-</div>
-
+            ";
+        // line 77
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("reviews/review-2.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 78
+        echo "        </div>
     </div>
 </section>
 
 <section id=\"about\" class=\"about-section\">
-    <div class=\"section__divider\"></div> <div class=\"about-container\">
+    <div class=\"section__divider\"></div>
+    <div class=\"about-container\">
         <div class=\"about-image-wrapper\">
-    <img src=\"";
-        // line 251
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Rectangle 2132.svg");
-        echo "\" alt=\"About Us\" class=\"about-image\">
-</div>
+            ";
+        // line 86
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("about/image.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 87
+        echo "        </div>
 
         <div class=\"about-content\">
-            <h2 class=\"about-title\">About Us</h2>
-            <p class=\"about-description\">
-                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше.
-            </p>
-        </div>
+            ";
+        // line 90
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("about/content.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 91
+        echo "        </div>
     </div>
 </section>
 
 <section id=\"gallery\" class=\"movers-section\">
     <div class=\"movers-container\">
-        <h2 class=\"movers-title\">See Our Movers in Action</h2>
+        <h2 class=\"movers-title\">";
+        // line 97
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("gallery/title.txt"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</h2>
 
         <div class=\"movers-slider-wrapper\">
             <div class=\"movers-track\">
-                <div class=\"mover-card\">
-                    <img src=\"";
-        // line 271
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers.svg");
-        echo "\" alt=\"Mover Action\" class=\"mover-img\">
-                </div>
-                <div class=\"mover-card\">
-                    <img src=\"";
-        // line 274
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers.svg");
-        echo "\" alt=\"Mover Action\" class=\"mover-img\">
-                </div>
-                <div class=\"mover-card\">
-                    <img src=\"";
-        // line 277
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers1.svg");
-        echo "\" alt=\"Mover Action\" class=\"mover-img\">
-                </div>
-                <div class=\"mover-card\">
-                    <img src=\"";
-        // line 280
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers2.svg");
-        echo "\" alt=\"Mover Action\" class=\"mover-img\">
-                </div>
-                <div class=\"mover-card\">
-                    <img src=\"";
-        // line 283
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers2.svg");
-        echo "\" alt=\"Mover Action\" class=\"mover-img\">
-                </div>
+                <div class=\"mover-card\">";
+        // line 101
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("gallery/mover-1.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</div>
+                <div class=\"mover-card\">";
+        // line 102
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("gallery/mover-2.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</div>
+                <div class=\"mover-card\">";
+        // line 103
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("gallery/mover-3.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</div>
+                <div class=\"mover-card\">";
+        // line 104
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("gallery/mover-4.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</div>
+                <div class=\"mover-card\">";
+        // line 105
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("gallery/mover-5.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</div>
             </div>
         </div>
 
         <div class=\"movers-pagination\">
-    <button class=\"m-dot\"></button>
-    <button class=\"m-dot\"></button>
-    <button class=\"m-dot active\"></button> <button class=\"m-dot\"></button>
-    <button class=\"m-dot\"></button>
-</div>
-
+            <button class=\"m-dot\"></button>
+            <button class=\"m-dot\"></button>
+            <button class=\"m-dot active\"></button>
+            <button class=\"m-dot\"></button>
+            <button class=\"m-dot\"></button>
+        </div>
     </div>
 </section>
 
@@ -421,7 +288,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"contact-container\">
         <div class=\"contact-banner\">
             <img src=\"";
-        // line 301
+        // line 122
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Rectangle.svg");
         echo "\" alt=\"Contact Background\" class=\"contact-bg-img\">
 
@@ -432,7 +299,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
             <span class=\"contact-bold-wrapper\">
                 <span class=\"contact-bold\">contact</span>
                 <img src=\"";
-        // line 309
+        // line 130
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/vector-line.svg");
         echo "\" class=\"contact-vector\" alt=\"\">
             </span> <br> us to learn more
@@ -457,7 +324,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     <div class=\"contact-right-icon\">
         <img src=\"";
-        // line 331
+        // line 152
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/your-icon.svg");
         echo "\" alt=\"icon\">
     </div>
@@ -468,14 +335,14 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
     <a href=\"#\" class=\"contact-map-btn\">
         <img src=\"";
-        // line 339
+        // line 160
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/map-button.svg");
         echo "\" alt=\"View on map\">
     </a>
 
     <div class=\"contact-right-icon phone-icon\">
         <img src=\"";
-        // line 343
+        // line 164
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/phonee-icon.svg");
         echo "\" alt=\"phone icon\">
     </div>
@@ -484,7 +351,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     <div class=\"contact-right-icon email-icon\">
     <img src=\"";
-        // line 349
+        // line 170
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/email-icon.svg");
         echo "\" alt=\"email icon\">
 </div>
@@ -514,181 +381,64 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getDebugInfo()
     {
-        return array (  488 => 349,  479 => 343,  472 => 339,  461 => 331,  436 => 309,  425 => 301,  404 => 283,  398 => 280,  392 => 277,  386 => 274,  380 => 271,  357 => 251,  335 => 232,  326 => 226,  311 => 214,  302 => 208,  291 => 200,  285 => 197,  274 => 189,  247 => 165,  234 => 155,  223 => 147,  209 => 136,  198 => 128,  184 => 117,  172 => 108,  157 => 96,  146 => 88,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
+        return array (  355 => 170,  346 => 164,  339 => 160,  328 => 152,  303 => 130,  292 => 122,  270 => 105,  264 => 104,  258 => 103,  252 => 102,  246 => 101,  237 => 97,  229 => 91,  225 => 90,  220 => 87,  216 => 86,  206 => 78,  202 => 77,  197 => 74,  193 => 73,  188 => 70,  184 => 69,  175 => 65,  156 => 51,  150 => 50,  144 => 49,  138 => 48,  132 => 47,  123 => 43,  116 => 38,  112 => 37,  107 => 34,  103 => 33,  98 => 30,  94 => 29,  89 => 26,  85 => 25,  81 => 23,  77 => 22,  70 => 17,  66 => 16,  58 => 10,  54 => 9,  47 => 4,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<section id=\"hero\" class=\"hero\">
     <video autoplay muted loop playsinline class=\"hero-video\">
-        <source src=\"{{ 'assets/video/hero-bg.mp4'|theme }}\" type=\"video/mp4\">
+        {% content 'hero/bg.htm' %}
     </video>
     <div class=\"hero-overlay\"></div>
 
     <div class=\"hero__container\">
-      <div class=\"hero__content\">
-    <h1 class=\"hero__title\">Your Seamless Move</h1>
-    <h2 class=\"hero__subtitle\">Starts With TI Moving</h2>
-    <p class=\"hero__text\">Licensed, insured, stress-free moves across Florida</p>
+        <div class=\"hero__content\">
+            {% content 'hero/info.htm' %}
 
-    <a href=\"#\" class=\"btn-hero-quote\">Get a Quote</a>
-</div>
-
+            <a href=\"#\" class=\"btn-hero-quote\">Get a Quote</a>
+        </div>
     </div>
 
     <div class=\"hero__divider\">
-        <img src=\"{{ 'assets/images/Rectangle 1862.svg'|theme }}\" alt=\"divider\">
+        {% content 'hero/divider.htm' %}
     </div>
 </section>
 
 <section id=\"why\" class=\"why-section\">
     <div class=\"container\">
-        <h2 class=\"why-section__title\">Why TI Moving?</h2>
+        {% content 'why/section-title.htm' %}
+    </div>
 
+    {% content 'why/main-description.htm' %}
+
+    <div class=\"why-grid\">
+        <div class=\"why-card card-1\">
+            {% content 'why/card-1.htm' %}
         </div>
 
-    <p class=\"why-section__text\">
-    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-</p>
-
-<div class=\"why-grid\">
-    <div class=\"why-card card-1\">
-    <div class=\"why-card__image\">
-        <img src=\"{{ 'assets/images/benefit1.svg'|theme }}\" alt=\"Service 1\">
-    </div>
-    <div class=\"why-card__content\">
-        <h3 class=\"why-card__title\">Licensed & Insured</h3>
-        <p class=\"why-card__description\">Your move is fully protected by certified professionals you can trust.</p>
-    </div>
-</div>
-
-    <div class=\"why-card card-2\">
-    <div class=\"why-card__image\">
-        <img src=\"{{ 'assets/images/benefit2.svg'|theme }}\" alt=\"Service 2\">
-    </div>
-    <div class=\"why-card__content\">
-        <h3 class=\"why-card__title\">Same-Day Moving</h3>
-        <p class=\"why-card__description\">Fast response and efficient relocation, even on short notice.</p>
-    </div>
-</div>
-
-    <div class=\"why-card card-3\">
-    <div class=\"why-card__image\">
-        <img src=\"{{ 'assets/images/benefit3.svg'|theme }}\" alt=\"Service 3\">
-    </div>
-    <div class=\"why-card__content\">
-        <h3 class=\"why-card__title\">Affordable Prices</h3>
-        <p class=\"why-card__description\">Premium moving service without the premium cost. Just contact us and we send you our price!</p>
+        <div class=\"why-card card-2\">
+            {% content 'why/card-2.htm' %}
         </div>
-</div>
 
- </section>
+        <div class=\"why-card card-3\">
+            {% content 'why/card-3.htm' %}
+        </div>
+    </div>
+</section>
 
 <section id=\"services\" class=\"services-section\">
-    <h2 class=\"services-title\">Our Services</h2>
+    <h2 class=\"services-title\">{% content 'services/title.txt' %}</h2>
 
     <div class=\"services-slider-wrapper\">
-    <div class=\"services-track\">
-
-        <div class=\"service-card empty-card\">
-    <div class=\"service-card__icon-container\">
-        <div class=\"service-card__icon-wrapper\">
-            <img src=\"{{ 'assets/images/card.svg'|theme }}\" alt=\"Service 1\" class=\"service-card__svg\">
+        <div class=\"services-track\">
+            <div class=\"service-card empty-card\">{% content 'services/card-1.htm' %}</div>
+            <div class=\"service-card empty-card\">{% content 'services/card-2.htm' %}</div>
+            <div class=\"service-card empty-card\">{% content 'services/card-3.htm' %}</div>
+            <div class=\"service-card empty-card\">{% content 'services/card-4.htm' %}</div>
+            <div class=\"service-card empty-card\">{% content 'services/card-5.htm' %}</div>
         </div>
     </div>
-
-    <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Storage<br>Solutions</h3>
-        <p class=\"service-card__description\">
-    </p>
-</div>
-
-    <a href=\"#\" class=\"service-card__btn\">
-        <img src=\"{{ 'assets/images/arrow.svg'|theme }}\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
-    </a>
-</div>
-
-        <div class=\"service-card empty-card\">
-            <div class=\"service-card__icon-container\">
-                <div class=\"service-card__glow\"></div>
-                <div class=\"service-card__icon-wrapper\">
-<img src=\"{{ 'assets/images/card1.svg'|theme }}\" alt=\"Service 2\" class=\"service-card__svg\">
-                </div>
-            </div>
-
-            <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Local Moving</h3>
-                <p class=\"service-card__description\">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    </p>
-</div>
-
-            <a href=\"#\" class=\"service-card__btn\">
-        <img src=\"{{ 'assets/images/arrow.svg'|theme }}\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
-    </a>
-
-        </div>
-
-        <div class=\"service-card empty-card\">
-            <div class=\"service-card__icon-container\">
-                <div class=\"service-card__glow\"></div>
-                <div class=\"service-card__icon-wrapper\">
-<img src=\"{{ 'assets/images/card2.svg'|theme }}\" alt=\"Service 3\" class=\"service-card__svg\">
-                </div>
-            </div>
-            <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Long Distance Moving</h3>
-                <p class=\"service-card__description\">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    </p>
-</div>
-
-            <a href=\"#\" class=\"service-card__btn\">
-        <img src=\"{{ 'assets/images/arrow.svg'|theme }}\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
-    </a>
-        </div>
-
-        <div class=\"service-card empty-card\">
-            <div class=\"service-card__icon-container\">
-                <div class=\"service-card__glow\"></div>
-                <div class=\"service-card__icon-wrapper\">
-<img src=\"{{ 'assets/images/card3.svg'|theme }}\" alt=\"Service 4\" class=\"service-card__svg\">
-                </div>
-            </div>
-            <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Commercial<br>(Office) Moving</h3>
-                <p class=\"service-card__description\">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    </p>
-            </div>
-
-            <a href=\"#\" class=\"service-card__btn\">
-        <img src=\"{{ 'assets/images/arrow.svg'|theme }}\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
-    </a>
-        </div>
-
-        <div class=\"service-card empty-card\">
-            <div class=\"service-card__icon-container\">
-                <div class=\"service-card__glow\"></div>
-                <div class=\"service-card__icon-wrapper\">
-<img src=\"{{ 'assets/images/card5.svg'|theme }}\" alt=\"Service 4\" class=\"service-card__svg\">
-                </div>
-            </div>
-            <div class=\"service-card__content\">
-    <h3 class=\"service-card__title\">Office /<br>Commercial<br>Moving</h3>
-<p class=\"service-card__description\">
-    </p>
-            </div>
-
-            <a href=\"#\" class=\"service-card__btn\">
-        <img src=\"{{ 'assets/images/arrow.svg'|theme }}\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
-    </a>
-        </div>
-
-    </div>
-</div>
 
     <div class=\"services-pagination\">
         <span class=\"dot active\"></span>
@@ -700,119 +450,57 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 </section>
 
 <section id=\"reviews\" class=\"reviews-section\">
-    <h2 class=\"reviews-title\">Real stories from real clients</h2>
+    <h2 class=\"reviews-title\">{% content 'reviews/title.txt' %}</h2>
 
     <div class=\"reviews-container\">
-
         <div class=\"review-card card-tall\">
-            <span class=\"review-card__rating-value\">4,9/5</span>
-            <div class=\"review-card__stars\">
-                <img src=\"{{ 'assets/images/stars.svg'|theme }}\" alt=\"Stars\" class=\"review-card__stars-svg\">
-            </div>
-            <p class=\"review-card__experience-text\">
-                Learn more about our customer experience by visiting our Yelp and Google reviews.
-            </p>
-            <span class=\"review-card__total-count\">1000+ reviews</span>
-            <div class=\"review-card__links\">
-                <div class=\"review-icon-circle\">
-                    <img src=\"{{ 'assets/images/yelp.svg'|theme }}\" alt=\"Yelp\" class=\"review-icon-svg yelp-svg\">
-                </div>
-                <div class=\"review-icon-circle\">
-                    <img src=\"{{ 'assets/images/google.svg'|theme }}\" alt=\"Google\" class=\"review-icon-svg google-svg\">
-                </div>
-            </div>
+            {% content 'reviews/stats-card.htm' %}
         </div>
 
         <div class=\"review-card card-short\">
-    <div class=\"review-card__header\">
-        <div class=\"review-card__user-avatar\">
-            <img src=\"{{ 'assets/images/avatar.svg'|theme }}\" alt=\"User\" class=\"avatar-svg\">
+            {% content 'reviews/review-1.htm' %}
         </div>
-        <span class=\"review-card__user-name\">Michael R.</span>
-    </div>
-
-    <div class=\"review-card__stars\">
-        <img src=\"{{ 'assets/images/stars.svg'|theme }}\" alt=\"Stars\" class=\"review-card__stars-svg\">
-    </div>
-
-     <p class=\"review-card__text\">
-        Excellent experience with TI Moving. Communication was clear, the movers were professional, and the entire process went exactly as planned.
-    </p>
-
-</div>
 
         <div class=\"review-card card-medium\">
-    <div class=\"review-card__header\">
-        <div class=\"review-card__user-avatar\">
-            <img src=\"{{ 'assets/images/avatar.svg'|theme }}\" alt=\"User\" class=\"avatar-svg\">
+            {% content 'reviews/review-2.htm' %}
         </div>
-        <span class=\"review-card__user-name\">Michael R.</span>
-    </div>
-
-    <div class=\"review-card__stars\">
-        <img src=\"{{ 'assets/images/stars.svg'|theme }}\" alt=\"Stars\" class=\"review-card__stars-svg\">
-    </div>
-
-    <div class=\"review-card__text-wrapper\">
-        <p class=\"review-card__text medium-text\">
-        We used TI Moving for a residential move and were very satisfied with the service.
-        The team arrived on time, packed everything carefully, and handled our furniture with great care.
-        The move was smooth and stress-free.
-    </p>
-    </div>
-
-</div>
-
     </div>
 </section>
 
 <section id=\"about\" class=\"about-section\">
-    <div class=\"section__divider\"></div> <div class=\"about-container\">
+    <div class=\"section__divider\"></div>
+    <div class=\"about-container\">
         <div class=\"about-image-wrapper\">
-    <img src=\"{{ 'assets/images/Rectangle 2132.svg'|theme }}\" alt=\"About Us\" class=\"about-image\">
-</div>
+            {% content 'about/image.htm' %}
+        </div>
 
         <div class=\"about-content\">
-            <h2 class=\"about-title\">About Us</h2>
-            <p class=\"about-description\">
-                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше.
-            </p>
+            {% content 'about/content.htm' %}
         </div>
     </div>
 </section>
 
 <section id=\"gallery\" class=\"movers-section\">
     <div class=\"movers-container\">
-        <h2 class=\"movers-title\">See Our Movers in Action</h2>
+        <h2 class=\"movers-title\">{% content 'gallery/title.txt' %}</h2>
 
         <div class=\"movers-slider-wrapper\">
             <div class=\"movers-track\">
-                <div class=\"mover-card\">
-                    <img src=\"{{ 'assets/images/movers.svg'|theme }}\" alt=\"Mover Action\" class=\"mover-img\">
-                </div>
-                <div class=\"mover-card\">
-                    <img src=\"{{ 'assets/images/movers.svg'|theme }}\" alt=\"Mover Action\" class=\"mover-img\">
-                </div>
-                <div class=\"mover-card\">
-                    <img src=\"{{ 'assets/images/movers1.svg'|theme }}\" alt=\"Mover Action\" class=\"mover-img\">
-                </div>
-                <div class=\"mover-card\">
-                    <img src=\"{{ 'assets/images/movers2.svg'|theme }}\" alt=\"Mover Action\" class=\"mover-img\">
-                </div>
-                <div class=\"mover-card\">
-                    <img src=\"{{ 'assets/images/movers2.svg'|theme }}\" alt=\"Mover Action\" class=\"mover-img\">
-                </div>
+                <div class=\"mover-card\">{% content 'gallery/mover-1.htm' %}</div>
+                <div class=\"mover-card\">{% content 'gallery/mover-2.htm' %}</div>
+                <div class=\"mover-card\">{% content 'gallery/mover-3.htm' %}</div>
+                <div class=\"mover-card\">{% content 'gallery/mover-4.htm' %}</div>
+                <div class=\"mover-card\">{% content 'gallery/mover-5.htm' %}</div>
             </div>
         </div>
 
         <div class=\"movers-pagination\">
-    <button class=\"m-dot\"></button>
-    <button class=\"m-dot\"></button>
-    <button class=\"m-dot active\"></button> <button class=\"m-dot\"></button>
-    <button class=\"m-dot\"></button>
-</div>
-
+            <button class=\"m-dot\"></button>
+            <button class=\"m-dot\"></button>
+            <button class=\"m-dot active\"></button>
+            <button class=\"m-dot\"></button>
+            <button class=\"m-dot\"></button>
+        </div>
     </div>
 </section>
 
@@ -885,13 +573,13 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     
     public function checkSecurity()
     {
-        static $tags = array();
-        static $filters = array("theme" => 3);
+        static $tags = array("content" => 3);
+        static $filters = array("theme" => 122);
         static $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                [],
+                ['content'],
                 ['theme'],
                 []
             );

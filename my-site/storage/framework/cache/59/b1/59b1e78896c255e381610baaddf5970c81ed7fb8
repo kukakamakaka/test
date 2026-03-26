@@ -1,0 +1,43 @@
+1774553603a:1:{s:20:"reviews/review-2.htm";a:6:{s:8:"fileName";s:20:"reviews/review-2.htm";s:7:"content";s:690:"<div class="review-card__header">
+    <div class="review-card__user-avatar">
+        <img src="/themes/moving-test/assets/images/avatar.svg" alt="User" class="avatar-svg">
+    </div>
+    <span class="review-card__user-name">Michael R.</span>
+</div>
+<div class="review-card__stars">
+    <img src="/themes/moving-test/assets/images/stars.svg" alt="Stars" class="review-card__stars-svg">
+</div>
+<div class="review-card__text-wrapper">
+    <p class="review-card__text medium-text">
+        We used TI Moving for a residential move and were very satisfied with the service.
+        The team arrived on time, packed everything carefully, and handled our furniture with great care.
+    </p>
+</div>";s:5:"mtime";i:1774552090;s:6:"markup";s:690:"<div class="review-card__header">
+    <div class="review-card__user-avatar">
+        <img src="/themes/moving-test/assets/images/avatar.svg" alt="User" class="avatar-svg">
+    </div>
+    <span class="review-card__user-name">Michael R.</span>
+</div>
+<div class="review-card__stars">
+    <img src="/themes/moving-test/assets/images/stars.svg" alt="Stars" class="review-card__stars-svg">
+</div>
+<div class="review-card__text-wrapper">
+    <p class="review-card__text medium-text">
+        We used TI Moving for a residential move and were very satisfied with the service.
+        The team arrived on time, packed everything carefully, and handled our furniture with great care.
+    </p>
+</div>";s:4:"code";N;s:12:"parsedMarkup";s:690:"<div class="review-card__header">
+    <div class="review-card__user-avatar">
+        <img src="/themes/moving-test/assets/images/avatar.svg" alt="User" class="avatar-svg">
+    </div>
+    <span class="review-card__user-name">Michael R.</span>
+</div>
+<div class="review-card__stars">
+    <img src="/themes/moving-test/assets/images/stars.svg" alt="Stars" class="review-card__stars-svg">
+</div>
+<div class="review-card__text-wrapper">
+    <p class="review-card__text medium-text">
+        We used TI Moving for a residential move and were very satisfied with the service.
+        The team arrived on time, packed everything carefully, and handled our furniture with great care.
+    </p>
+</div>";}}

@@ -1,0 +1,43 @@
+1774553603a:1:{s:19:"services/card-4.htm";a:6:{s:8:"fileName";s:19:"services/card-4.htm";s:7:"content";s:730:"<div class="service-card__icon-container">
+    <div class="service-card__glow"></div>
+    <div class="service-card__icon-wrapper">
+        <img src="/themes/moving-test/assets/images/card3.svg" alt="Service 4" class="service-card__svg">
+    </div>
+</div>
+<div class="service-card__content">
+    <h3 class="service-card__title">Commercial<br>(Office) Moving</h3>
+    <p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
+</div>
+<a href="#" class="service-card__btn">
+    <img src="/themes/moving-test/assets/images/arrow.svg" alt="Arrow" class="service-card__btn-arrow">
+</a>";s:5:"mtime";i:1774551878;s:6:"markup";s:730:"<div class="service-card__icon-container">
+    <div class="service-card__glow"></div>
+    <div class="service-card__icon-wrapper">
+        <img src="/themes/moving-test/assets/images/card3.svg" alt="Service 4" class="service-card__svg">
+    </div>
+</div>
+<div class="service-card__content">
+    <h3 class="service-card__title">Commercial<br>(Office) Moving</h3>
+    <p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
+</div>
+<a href="#" class="service-card__btn">
+    <img src="/themes/moving-test/assets/images/arrow.svg" alt="Arrow" class="service-card__btn-arrow">
+</a>";s:4:"code";N;s:12:"parsedMarkup";s:730:"<div class="service-card__icon-container">
+    <div class="service-card__glow"></div>
+    <div class="service-card__icon-wrapper">
+        <img src="/themes/moving-test/assets/images/card3.svg" alt="Service 4" class="service-card__svg">
+    </div>
+</div>
+<div class="service-card__content">
+    <h3 class="service-card__title">Commercial<br>(Office) Moving</h3>
+    <p class="service-card__description">
+        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
+    </p>
+</div>
+<a href="#" class="service-card__btn">
+    <img src="/themes/moving-test/assets/images/arrow.svg" alt="Arrow" class="service-card__btn-arrow">
+</a>";}}

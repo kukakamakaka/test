@@ -212,5 +212,33 @@ if (moversSlider && moversTrack && mDots.length > 0) {
     });
 }
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('quoteModal');
+    const closeBtn = document.querySelector('.close-modal');
+
+    // Барлық "Get a Quote" батырмаларын класс арқылы жинаймыз
+    const quoteButtons = document.querySelectorAll('.footer-btn, .hero-btn');
+
+    quoteButtons.forEach(btn => {
+        btn.onclick = function(e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        }
+    });
+
+    if (closeBtn) {
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});
+
 });
 

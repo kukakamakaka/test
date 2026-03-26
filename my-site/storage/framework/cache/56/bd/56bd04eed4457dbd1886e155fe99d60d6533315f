@@ -1,0 +1,19 @@
+1774553603a:1:{s:14:"why/card-2.htm";a:6:{s:8:"fileName";s:14:"why/card-2.htm";s:7:"content";s:310:"<div class="why-card__image">
+    <img src="/themes/moving-test/assets/images/benefit2.svg" alt="Service 2">
+</div>
+<div class="why-card__content">
+    <h3 class="why-card__title">Same-Day Moving</h3>
+    <p class="why-card__description">Fast response and efficient relocation, even on short notice.</p>
+</div>";s:5:"mtime";i:1774551715;s:6:"markup";s:310:"<div class="why-card__image">
+    <img src="/themes/moving-test/assets/images/benefit2.svg" alt="Service 2">
+</div>
+<div class="why-card__content">
+    <h3 class="why-card__title">Same-Day Moving</h3>
+    <p class="why-card__description">Fast response and efficient relocation, even on short notice.</p>
+</div>";s:4:"code";N;s:12:"parsedMarkup";s:310:"<div class="why-card__image">
+    <img src="/themes/moving-test/assets/images/benefit2.svg" alt="Service 2">
+</div>
+<div class="why-card__content">
+    <h3 class="why-card__title">Same-Day Moving</h3>
+    <p class="why-card__description">Fast response and efficient relocation, even on short notice.</p>
+</div>";}}

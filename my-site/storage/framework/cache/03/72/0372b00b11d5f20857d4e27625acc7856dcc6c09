@@ -1,0 +1,46 @@
+1774553603a:1:{s:22:"reviews/stats-card.htm";a:6:{s:8:"fileName";s:22:"reviews/stats-card.htm";s:7:"content";s:743:"<span class="review-card__rating-value">4,9/5</span>
+<div class="review-card__stars">
+    <img src="/themes/moving-test/assets/images/stars.svg" alt="Stars" class="review-card__stars-svg">
+</div>
+<p class="review-card__experience-text">
+    Learn more about our customer experience by visiting our Yelp and Google reviews.
+</p>
+<span class="review-card__total-count">1000+ reviews</span>
+<div class="review-card__links">
+    <div class="review-icon-circle">
+        <img src="/themes/moving-test/assets/images/yelp.svg" alt="Yelp" class="review-icon-svg yelp-svg">
+    </div>
+    <div class="review-icon-circle">
+        <img src="/themes/moving-test/assets/images/google.svg" alt="Google" class="review-icon-svg google-svg">
+    </div>
+</div>";s:5:"mtime";i:1774552071;s:6:"markup";s:743:"<span class="review-card__rating-value">4,9/5</span>
+<div class="review-card__stars">
+    <img src="/themes/moving-test/assets/images/stars.svg" alt="Stars" class="review-card__stars-svg">
+</div>
+<p class="review-card__experience-text">
+    Learn more about our customer experience by visiting our Yelp and Google reviews.
+</p>
+<span class="review-card__total-count">1000+ reviews</span>
+<div class="review-card__links">
+    <div class="review-icon-circle">
+        <img src="/themes/moving-test/assets/images/yelp.svg" alt="Yelp" class="review-icon-svg yelp-svg">
+    </div>
+    <div class="review-icon-circle">
+        <img src="/themes/moving-test/assets/images/google.svg" alt="Google" class="review-icon-svg google-svg">
+    </div>
+</div>";s:4:"code";N;s:12:"parsedMarkup";s:743:"<span class="review-card__rating-value">4,9/5</span>
+<div class="review-card__stars">
+    <img src="/themes/moving-test/assets/images/stars.svg" alt="Stars" class="review-card__stars-svg">
+</div>
+<p class="review-card__experience-text">
+    Learn more about our customer experience by visiting our Yelp and Google reviews.
+</p>
+<span class="review-card__total-count">1000+ reviews</span>
+<div class="review-card__links">
+    <div class="review-icon-circle">
+        <img src="/themes/moving-test/assets/images/yelp.svg" alt="Yelp" class="review-icon-svg yelp-svg">
+    </div>
+    <div class="review-icon-circle">
+        <img src="/themes/moving-test/assets/images/google.svg" alt="Google" class="review-icon-svg google-svg">
+    </div>
+</div>";}}

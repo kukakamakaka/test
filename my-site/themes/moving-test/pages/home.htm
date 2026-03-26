@@ -8,174 +8,57 @@ is_hidden = 0
 
 <section id="hero" class="hero">
     <video autoplay muted loop playsinline class="hero-video">
-        <source src="{{ 'assets/video/hero-bg.mp4'|theme }}" type="video/mp4">
+        {% content 'hero/bg.htm' %}
     </video>
     <div class="hero-overlay"></div>
 
     <div class="hero__container">
-      <div class="hero__content">
-    <h1 class="hero__title">Your Seamless Move</h1>
-    <h2 class="hero__subtitle">Starts With TI Moving</h2>
-    <p class="hero__text">Licensed, insured, stress-free moves across Florida</p>
+        <div class="hero__content">
+            {% content 'hero/info.htm' %}
 
-    <a href="#" class="btn-hero-quote">Get a Quote</a>
-</div>
-
+            <a href="#" class="btn-hero-quote">Get a Quote</a>
+        </div>
     </div>
 
     <div class="hero__divider">
-        <img src="{{ 'assets/images/Rectangle 1862.svg'|theme }}" alt="divider">
+        {% content 'hero/divider.htm' %}
     </div>
 </section>
 
 <section id="why" class="why-section">
     <div class="container">
-        <h2 class="why-section__title">Why TI Moving?</h2>
+        {% content 'why/section-title.htm' %}
+    </div>
 
+    {% content 'why/main-description.htm' %}
+
+    <div class="why-grid">
+        <div class="why-card card-1">
+            {% content 'why/card-1.htm' %}
         </div>
 
-    <p class="why-section__text">
-    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-</p>
-
-<div class="why-grid">
-    <div class="why-card card-1">
-    <div class="why-card__image">
-        <img src="{{ 'assets/images/benefit1.svg'|theme }}" alt="Service 1">
-    </div>
-    <div class="why-card__content">
-        <h3 class="why-card__title">Licensed & Insured</h3>
-        <p class="why-card__description">Your move is fully protected by certified professionals you can trust.</p>
-    </div>
-</div>
-
-    <div class="why-card card-2">
-    <div class="why-card__image">
-        <img src="{{ 'assets/images/benefit2.svg'|theme }}" alt="Service 2">
-    </div>
-    <div class="why-card__content">
-        <h3 class="why-card__title">Same-Day Moving</h3>
-        <p class="why-card__description">Fast response and efficient relocation, even on short notice.</p>
-    </div>
-</div>
-
-    <div class="why-card card-3">
-    <div class="why-card__image">
-        <img src="{{ 'assets/images/benefit3.svg'|theme }}" alt="Service 3">
-    </div>
-    <div class="why-card__content">
-        <h3 class="why-card__title">Affordable Prices</h3>
-        <p class="why-card__description">Premium moving service without the premium cost. Just contact us and we send you our price!</p>
+        <div class="why-card card-2">
+            {% content 'why/card-2.htm' %}
         </div>
-</div>
 
- </section>
+        <div class="why-card card-3">
+            {% content 'why/card-3.htm' %}
+        </div>
+    </div>
+</section>
 
 <section id="services" class="services-section">
-    <h2 class="services-title">Our Services</h2>
+    <h2 class="services-title">{% content 'services/title.txt' %}</h2>
 
     <div class="services-slider-wrapper">
-    <div class="services-track">
-
-        <div class="service-card empty-card">
-    <div class="service-card__icon-container">
-        <div class="service-card__icon-wrapper">
-            <img src="{{ 'assets/images/card.svg'|theme }}" alt="Service 1" class="service-card__svg">
+        <div class="services-track">
+            <div class="service-card empty-card">{% content 'services/card-1.htm' %}</div>
+            <div class="service-card empty-card">{% content 'services/card-2.htm' %}</div>
+            <div class="service-card empty-card">{% content 'services/card-3.htm' %}</div>
+            <div class="service-card empty-card">{% content 'services/card-4.htm' %}</div>
+            <div class="service-card empty-card">{% content 'services/card-5.htm' %}</div>
         </div>
     </div>
-
-    <div class="service-card__content">
-    <h3 class="service-card__title">Storage<br>Solutions</h3>
-        <p class="service-card__description">
-    </p>
-</div>
-
-    <a href="#" class="service-card__btn">
-        <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
-    </a>
-</div>
-
-        <div class="service-card empty-card">
-            <div class="service-card__icon-container">
-                <div class="service-card__glow"></div>
-                <div class="service-card__icon-wrapper">
-<img src="{{ 'assets/images/card1.svg'|theme }}" alt="Service 2" class="service-card__svg">
-                </div>
-            </div>
-
-            <div class="service-card__content">
-    <h3 class="service-card__title">Local Moving</h3>
-                <p class="service-card__description">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    </p>
-</div>
-
-            <a href="#" class="service-card__btn">
-        <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
-    </a>
-
-        </div>
-
-        <div class="service-card empty-card">
-            <div class="service-card__icon-container">
-                <div class="service-card__glow"></div>
-                <div class="service-card__icon-wrapper">
-<img src="{{ 'assets/images/card2.svg'|theme }}" alt="Service 3" class="service-card__svg">
-                </div>
-            </div>
-            <div class="service-card__content">
-    <h3 class="service-card__title">Long Distance Moving</h3>
-                <p class="service-card__description">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    </p>
-</div>
-
-            <a href="#" class="service-card__btn">
-        <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
-    </a>
-        </div>
-
-        <div class="service-card empty-card">
-            <div class="service-card__icon-container">
-                <div class="service-card__glow"></div>
-                <div class="service-card__icon-wrapper">
-<img src="{{ 'assets/images/card3.svg'|theme }}" alt="Service 4" class="service-card__svg">
-                </div>
-            </div>
-            <div class="service-card__content">
-    <h3 class="service-card__title">Commercial<br>(Office) Moving</h3>
-                <p class="service-card__description">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-    </p>
-            </div>
-
-            <a href="#" class="service-card__btn">
-        <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
-    </a>
-        </div>
-
-        <div class="service-card empty-card">
-            <div class="service-card__icon-container">
-                <div class="service-card__glow"></div>
-                <div class="service-card__icon-wrapper">
-<img src="{{ 'assets/images/card5.svg'|theme }}" alt="Service 4" class="service-card__svg">
-                </div>
-            </div>
-            <div class="service-card__content">
-    <h3 class="service-card__title">Office /<br>Commercial<br>Moving</h3>
-<p class="service-card__description">
-    </p>
-            </div>
-
-            <a href="#" class="service-card__btn">
-        <img src="{{ 'assets/images/arrow.svg'|theme }}" alt="Arrow" class="service-card__btn-arrow">
-    </a>
-        </div>
-
-    </div>
-</div>
 
     <div class="services-pagination">
         <span class="dot active"></span>
@@ -187,119 +70,57 @@ is_hidden = 0
 </section>
 
 <section id="reviews" class="reviews-section">
-    <h2 class="reviews-title">Real stories from real clients</h2>
+    <h2 class="reviews-title">{% content 'reviews/title.txt' %}</h2>
 
     <div class="reviews-container">
-
         <div class="review-card card-tall">
-            <span class="review-card__rating-value">4,9/5</span>
-            <div class="review-card__stars">
-                <img src="{{ 'assets/images/stars.svg'|theme }}" alt="Stars" class="review-card__stars-svg">
-            </div>
-            <p class="review-card__experience-text">
-                Learn more about our customer experience by visiting our Yelp and Google reviews.
-            </p>
-            <span class="review-card__total-count">1000+ reviews</span>
-            <div class="review-card__links">
-                <div class="review-icon-circle">
-                    <img src="{{ 'assets/images/yelp.svg'|theme }}" alt="Yelp" class="review-icon-svg yelp-svg">
-                </div>
-                <div class="review-icon-circle">
-                    <img src="{{ 'assets/images/google.svg'|theme }}" alt="Google" class="review-icon-svg google-svg">
-                </div>
-            </div>
+            {% content 'reviews/stats-card.htm' %}
         </div>
 
         <div class="review-card card-short">
-    <div class="review-card__header">
-        <div class="review-card__user-avatar">
-            <img src="{{ 'assets/images/avatar.svg'|theme }}" alt="User" class="avatar-svg">
+            {% content 'reviews/review-1.htm' %}
         </div>
-        <span class="review-card__user-name">Michael R.</span>
-    </div>
-
-    <div class="review-card__stars">
-        <img src="{{ 'assets/images/stars.svg'|theme }}" alt="Stars" class="review-card__stars-svg">
-    </div>
-
-     <p class="review-card__text">
-        Excellent experience with TI Moving. Communication was clear, the movers were professional, and the entire process went exactly as planned.
-    </p>
-
-</div>
 
         <div class="review-card card-medium">
-    <div class="review-card__header">
-        <div class="review-card__user-avatar">
-            <img src="{{ 'assets/images/avatar.svg'|theme }}" alt="User" class="avatar-svg">
+            {% content 'reviews/review-2.htm' %}
         </div>
-        <span class="review-card__user-name">Michael R.</span>
-    </div>
-
-    <div class="review-card__stars">
-        <img src="{{ 'assets/images/stars.svg'|theme }}" alt="Stars" class="review-card__stars-svg">
-    </div>
-
-    <div class="review-card__text-wrapper">
-        <p class="review-card__text medium-text">
-        We used TI Moving for a residential move and were very satisfied with the service.
-        The team arrived on time, packed everything carefully, and handled our furniture with great care.
-        The move was smooth and stress-free.
-    </p>
-    </div>
-
-</div>
-
     </div>
 </section>
 
 <section id="about" class="about-section">
-    <div class="section__divider"></div> <div class="about-container">
+    <div class="section__divider"></div>
+    <div class="about-container">
         <div class="about-image-wrapper">
-    <img src="{{ 'assets/images/Rectangle 2132.svg'|theme }}" alt="About Us" class="about-image">
-</div>
+            {% content 'about/image.htm' %}
+        </div>
 
         <div class="about-content">
-            <h2 class="about-title">About Us</h2>
-            <p class="about-description">
-                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
-                Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь. Текст для описания вашей компании, нужны данные для сайта ваше.
-            </p>
+            {% content 'about/content.htm' %}
         </div>
     </div>
 </section>
 
 <section id="gallery" class="movers-section">
     <div class="movers-container">
-        <h2 class="movers-title">See Our Movers in Action</h2>
+        <h2 class="movers-title">{% content 'gallery/title.txt' %}</h2>
 
         <div class="movers-slider-wrapper">
             <div class="movers-track">
-                <div class="mover-card">
-                    <img src="{{ 'assets/images/movers.svg'|theme }}" alt="Mover Action" class="mover-img">
-                </div>
-                <div class="mover-card">
-                    <img src="{{ 'assets/images/movers.svg'|theme }}" alt="Mover Action" class="mover-img">
-                </div>
-                <div class="mover-card">
-                    <img src="{{ 'assets/images/movers1.svg'|theme }}" alt="Mover Action" class="mover-img">
-                </div>
-                <div class="mover-card">
-                    <img src="{{ 'assets/images/movers2.svg'|theme }}" alt="Mover Action" class="mover-img">
-                </div>
-                <div class="mover-card">
-                    <img src="{{ 'assets/images/movers2.svg'|theme }}" alt="Mover Action" class="mover-img">
-                </div>
+                <div class="mover-card">{% content 'gallery/mover-1.htm' %}</div>
+                <div class="mover-card">{% content 'gallery/mover-2.htm' %}</div>
+                <div class="mover-card">{% content 'gallery/mover-3.htm' %}</div>
+                <div class="mover-card">{% content 'gallery/mover-4.htm' %}</div>
+                <div class="mover-card">{% content 'gallery/mover-5.htm' %}</div>
             </div>
         </div>
 
         <div class="movers-pagination">
-    <button class="m-dot"></button>
-    <button class="m-dot"></button>
-    <button class="m-dot active"></button> <button class="m-dot"></button>
-    <button class="m-dot"></button>
-</div>
-
+            <button class="m-dot"></button>
+            <button class="m-dot"></button>
+            <button class="m-dot active"></button>
+            <button class="m-dot"></button>
+            <button class="m-dot"></button>
+        </div>
     </div>
 </section>
 

@@ -102,6 +102,22 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
         </div>
 
     </div>
+
+    <div id=\"quoteModal\" class=\"modal\">
+    <div class=\"modal-content\">
+        <span class=\"close-modal\">&times;</span>
+        <h2 class=\"modal-title\">Get a Quote</h2>
+        <p class=\"modal-subtitle\">Leave your details and we will call you back</p>
+
+        <form class=\"modal-form\">
+            <input type=\"text\" placeholder=\"Your Name\" required>
+            <input type=\"tel\" placeholder=\"Phone Number\" required>
+            <textarea placeholder=\"Tell us about your move...\"></textarea>
+            <button type=\"submit\" class=\"modal-submit-btn\">Send Request</button>
+        </form>
+    </div>
+</div>
+
 </footer>";
     }
 
@@ -182,6 +198,22 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
         </div>
 
     </div>
+
+    <div id=\"quoteModal\" class=\"modal\">
+    <div class=\"modal-content\">
+        <span class=\"close-modal\">&times;</span>
+        <h2 class=\"modal-title\">Get a Quote</h2>
+        <p class=\"modal-subtitle\">Leave your details and we will call you back</p>
+
+        <form class=\"modal-form\">
+            <input type=\"text\" placeholder=\"Your Name\" required>
+            <input type=\"tel\" placeholder=\"Phone Number\" required>
+            <textarea placeholder=\"Tell us about your move...\"></textarea>
+            <button type=\"submit\" class=\"modal-submit-btn\">Send Request</button>
+        </form>
+    </div>
+</div>
+
 </footer>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/partials/site/footer.htm", "");
     }
     
