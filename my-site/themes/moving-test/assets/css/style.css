@@ -2439,21 +2439,19 @@ margin: 15px 0 0;
     height: 492.82px;
     position: relative;
     border-radius: 20px;
-    overflow: hidden; /* Сурет шетінен шықпауы үшін */
+    overflow: hidden;
 }
 
-/* Фондық суреттің стилі */
 .contact-bg-img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Суретті созбай, бүкіл ауданды жабады */
+    object-fit: cover;
     z-index: 1;
 }
 
-/* Overlay-ді өзгертеміз: мазмұнды сол жақ жоғарыға итереміз */
 .contact-overlay {
     position: absolute;
     top: 0;
@@ -2464,16 +2462,15 @@ margin: 15px 0 0;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Сол жаққа жинау */
-    justify-content: flex-start; /* Жоғарыдан бастау */
-    padding-top: 57px;    /* Төбесінен оступ */
-    padding-left: 107.79px;  /* Сол жақтан оступ */
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 57px;
+    padding-left: 107.79px;
 }
 
 
 
 .contact-content-wrapper {
-    /* 1. Енін 442px-ден 650px-ге дейін ұлғайтамыз, сонда "contact" сыяды */
     width: 100%;
     max-width: 650px;
     display: flex;
@@ -2490,15 +2487,12 @@ margin: 15px 0 0;
     color: #FFFFFF;
     text-align: left;
     margin: 0;
-    /* 2. Әріптер арасын сәл тығыздаймыз, бұл сөздердің сыюына көмектеседі */
     letter-spacing: -0.02em;
-    /* 3. Мәтін өздігінен үзілмеуі үшін */
     white-space: normal;
 }
 
 .contact-bold-wrapper {
     position: relative;
-    /* inline-block орнына жай ғана inline немесе inline-flex */
     display: inline-flex;
     vertical-align: baseline;
 }
@@ -2509,7 +2503,7 @@ margin: 15px 0 0;
 
 .contact-vector {
     position: absolute;
-    bottom: -4px; /* Сөздің астына дәлдеу */
+    bottom: -4px;
     left: 0;
     width: 100%;
     height: auto;
@@ -2517,13 +2511,12 @@ margin: 15px 0 0;
     z-index: 1;
 }
 
-/* Мәтін мен инпуттардың арасы */
 .contact-form-grid {
     grid-template-rows: auto auto auto;
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 189.99px); /* 3 баған */
-    gap: 10px; /* Карточкалар арасындағы қашықтық */
+    grid-template-columns: repeat(3, 189.99px);
+    gap: 10px;
     width: max-content;
 }
 
@@ -2532,7 +2525,7 @@ margin: 15px 0 0;
     height: 48.33px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px); /* Safari үшін */
+    -webkit-backdrop-filter: blur(14px);
     border-radius: 8px;
     border: none;
     display: flex;
@@ -2546,35 +2539,30 @@ margin: 15px 0 0;
     background: transparent;
     border: none;
     outline: none;
-
-    /* Текст стильдері */
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 17px;
     color: #FFFFFF;
     line-height: 100%;
-
-    /* Сен берген ішкі отступтар (padding) */
     padding-top: 18.17px;
     padding-bottom: 18.17px;
     padding-left: 15.74px;
-    padding-right: 10px; /* Оң жақтан текст сыюы үшін */
+    padding-right: 10px;
 }
 
 .form-row-last {
-    grid-column: 1 / 4; /* 3 бағанның енін толық алады */
+    grid-column: 1 / 4;
     display: flex !important;
-    justify-content: space-between !important; /* Екі шетке айырады */
+    justify-content: space-between !important;
     width: 100%;
-    margin-top: 0; /* Алдыңғы жолмен арасы */
+    margin-top: 0;
 }
 
 .form-item-wide {
     width: 289.95px !important;
-    display: flex !important; /* Ішіндегі input дұрыс тұруы үшін */
+    display: flex !important;
 }
 
-/* Placeholder түсі ақ болуы үшін */
 .form-item input::placeholder {
     color: rgba(255, 255, 255, 0.8);
     font-family: 'Manrope', sans-serif;
@@ -2582,60 +2570,46 @@ margin: 15px 0 0;
 }
 
 .contact-submit-btn {
-    /* Өлшемдері мен орны */
     width: 189.99px;
     height: 48.33px;
     margin-top: 20px;
-    grid-column: 1; /* Бірінші бағанда тұруы үшін */
-
-    /* Түсі мен формасы */
+    grid-column: 1;
     background: rgba(192, 31, 31, 1);
     border-radius: 300px;
     border: none;
     cursor: pointer;
-
-    /* Текст стильдері */
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
     font-size: 17px;
     color: #FFFFFF;
     line-height: 100%;
     text-align: center;
-
-    /* МӘТІНДІ БІР ЖОЛҒА КҮШТЕУ */
     white-space: nowrap;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* Padding-ті аздап азайттық, сонда мәтін еркін сыяды */
     padding: 0 20px;
-
     transition: opacity 0.3s ease;
 }
 
-/* Grid-тің ішінде батырманың тек бірінші бағанда тұруын қадағалау */
 .contact-submit-btn {
     grid-column: 1;
-    position: relative; /* ::after дұрыс жұмыс істеуі үшін міндетті */
-    overflow: hidden;    /* "Найзағай" эффектісі батырмадан шығып кетпеуі үшін */
+    position: relative;
+    overflow: hidden;
     transition: all 0.3s ease;
 }
 
-/* 1. Тышқанды үстіне әкелгенде (Hover) */
 .contact-submit-btn:hover {
-    background-color: #D12525; /* Сәл ашық түс */
-    transform: translateY(-3px) scale(1.03); /* Жоғары көтеріліп, сәл үлкейеді */
-    box-shadow: 0 8px 25px rgba(192, 31, 31, 0.4); /* Көлеңке қосылады */
+    background-color: #D12525;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(192, 31, 31, 0.4);
 }
 
-/* 2. Батырманы басқан сәтте (Active) */
 .contact-submit-btn:active {
-    transform: translateY(-1px) scale(0.98); /* Кішкене басылады */
+    transform: translateY(-1px) scale(0.98);
     box-shadow: 0 4px 10px rgba(192, 31, 31, 0.3);
 }
 
-/* 3. "Найзағай" эффектісі (Shimmer effect) */
 .contact-submit-btn::after {
     content: '';
     position: absolute;
@@ -2646,27 +2620,22 @@ margin: 15px 0 0;
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(255, 255, 255, 0.3), /* Ақ сәуле */
+        rgba(255, 255, 255, 0.3),
         transparent
     );
     transition: 0.5s;
 }
 
-/* 4. Hover кезінде сәуленің жүріп өтуі */
 .contact-submit-btn:hover::after {
     left: 100%;
 }
 
-/* Оң жақтағы иконка */
 .contact-right-icon {
     position: absolute;
     width: 30.77px;
     height: 30.77px;
     top: 61.38px;
-
-    /* Осы мәнді Address-пен бірдей қыламыз */
     left: 816.08px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2675,48 +2644,33 @@ margin: 15px 0 0;
 
 .contact-right-icon img {
     width: 100%;
-    /* 110% жасасаң, сурет контейнерден шығып кетеді, 100% жақсырақ */
     height: 100%;
     display: block;
 }
 
-/* Address жазуы */
 .contact-address-label {
     position: absolute;
     width: 63px;
     height: 13px;
-
-    /* Иконкадан 14.68px төмен */
     top: 110.83px;
-
-    /* ИКОНКАМЕН БІРДЕЙ СОЛ ЖАҚ ОСТУП (Енді ровно тұрады) */
     left: 816.08px;
-
     font-family: 'Manrope', sans-serif;
     font-weight: 200;
     font-size: 18px;
     line-height: 20px;
     color: #FFFFFF;
     white-space: nowrap;
-
-    /* Сығымдау (scale) дизайнда болса қос, болмаса алып таста */
     transform-origin: top left;
-
     display: flex;
     align-items: flex-end;
 }
 
-/* 1. Нақты мекен-жай (Address-тен кейін) */
 .contact-address-text {
     position: absolute;
     width: 224.29px;
-    height: auto; /* Екі жол болғандықтан авто */
-
-    /* ОРНАЛАСУЫ: Address-тен төмен (сен берген top: 4299.42px негізінде) */
+    height: auto;
     top: 132.83px;
     left: 816.08px;
-
-    /* СТИЛЬДЕРІ */
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -2726,16 +2680,12 @@ margin: 15px 0 0;
     text-align: left;
 }
 
-/* 2. SVG Батырма (Фото) */
 .contact-map-btn {
     position: absolute;
     width: 129.40px;
     height: 18.36px;
-
-    /* ОРНАЛАСУЫ: Мекен-жайдан төмен (сен берген top: 4346.75px негізінде) */
     top: 180px;
     left: 814.08px;
-
     display: block;
     opacity: 1;
     cursor: pointer;
@@ -2749,23 +2699,20 @@ margin: 15px 0 0;
 }
 
 .contact-map-btn:hover {
-    transform: translateY(-2px); /* Басқанда немесе жақындағанда кішкене эффект */
+    transform: translateY(-2px);
 }
 
-/* 1. Phone Иконкасы */
 .phone-icon {
-    top: 224.67px !important; /* 180 + 18.36 + 26.31 */
+    top: 224.67px !important;
     left: 816.08px;
 }
 
-/* 2. Phone: жазуы (Иконкадан 14.68px төмен) */
 .phone-label {
     position: absolute;
     width: 63px;
     height: 13px;
-    top: 270.12px; /* 224.67 + 30.77 + 14.68 */
+    top: 270.12px;
     left: 816.08px;
-
     font-family: 'Manrope', sans-serif;
     font-weight: 200;
     font-size: 18px;
@@ -2774,15 +2721,12 @@ margin: 15px 0 0;
     white-space: nowrap;
 }
 
-/* 3. Нақты телефон нөмірі (Label-ден 22px төмен, сен берген top: 4462.92 негізінде) */
 .contact-phone-text {
     position: absolute;
     width: 167px;
     height: 15px;
     top: 290px;
     left: 816.08px;
-
-    /* Текст стильдері */
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 21px;
@@ -2792,21 +2736,17 @@ margin: 15px 0 0;
     white-space: nowrap;
 }
 
-/* 1. Email Иконкасы */
 .email-icon {
-    /* Алдыңғы телефон блогының иконкасынан бастап есептегенде */
-    top: 348.15px !important; /* Phone-нан кейінгі нақты орын */
+    top: 348.15px !important;
     left: 816.08px;
 }
 
-/* 2. Email: жазуы (Иконкадан 14.68px төмен) */
 .email-label {
     position: absolute;
     width: 63px;
     height: 13px;
-    top: 393.60px; /* 348.15 + 30.77 + 14.68 */
+    top: 393.60px;
     left: 816.08px;
-
     font-family: 'Manrope', sans-serif;
     font-weight: 200;
     font-size: 18px;
@@ -2814,29 +2754,22 @@ margin: 15px 0 0;
     color: #FFFFFF;
 }
 
-/* 3. Нақты Email мәтіні (Label-ден ровно астында) */
 .contact-email-text {
     position: absolute;
     width: auto;
     height: 15px;
-    top: 410px; /* Label-ден кейін 22px */
+    top: 410px;
     left: 816.08px;
 
-    /* Текст стильдері */
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
-    font-size: 21px; /* Телефонмен бірдей стиль */
+    font-size: 21px;
     line-height: 22px;
     color: #FFFFFF;
     opacity: 1;
     white-space: nowrap;
 }
 
-/* ==========================================================================
-    Contact-section PRO Responsive (No HTML changes)
-   ========================================================================== */
-
-/* 1. ПЛАНШЕТ (1250px - 1000px) - Элементтерді сығымдау */
 @media (max-width: 1250px) {
 
     /* Барлық мәтіндік блоктарды оң жақ шетке бағыттаймыз */
@@ -2867,10 +2800,8 @@ margin: 15px 0 0;
     }
 }
 
-/* 2. ШАҒЫН ПЛАНШЕТ ПЕН МОБИЛЬДІ (991px-ден ТӨМЕН) */
 @media (max-width: 991px) {
     .contact-banner {
-        /* Затемнение түбіне дейін жетуі үшін маңызды түзетулер: */
         height: auto !important;
         min-height: unset !important;
         display: flex !important;
@@ -2879,13 +2810,12 @@ margin: 15px 0 0;
 
     .contact-overlay {
         position: relative !important;
-        /* Overlay-дің өзі бүкіл биіктікті алып, түбіне дейін жабуы үшін: */
         flex-grow: 1 !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        padding: 60px 20px 80px 20px !important; /* Төменгі жағынан 80px оступ бердік */
-        background: rgba(24, 24, 24, 0.65) !important; /* Затемнениені сәл қоюлаттық */
+        padding: 60px 20px 80px 20px !important;
+        background: rgba(24, 24, 24, 0.65) !important;
     }
 
     .contact-content-wrapper {
@@ -2899,11 +2829,10 @@ margin: 15px 0 0;
 
     .contact-main-text {
         text-align: center !important;
-        font-size: clamp(28px, 6vw, 38px) !important; /* Экранға қарай иіледі */
+        font-size: clamp(28px, 6vw, 38px) !important;
         margin-bottom: 30px;
     }
 
-    /* ФОРМА: 2 баған, бірақ өте жинақы */
     .contact-form-grid {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
@@ -2913,36 +2842,31 @@ margin: 15px 0 0;
     }
 
     .contact-right-icon, .phone-icon, .email-icon {
-    /* ПК-дағы absolute позицияны толық өшіреміз */
     position: relative !important;
     left: auto !important;
     right: auto !important;
     top: auto !important;
 
-    /* Ортаға келтіру логикасы */
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
 
-    /* Контейнердің ені бүкіл экран болуы керек, сонда ортасы нақты табылады */
     width: 100% !important;
     height: auto !important;
 }
 
-/* 2. Иконканың ішіндегі суреттің өлшемін сақтау */
 .contact-right-icon img, .phone-icon img, .email-icon img {
-    width: 30px !important; /* ПК нұсқасындағы өлшемді сақтау */
+    width: 30px !important;
     height: 30px !important;
     display: block;
 }
 
-/* 3. Оступтарды реттеу (Сенде бұлар бұрын да болған, бірақ иконкаларға әсер етуі үшін) */
 .contact-right-icon {
-    margin-top: 30px !important; /* Формадан кейінгі бірінші адрес иконкасы */
+    margin-top: 30px !important;
 }
 
 .phone-icon, .email-icon {
-    margin-top: 60px !important; /* Әр блок арасындағы қашықтық */
+    margin-top: 60px !important;
 }
 
 .contact-address-label, .phone-label, .email-label,
@@ -2955,31 +2879,26 @@ margin: 15px 0 0;
 
     display: block !important;
     width: 100% !important;
-    text-align: center !important; /* Мәтінді ортаға жазады */
+    text-align: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
     margin-top: 10px !important;
 }
 
-/* Карта батырмасын сурет болғандықтан ортаға қою */
 .contact-map-btn {
     position: relative !important;
     left: auto !important;
     right: auto !important;
     top: auto !important;
-
-    /* Блокты ортаға келтірудің ең сенімді жолы */
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-
     width: 100% !important;
-    margin: 15px auto 0 auto !important; /* Үстінен сәл оступ бердік */
+    margin: 15px auto 0 auto !important;
 }
 
-/* 2. Ішіндегі суреттің өлшемі бұзылмауы үшін */
 .contact-map-btn img {
-    width: 129.40px !important; /* Сенің ПК-дағы нақты өлшемің */
+    width: 129.40px !important;
     height: auto !important;
     display: block !important;
 }
@@ -2996,7 +2915,7 @@ margin: 15px 0 0;
     }
 
     .form-item-wide {
-        flex: 1; /* Екеуі теңдей бөліп алады */
+        flex: 1;
         width: auto !important;
     }
 
@@ -3007,19 +2926,17 @@ margin: 15px 0 0;
         margin-top: 20px;
     }
 
-    /* КОНТАКТІЛЕР: Ортаға әдемілеп топтастыру */
     .contact-info-wrapper {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px; /* Блоктар арасы ашық, анық */
+        gap: 30px;
         width: 100%;
     }
 
-    /* Қалған контактілерді бір-бірінен ажырату */
     [class*="phone-icon"], [class*="email-icon"] {
-        margin-top: 40px !important; /* Әр блок арасы */
+        margin-top: 40px !important;
         position: relative !important;
         left: auto !important;
         top: auto !important;
@@ -3027,7 +2944,6 @@ margin: 15px 0 0;
         justify-content: center !important;
     }
 
-    /* Мәтіндерді реттеу */
     [class*="-label"], [class*="-text"], .contact-phone-text, .contact-email-text {
     position: relative !important;
     left: auto !important;
@@ -3040,10 +2956,9 @@ margin: 15px 0 0;
 }
 }
 
-/* 3. НАҒЫЗ МОБИЛЬДІ (650px-ден ТӨМЕН) */
 @media (max-width: 650px) {
     .contact-form-grid {
-        grid-template-columns: 1fr !important; /* Барлығы 1 баған */
+        grid-template-columns: 1fr !important;
     }
 
     .form-row-last {
@@ -3063,11 +2978,10 @@ margin: 15px 0 0;
 .footer {
     position: relative;
     width: 100%;
-    /* min-height-ті контейнерге берген соң, бұл жерде тек фон қалсын */
     background: rgba(21, 21, 21, 1);
     z-index: 10;
     overflow: visible;
-    display: block; /* Flex-ті алып тастасаң, контейнер еркін орналасады */
+    display: block;
 }
 
 .footer-container {
@@ -3076,36 +2990,30 @@ margin: 15px 0 0;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* ❌ justify-content: center; - БҰНЫ ӨШІРУ КЕРЕК */
-    /* ✅ ОРНЫНА: */
     justify-content: flex-start;
-    align-items: flex-start; /* Контент сол жақтан басталсын */
+    align-items: flex-start;
 
-    min-height: 384px; /* Футер биіктігін осында бекіткен дұрыс */
+    min-height: 384px;
     position: relative;
     z-index: 20;
 }
 
 .f-vector {
     position: absolute;
-    background-repeat: no-repeat; /* Бұл жерде бір рет жазса жеткілікті */
+    background-repeat: no-repeat;
 }
 
-/* СЕНІҢ ИДЕАЛ ВЕКТОР КОДТАРЫҢ */
 .footer-vector-wrapper {
     position: absolute;
-    /* Векторларды ақ секцияға қарай көтеру (-80px немесе одан көп) */
     top: -80px;
     left: 0;
     width: 100%;
     height: 300px;
     pointer-events: none;
     z-index: 9999;
-    /* Wrapper-дің ішінде де overflow болмағаны дұрыс */
     overflow: visible;
 }
 
-/* СОЛ ЖАҚТАҒЫ ВЕКТОР (v-left) */
 .v-left {
     position: absolute;
     right: 50%;
@@ -3118,7 +3026,6 @@ margin: 15px 0 0;
     top: 65px;
 }
 
-/* ОҢ ЖАҚТАҒЫ ВЕКТОР (v-right) */
 .v-right {
     position: absolute;
     left: 50%;
@@ -3136,8 +3043,6 @@ margin: 15px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
-    /* Фигма бойынша нақты отступ */
     padding-top: 54.29px;
     padding-left: 39px;
     box-sizing: border-box;
@@ -3145,7 +3050,7 @@ margin: 15px 0 0;
 
 .footer-left-info {
     display: flex;
-    flex-direction: column; /* Элементтерді бірінің астына бірін қою */
+    flex-direction: column;
     align-items: flex-start;
 }
 
@@ -3156,7 +3061,7 @@ margin: 15px 0 0;
     line-height: 100%;
     color: #FFFFFF;
     margin: 0;
-    margin-bottom: 13px; /* Астындағы текстке дейінгі қашықтық */
+    margin-bottom: 13px;
 
     transform: scaleY(0.9);
     transform-origin: top left;
@@ -3165,23 +3070,19 @@ margin: 15px 0 0;
 
 .footer-subtitle {
     font-family: 'Nata Sans', sans-serif;
-    font-weight: 300; /* Light */
+    font-weight: 300;
     font-size: 19px;
     line-height: 100%;
     color: #FFFFFF;
     margin: 0;
-    opacity: 0.8; /* Сәл жұмсақ түс беру үшін (опционально) */
-
+    opacity: 0.8;
     transform: scaleY(0.9);
     transform-origin: top left;
     display: block;
-
-    /* Leading-trim баламасы */
     font-variant-caps: normal;
 }
 
 .footer-btn {
-    /* Өлшемдер мен стильдерің сол қалпында қалады */
     width: 174.97px;
     height: 45.22px;
     margin-top: 20px;
@@ -3196,27 +3097,22 @@ margin: 15px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* 🔥 ЭФФЕКТ ҮШІН МІНДЕТТІ ПАРАМЕТРЛЕР: */
     position: relative;
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); /* Тегіс анимация */
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-/* 1. Hover кезінде (Жоғары көтерілу және үлкею) */
 .footer-btn:hover {
     background-color: #D12525;
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 8px 25px rgba(192, 31, 31, 0.4);
 }
 
-/* 2. Басқан кезде (Active) */
 .footer-btn:active {
     transform: translateY(-1px) scale(0.98);
     box-shadow: 0 4px 10px rgba(192, 31, 31, 0.3);
 }
 
-/* 3. "Найзағай" (Shimmer) эффектісі */
 .footer-btn::after {
     content: '';
     position: absolute;
@@ -3227,13 +3123,12 @@ margin: 15px 0 0;
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(255, 255, 255, 0.4), /* Сәуле сәл жарық болсын */
+        rgba(255, 255, 255, 0.4),
         transparent
     );
     transition: 0.6s;
 }
 
-/* 4. Hover кезінде сәуленің жүріп өтуі */
 .footer-btn:hover::after {
     left: 100%;
 }
@@ -3241,10 +3136,10 @@ margin: 15px 0 0;
 
 .footer-right-groups {
     display: flex;
-    gap: 80px; /* Топтардың арасындағы бос орын (Фигмада басқа болса, өзгерт) */
+    gap: 80px;
     position: absolute;
-    left: 425.32px; /* Фигма бойынша сол жақтан нақты орыны */
-    top: 56.29px;   /* Төбеден отступ */
+    left: 425.32px;
+    top: 56.29px;
 }
 
 .footer-group {
@@ -3253,7 +3148,6 @@ margin: 15px 0 0;
     align-items: flex-start;
 }
 
-/* "Navigation" тақырыбы */
 .group-title {
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
@@ -3261,21 +3155,16 @@ margin: 15px 0 0;
     line-height: 100%;
     color: #FFFFFF;
     margin: 0;
-    margin-bottom: 18px; /* Тізіммен арақашықтық */
-
-    /* 1. Бірінші әріп қана БАС ӘРІП болуы үшін */
+    margin-bottom: 18px;
     text-transform: capitalize;
-
-    /* 2. SCALE Y (0.9) - Тігінен сәл жинақтау */
     transform-origin: top left;
-    display: block; /* Трансформ дұрыс жұмыс істеуі үшін */
+    display: block;
 }
 
-/* Тізім стилі (About Us, Gallery, т.б.) */
 .group-list {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Тізім элементтерінің арасы (Фигма бойынша ретте) */
+    gap: 15px;
 }
 
 .group-list a {
@@ -3283,58 +3172,48 @@ margin: 15px 0 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
-    color: rgba(221, 221, 221, 1); /* Фигмадағы түс */
+    color: rgba(221, 221, 221, 1);
     text-decoration: none;
     transition: 0.3s;
 }
 
 .group-list a:hover {
-    color: #C01F1F; /* Кнопканың түсімен бірдей акцент берсек әдемі болады */
-    padding-left: 5px; /* Кішкене жылжу эффектісі */
+    color: #C01F1F;
+    padding-left: 5px;
 }
 
-/* Контактілерге арналған арнайы стильдер */
 .contact-list {
-    max-width: 250px; /* Адрес екі жолға әдемі түсуі үшін */
+    max-width: 250px;
 }
 
 .contact-item {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 17px;
-    /* line-height 140% - бұл жолдардың арасын ашады,
-       егер тым алшақ болса 120% қойып көр */
     line-height: 120%;
     color: rgba(221, 221, 221, 1);
     text-decoration: none;
     margin: 0;
-
-    /* Әр элементтің астындағы бос орынды нөлге жақындатамыз */
     margin-bottom: 8px;
-
     transform: scaleY(0.9);
     transform-origin: top left;
     display: block;
     transition: 0.3s ease;
 }
 
-/* 🏢 Адрестің астындағы бос орынды жеке реттеу */
 .contact-item.address {
     text-transform: uppercase;
     max-width: 250px;
-    /* Егер адрестің асты тым алшақ болса, margin-ді азайтамыз */
     margin-bottom: -5px;
 }
 
-/* Email мен Телефонның арасы жақын болуы үшін */
 .contact-item.email {
     margin-bottom: 5px;
 }
 
-/* ✉️ Электронды пошта мен телефон үшін қалыпты стиль */
 .contact-item.email,
 .contact-item.phone {
-    text-transform: none; /* Үлкен әріптерді өшіреміз */
+    text-transform: none;
 }
 
 a.contact-item:hover {
@@ -3343,43 +3222,32 @@ a.contact-item:hover {
 
 .footer-socials {
     position: absolute;
-    /* Оң жақтан отступ 38px */
     right: 38px;
-    /* Төбеден отступ 51.2px */
     top: 51.2px;
-
     display: flex;
-    /* Иконкалар арасы 12px */
     gap: 12px;
     align-items: center;
     z-index: 30;
 }
 
 .social-icon {
-    /* Фигмадағы нақты өлшемдерді нүктесіне дейін сақтаймыз */
     width: 58.094764709472656px;
     height: 55.040611267089844px;
-
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     transition: all 0.3s ease;
-
-    /* CSS бордерін алып тастаймыз, өйткені ол суреттің ішінде бар */
     border: none;
     background: transparent;
 }
 
 .social-icon img {
-    /* Сурет контейнерді толық толтыруы керек,
-       өйткені бордер суреттің өзінде */
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Пропорциясын бұзбай сыйғызу */
+    object-fit: contain;
 }
 
-/* Hover эффектісі - тек сәл үлкейту */
 .social-icon:hover {
     transform: scale(1.1);
     opacity: 0.8;
@@ -3387,26 +3255,21 @@ a.contact-item:hover {
 
 .footer-bottom {
     width: 100%;
-    margin-top: 110px; /* Төбеден (контенттен) отступ */
+    margin-top: 110px;
     position: relative;
     z-index: 25;
 }
 
 .footer-line {
-    /* Фигма бойынша өлшемдер */
     width: 1290px;
     height: 0px;
-    margin: 0 auto; /* Ортаға қою */
-
-    /* Оң-сол жақтан 38px сақталуы үшін (1290 + 38 + 38 = 1366) */
+    margin: 0 auto;
     border: 1px solid rgba(255, 255, 255, 0.1);
     opacity: 1;
 }
 
 .footer-copyright {
-    /* Сызықтың астынан 36.04px отступ */
     margin-top: 36.04px;
-    /* Сол жақтан 38px "пиздес ровно" */
     padding-left: 38px;
 }
 
@@ -3415,93 +3278,81 @@ a.contact-item:hover {
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
-    color: rgba(255, 255, 255, 1); /* Ақ түс */
-    text-transform: lowercase; /* abc design кіші әріппен */
+    color: rgba(255, 255, 255, 1);
+    text-transform: lowercase;
     margin: 0;
-
-    /* Тігінен ортаға туралау */
     vertical-align: middle;
     display: block;
 }
 
 
-/* 1. ПЛАНШЕТТЕР ҮШІН (1024px-ден төмен) */
 @media (max-width: 1024px) {
+    .footer-bottom {
+        grid-column: 1 / span 3;
+        margin-top: 50px;
+        padding-bottom: 30px !important;
+    }
+
     .v-left {
-        /* 1. Енін үлкейтеміз, сонда басы ортаға қарай ұзарады */
         width: 1100px !important;
-
-        /* 2. background-size-ды да сәйкесінше ұзартамыз (басы созылсын десең) */
         background-size: 1400px 25px !important;
-
-        /* 3. Ортаға жақындату немесе ортадан асыру (минус мәнмен ойна) */
-        /* Егер басы әлі жетпей жатса, осы 30px-ті азайт (мысалы 0 немесе -20px) */
         margin-right: 5px;
-
         top: 65px;
         position: absolute;
         right: 50%;
     }
 
     .v-right {
-        background-size: 1200px 100px !important; /* Кішірейді */
+        background-size: 1200px 100px !important;
         width: 1000px !important;
-        margin-left: -100px; /* Ортаға қарай жақындады */
+        margin-left: -100px;
         top: 30px;
     }
 
     .footer-top-row {
         position: relative;
         display: grid;
-        /* 3 бағана: Сол жақ, Орта (топтар), Оң жақ (иконкалар) */
         grid-template-columns: 1fr 2fr auto;
         align-items: start;
         padding: 80px 40px 0 40px;
         gap: 30px;
-        /* Absolute позицияларды күшпен өшіру */
         height: auto;
     }
 
-    /* 2. Сол жақ (Questions) */
     .footer-left-info {
         grid-column: 1;
         position: static !important;
     }
 
-    /* 3. ОРТАДАҒЫ ТОПТАР (Navigation, Services, Contacts) */
     .footer-right-groups {
         grid-column: 2;
         position: static !important;
         display: flex;
         flex-direction: row;
-        justify-content: space-around; /* Арасын теңдей ашады */
+        justify-content: space-around;
         gap: 20px;
-        /* Десктоптан қалған қоқыстарды тазалау */
         left: auto !important;
         top: auto !important;
         margin: 0 !important;
         transform: none !important;
     }
 
-    /* 4. ИКОНКАЛАР (Facebook, Insta) */
     .footer-socials {
         grid-column: 3;
         position: static !important;
         display: flex;
-        flex-direction: column; /* Планшетте оларды тігінен қойсақ, орын үнемдейді */
+        flex-direction: column;
         gap: 15px;
         right: auto !important;
         top: auto !important;
     }
 
-    /* 5. Топтардың ішкі стилі */
     .footer-group {
         min-width: 120px;
     }
 
-    /* 6. Төменгі сызық бүкіл енді алуы үшін */
     .footer-bottom {
-        grid-column: 1 / span 3; /* 1-ден 3-ке дейінгі барлық бағананы алсын */
+        grid-column: 1 / span 3;
         margin-top: 50px;
     }
 
@@ -3511,10 +3362,9 @@ a.contact-item:hover {
     }
 }
 
-/* Егер 900px-тен төмен түссе, иконкаларды астына түсіру */
 @media (max-width: 900px) {
     .footer-top-row {
-        grid-template-columns: 1fr 1fr; /* 2 бағанаға көшеміз */
+        grid-template-columns: 1fr 1fr;
     }
     .footer-socials {
         grid-column: 1 / span 2;
