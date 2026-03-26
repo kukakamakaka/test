@@ -1690,20 +1690,32 @@ body {
 .about-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Маңызды: сыймаса астына түсуі үшін */
-    align-items: flex-start;
-    justify-content: center; /* Элементтер ортада жиналуы үшін */
+    flex-wrap: nowrap;
+    align-items: center;
+
+    /* 1. Сол жақ шетті (padding) қатал сақтау үшін ✅ */
+    justify-content: flex-start;
+
     max-width: 1366px;
     margin: 130px auto 0;
+
+    /* СЕНІҢ АЛТЫН ЕРЕЖЕҢ (ПК-да және Мобильді де бірдей жұмыс істейді) */
     padding-left: clamp(20px, 4vw, 38px);
-    padding-right: clamp(20px, 4vw, 75px);
+    padding-right: clamp(20px, 4vw, 38px);
+
     box-sizing: border-box;
-    gap: 98.21px;
+
+    /* 2. GAP: Экран тарылғанда 100px-ден 20px-ге дейін плавно азаяды ✅ */
+    gap: clamp(20px, 6vw, 100px);
 }
 
 .about-image-wrapper {
-    flex: 0 1 595.43px; /* 1 дегеніміз - кішірейе алады деген сөз */
-    min-width: 320px; /* Телефонда сурет тым кішкентай болып кетпеуі үшін */
+    /* 3. Суретке кішіреюге рұқсат (flex-shrink: 1), бірақ макс-ені 595px ✅ */
+    flex: 0 1 595px;
+    width: 100%;
+    max-width: 595px;
+    min-width: 300px; /* Планшетке дейін осыған дейін кішірейе алады */
+
     height: auto;
     aspect-ratio: 595 / 430;
     margin-top: -30px;
@@ -1719,9 +1731,11 @@ body {
 }
 
 .about-content {
-    flex: 0 1 556.67px;
+    /* 4. Текст блогы суретке барынша жақын тұруы үшін ✅ */
+    flex: 0 1 556px;
+    width: 100%;
+    max-width: 556px;
     min-width: 320px;
-    margin-left: 0 !important;
     display: flex;
     flex-direction: column;
 }
@@ -1729,8 +1743,8 @@ body {
 .about-title {
     font-family: 'Nata Sans', sans-serif;
     font-weight: 500;
-    font-size: 44px;
-    line-height: 100%;
+    font-size: clamp(32px, 3.5vw, 44px);
+    line-height: 1.1;
     color: #151515;
     margin: 0;
     margin-top: 5px;
@@ -1745,8 +1759,8 @@ body {
     margin-top: 25px;
     font-family: 'Nata Sans', sans-serif;
     font-weight: 400;
-    font-size: clamp(16px, 1.5vw, 18px); /* Шрифт те аздап кішірейеді */
-    line-height: 1.4; /* Фигмадағы 24px-ке жақын */
+    font-size: clamp(15px, 1.2vw, 18px);
+    line-height: 1.5;
     color: rgba(119, 119, 119, 1);
     text-align: left;
     word-wrap: break-word; /* Ұзын сөздерді кеседі */
@@ -1761,23 +1775,34 @@ body {
     }
 
     .about-container {
-        margin-top: 40px !important; /* Төбесіндегі бос орынды азайттық */
-        gap: 15px !important;
-        margin-bottom: 0 !important;
-        padding-bottom: 0 !important;
-        flex-direction: column; /* Сурет пен мәтін бірінің астына бірі түседі */
+        flex-direction: column; /* Енді ғана астына түседі */
         align-items: center;
+        text-align: center;
+        gap: 40px !important;
+        margin-top: 80px !important;
+
+        /* Планшетте де ереже сақталады */
         padding-left: clamp(20px, 4vw, 38px);
         padding-right: clamp(20px, 4vw, 38px);
     }
 
     .about-image-wrapper {
         width: 100%;
-        max-width: 595.43px;
-        height: auto; /* Пропорцияны сақтау үшін */
-        aspect-ratio: 595 / 430; /* ПК-дағы пропорциясын сақтайды */
-        margin-top: 0; /* Мобильді де теріс margin қажет емес немесе аздап қана */
-        margin-bottom: 5px !important; /* Мәтінге дейінгі қашықтық */
+        max-width: 500px; /* Планшетте тым дәу болмауы үшін */
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .about-title {
+        text-align: center;
+        font-size: clamp(28px, 5vw, 36px) !important;
+        margin-bottom: 20px;
+    }
+
+    .about-description {
+        text-align: center;
+        margin-top: 20px;
+        max-width: 600px; /* Ортада жинақы тұруы үшін */
     }
 
     .about-image {
@@ -1794,33 +1819,13 @@ body {
         min-height: 0 !important;
         margin-bottom: 0 !important;
     }
-
-    .about-title {
-        transform: scaleY(0.9);
-        text-align: center;
-        font-size: 28px !important;
-        line-height: 100%;
-        width: auto;
-        height: auto;
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-
-    .about-description {
-        width: 100%;
-        max-width: 556.67px;
-        height: auto;
-        text-align: center;
-        font-size: 16px;
-        line-height: 22px;
-        margin-top: 20px;
-        margin-bottom: 0 !important;
-    }
 }
 
 @media (max-width: 480px) {
     .about-container {
-        margin-top: 60px;
+        padding-left: 20px; /* clamp-тың ең кіші мәні */
+        padding-right: 20px;
+        margin-top: 60px !important;
     }
 
     .about-description {
