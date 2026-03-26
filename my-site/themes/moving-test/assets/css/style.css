@@ -3509,63 +3509,127 @@ a.contact-item:hover {
     }
 }
 
-/* Модалканың фоны */
+/* Модалканың негізгі фоны */
 .modal {
-    display: none; /* Басында жасырулы */
     position: fixed;
-    z-index: 10000; /* Барлық элементтің үстінде */
+    z-index: 10000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Күңгірт фон */
-    backdrop-filter: blur(5px);
+    display: flex; /* Әрқашан flex, бірақ жасырулы болады */
+    justify-content: center;
+    align-items: center;
+
+    /* Жасыру механизмі */
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+
+    /* Барлық эффектілердің уақыты */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Терезенің өзі */
+/* Ашылғандағы күйі */
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+}
+
+/* Терезенің өзі (Контент) */
 .modal-content {
     background-color: #1a1a1a;
-    margin: 10% auto;
-    padding: 40px;
-    border-radius: 20px;
-    width: 90%;
-    max-width: 500px;
+    padding: 40px 30px;
+    border-radius: 28px;
+    width: 90%; /* Мобилкада шетінен қашықтық болуы үшін */
+    max-width: 450px;
     position: relative;
     color: white;
     text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+
+    /* Анимация: төменнен жоғары қарай және үлкейіп шығу */
+    transform: translateY(30px) scale(0.95);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* Жабу батырмасы (X) */
+/* Модалка ашылғанда контенттің қозғалысы */
+.modal.show .modal-content {
+    transform: translateY(0) scale(1);
+}
+
+/* Мобильді адаптация (480px-ден кіші болса) */
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 35px 20px; /* Оступтарды азайттық */
+        border-radius: 20px;
+    }
+
+    .modal-title {
+        font-size: 24px;
+    }
+}
+
+/* Жабу батырмасы */
 .close-modal {
     position: absolute;
     right: 20px;
-    top: 15px;
+    top: 20px;
     font-size: 30px;
+    line-height: 1;
     cursor: pointer;
-    color: #999;
+    color: #666;
+    transition: 0.3s;
 }
 
+.close-modal:hover {
+    color: #C01F1F;
+    transform: rotate(90deg);
+}
+
+/* Форма */
 .modal-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 25px;
+    gap: 12px;
+    margin-top: 20px;
 }
 
 .modal-form input, .modal-form textarea {
-    padding: 12px;
-    border-radius: 8px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 14px;
     border: 1px solid #333;
-    background: #222;
+    background: #0f0f0f;
     color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.modal-form input:focus {
+    border-color: #C01F1F;
+    background: #151515;
+    outline: none;
 }
 
 .modal-submit-btn {
     background: #C01F1F;
     color: white;
-    padding: 15px;
+    padding: 16px;
     border: none;
-    border-radius: 300px;
+    border-radius: 100px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.modal-submit-btn:hover {
+    background: #e62525;
+    box-shadow: 0 8px 20px rgba(192, 31, 31, 0.4);
 }

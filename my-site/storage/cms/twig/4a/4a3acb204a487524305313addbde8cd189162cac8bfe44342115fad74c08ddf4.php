@@ -42,11 +42,12 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
         <div class=\"f-vector v-right\"></div>
     </div>
 
-    <div class=\"footer-container\" style=\"position: relative;\"> <div class=\"footer-top-row\">
+    <div class=\"footer-container\" style=\"position: relative;\">
+        <div class=\"footer-top-row\">
             <div class=\"footer-left-info\">
                 <h2 class=\"footer-title\">Have a Questions?</h2>
                 <p class=\"footer-subtitle\">We’re here to Help</p>
-                <button class=\"footer-btn\">Get a Quote</button>
+                <button class=\"footer-btn\" id=\"openQuote\">Get a Quote</button>
             </div>
 
             <div class=\"footer-right-groups\">
@@ -73,51 +74,59 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
                 <div class=\"footer-group\">
                     <h4 class=\"group-title\">Contact Us</h4>
                     <div class=\"group-list contact-list\">
-                        <p class=\"contact-item address\">1234 NW 45TH AVE, FORT LAUDERDALE, FL 33309</p>
-                        <a href=\"mailto:examplemail.kz@mail.ru\" class=\"contact-item email\">examplemail.kz@mail.ru</a>
-                        <a href=\"tel:+77777777777\" class=\"contact-item phone\">+7 (777) 777 77 77</a>
-                    </div>
+                        ";
+        // line 39
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("footer/contacts.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 40
+        echo "                    </div>
                 </div>
             </div>
 
             <div class=\"footer-socials\">
                 <a href=\"#\" class=\"social-icon fb\">
                     <img src=\"";
-        // line 47
+        // line 46
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/instagram.svg");
-        echo "\" alt=\"Facebook\">
+        echo "\" alt=\"Instagram\">
                 </a>
                 <a href=\"#\" class=\"social-icon insta\">
                     <img src=\"";
-        // line 50
+        // line 49
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/facebook.svg");
-        echo "\" alt=\"Instagram\">
+        echo "\" alt=\"Facebook\">
                 </a>
-            </div>
-        </div> <div class=\"footer-bottom\">
-            <div class=\"footer-line\"></div>
-            <div class=\"footer-copyright\">
-                <p class=\"copyright-text\">abc design</p>
             </div>
         </div>
 
+        <div class=\"footer-bottom\">
+            <div class=\"footer-line\"></div>
+            <div class=\"footer-copyright\">
+                <p class=\"copyright-text\">";
+        // line 57
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("footer/copyright.txt"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</p>
+            </div>
+        </div>
     </div>
 
     <div id=\"quoteModal\" class=\"modal\">
-    <div class=\"modal-content\">
-        <span class=\"close-modal\">&times;</span>
-        <h2 class=\"modal-title\">Get a Quote</h2>
-        <p class=\"modal-subtitle\">Leave your details and we will call you back</p>
+        <div class=\"modal-content\">
+            <span class=\"close-modal\">&times;</span>
+            <h2 class=\"modal-title\">Get a Quote</h2>
+            <p class=\"modal-subtitle\">Leave your details and we will call you back</p>
 
-        <form class=\"modal-form\">
-            <input type=\"text\" placeholder=\"Your Name\" required>
-            <input type=\"tel\" placeholder=\"Phone Number\" required>
-            <textarea placeholder=\"Tell us about your move...\"></textarea>
-            <button type=\"submit\" class=\"modal-submit-btn\">Send Request</button>
-        </form>
+            <form class=\"modal-form\">
+                <input type=\"text\" placeholder=\"Your Name\" required>
+                <input type=\"tel\" placeholder=\"Phone Number\" required>
+                <textarea placeholder=\"Tell us about your move...\"></textarea>
+                <button type=\"submit\" class=\"modal-submit-btn\">Send Request</button>
+            </form>
+        </div>
     </div>
-</div>
-
 </footer>";
     }
 
@@ -133,7 +142,7 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
 
     public function getDebugInfo()
     {
-        return array (  93 => 50,  87 => 47,  39 => 1,);
+        return array (  108 => 57,  97 => 49,  91 => 46,  83 => 40,  79 => 39,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -144,11 +153,12 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
         <div class=\"f-vector v-right\"></div>
     </div>
 
-    <div class=\"footer-container\" style=\"position: relative;\"> <div class=\"footer-top-row\">
+    <div class=\"footer-container\" style=\"position: relative;\">
+        <div class=\"footer-top-row\">
             <div class=\"footer-left-info\">
                 <h2 class=\"footer-title\">Have a Questions?</h2>
                 <p class=\"footer-subtitle\">We’re here to Help</p>
-                <button class=\"footer-btn\">Get a Quote</button>
+                <button class=\"footer-btn\" id=\"openQuote\">Get a Quote</button>
             </div>
 
             <div class=\"footer-right-groups\">
@@ -175,57 +185,55 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
                 <div class=\"footer-group\">
                     <h4 class=\"group-title\">Contact Us</h4>
                     <div class=\"group-list contact-list\">
-                        <p class=\"contact-item address\">1234 NW 45TH AVE, FORT LAUDERDALE, FL 33309</p>
-                        <a href=\"mailto:examplemail.kz@mail.ru\" class=\"contact-item email\">examplemail.kz@mail.ru</a>
-                        <a href=\"tel:+77777777777\" class=\"contact-item phone\">+7 (777) 777 77 77</a>
+                        {% content 'footer/contacts.htm' %}
                     </div>
                 </div>
             </div>
 
             <div class=\"footer-socials\">
                 <a href=\"#\" class=\"social-icon fb\">
-                    <img src=\"{{ 'assets/images/instagram.svg'|theme }}\" alt=\"Facebook\">
+                    <img src=\"{{ 'assets/images/instagram.svg'|theme }}\" alt=\"Instagram\">
                 </a>
                 <a href=\"#\" class=\"social-icon insta\">
-                    <img src=\"{{ 'assets/images/facebook.svg'|theme }}\" alt=\"Instagram\">
+                    <img src=\"{{ 'assets/images/facebook.svg'|theme }}\" alt=\"Facebook\">
                 </a>
-            </div>
-        </div> <div class=\"footer-bottom\">
-            <div class=\"footer-line\"></div>
-            <div class=\"footer-copyright\">
-                <p class=\"copyright-text\">abc design</p>
             </div>
         </div>
 
+        <div class=\"footer-bottom\">
+            <div class=\"footer-line\"></div>
+            <div class=\"footer-copyright\">
+                <p class=\"copyright-text\">{% content 'footer/copyright.txt' %}</p>
+            </div>
+        </div>
     </div>
 
     <div id=\"quoteModal\" class=\"modal\">
-    <div class=\"modal-content\">
-        <span class=\"close-modal\">&times;</span>
-        <h2 class=\"modal-title\">Get a Quote</h2>
-        <p class=\"modal-subtitle\">Leave your details and we will call you back</p>
+        <div class=\"modal-content\">
+            <span class=\"close-modal\">&times;</span>
+            <h2 class=\"modal-title\">Get a Quote</h2>
+            <p class=\"modal-subtitle\">Leave your details and we will call you back</p>
 
-        <form class=\"modal-form\">
-            <input type=\"text\" placeholder=\"Your Name\" required>
-            <input type=\"tel\" placeholder=\"Phone Number\" required>
-            <textarea placeholder=\"Tell us about your move...\"></textarea>
-            <button type=\"submit\" class=\"modal-submit-btn\">Send Request</button>
-        </form>
+            <form class=\"modal-form\">
+                <input type=\"text\" placeholder=\"Your Name\" required>
+                <input type=\"tel\" placeholder=\"Phone Number\" required>
+                <textarea placeholder=\"Tell us about your move...\"></textarea>
+                <button type=\"submit\" class=\"modal-submit-btn\">Send Request</button>
+            </form>
+        </div>
     </div>
-</div>
-
 </footer>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/partials/site/footer.htm", "");
     }
     
     public function checkSecurity()
     {
-        static $tags = array();
-        static $filters = array("theme" => 47);
+        static $tags = array("content" => 39);
+        static $filters = array("theme" => 46);
         static $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                [],
+                ['content'],
                 ['theme'],
                 []
             );

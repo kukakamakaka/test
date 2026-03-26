@@ -287,83 +287,53 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 <section id=\"contact\" class=\"contact-section\">
     <div class=\"contact-container\">
         <div class=\"contact-banner\">
-            <img src=\"";
-        // line 122
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Rectangle.svg");
-        echo "\" alt=\"Contact Background\" class=\"contact-bg-img\">
+            <img src=\"/themes/moving-test/assets/images/Rectangle.svg\" alt=\"Contact Background\" class=\"contact-bg-img\">
 
-<div class=\"contact-overlay\">
-    <div class=\"contact-content-wrapper\">
-        <h2 class=\"contact-main-text\">
-            Feel free to
-            <span class=\"contact-bold-wrapper\">
-                <span class=\"contact-bold\">contact</span>
-                <img src=\"";
-        // line 130
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/vector-line.svg");
-        echo "\" class=\"contact-vector\" alt=\"\">
-            </span> <br> us to learn more
-        </h2>
+            <div class=\"contact-overlay\">
+                <div class=\"contact-content-wrapper\">
+                    ";
+        // line 126
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("contact/main-title.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 127
+        echo "
+                    <div class=\"contact-form-grid\">
+                        <div class=\"form-item\"><input type=\"text\" placeholder=\"Your Name*\"></div>
+                        <div class=\"form-item\"><input type=\"text\" placeholder=\"Phone*\"></div>
+                        <div class=\"form-item\"><input type=\"email\" placeholder=\"Email\"></div>
+                        <div class=\"form-item\"><input type=\"text\" placeholder=\"From Address*\"></div>
+                        <div class=\"form-item\"><input type=\"text\" placeholder=\"To Address*\"></div>
+                        <div class=\"form-item\"><input type=\"text\" placeholder=\"Date*\"></div>
 
-        <div class=\"contact-form-grid\">
-            <div class=\"form-item\"><input type=\"text\" placeholder=\"Your Name*\"></div>
-            <div class=\"form-item\"><input type=\"text\" placeholder=\"Phone*\"></div>
-            <div class=\"form-item\"><input type=\"email\" placeholder=\"Email\"></div>
-            <div class=\"form-item\"><input type=\"text\" placeholder=\"From Address*\"></div>
-            <div class=\"form-item\"><input type=\"text\" placeholder=\"To Address*\"></div>
-            <div class=\"form-item\"><input type=\"text\" placeholder=\"Date*\"></div>
+                        <div class=\"form-row-last\">
+                            <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
+                            <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
+                        </div>
+                    </div>
 
-            <div class=\"form-row-last\">
-                <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
-                <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
+                    <button class=\"contact-submit-btn\">Get a Quote</button>
+                </div>
+
+                <div class=\"contact-info-wrapper\">
+                    ";
+        // line 146
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("contact/address.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 147
+        echo "                    ";
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("contact/phone.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 148
+        echo "                    ";
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("contact/email.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 149
+        echo "                </div>
             </div>
-        </div>
-
-        <button class=\"contact-submit-btn\">Get a Quote</button>
-    </div>
-
-    <div class=\"contact-right-icon\">
-        <img src=\"";
-        // line 152
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/your-icon.svg");
-        echo "\" alt=\"icon\">
-    </div>
-    <div class=\"contact-address-label\">Address:</div>
-    <div class=\"contact-address-text\">
-        1234 NW 45th Ave, <br>
-        Fort Lauderdale, FL 33309
-    </div>
-    <a href=\"#\" class=\"contact-map-btn\">
-        <img src=\"";
-        // line 160
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/map-button.svg");
-        echo "\" alt=\"View on map\">
-    </a>
-
-    <div class=\"contact-right-icon phone-icon\">
-        <img src=\"";
-        // line 164
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/phonee-icon.svg");
-        echo "\" alt=\"phone icon\">
-    </div>
-    <div class=\"contact-address-label phone-label\">Phone:</div>
-    <div class=\"contact-phone-text\">+7 (777) 777 77 77</div>
-
-    <div class=\"contact-right-icon email-icon\">
-    <img src=\"";
-        // line 170
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/email-icon.svg");
-        echo "\" alt=\"email icon\">
-</div>
-
-<div class=\"contact-address-label email-label\">Email:</div>
-
-<div class=\"contact-email-text\">examplemail.kz@mail.ru</div>
-
-</div>
-
-</div>
-
         </div>
     </div>
 </section>";
@@ -381,7 +351,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getDebugInfo()
     {
-        return array (  355 => 170,  346 => 164,  339 => 160,  328 => 152,  303 => 130,  292 => 122,  270 => 105,  264 => 104,  258 => 103,  252 => 102,  246 => 101,  237 => 97,  229 => 91,  225 => 90,  220 => 87,  216 => 86,  206 => 78,  202 => 77,  197 => 74,  193 => 73,  188 => 70,  184 => 69,  175 => 65,  156 => 51,  150 => 50,  144 => 49,  138 => 48,  132 => 47,  123 => 43,  116 => 38,  112 => 37,  107 => 34,  103 => 33,  98 => 30,  94 => 29,  89 => 26,  85 => 25,  81 => 23,  77 => 22,  70 => 17,  66 => 16,  58 => 10,  54 => 9,  47 => 4,  43 => 3,  39 => 1,);
+        return array (  335 => 149,  330 => 148,  325 => 147,  321 => 146,  300 => 127,  296 => 126,  270 => 105,  264 => 104,  258 => 103,  252 => 102,  246 => 101,  237 => 97,  229 => 91,  225 => 90,  220 => 87,  216 => 86,  206 => 78,  202 => 77,  197 => 74,  193 => 73,  188 => 70,  184 => 69,  175 => 65,  156 => 51,  150 => 50,  144 => 49,  138 => 48,  132 => 47,  123 => 43,  116 => 38,  112 => 37,  107 => 34,  103 => 33,  98 => 30,  94 => 29,  89 => 26,  85 => 25,  81 => 23,  77 => 22,  70 => 17,  66 => 16,  58 => 10,  54 => 9,  47 => 4,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -507,65 +477,35 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 <section id=\"contact\" class=\"contact-section\">
     <div class=\"contact-container\">
         <div class=\"contact-banner\">
-            <img src=\"{{ 'assets/images/Rectangle.svg'|theme }}\" alt=\"Contact Background\" class=\"contact-bg-img\">
+            <img src=\"/themes/moving-test/assets/images/Rectangle.svg\" alt=\"Contact Background\" class=\"contact-bg-img\">
 
-<div class=\"contact-overlay\">
-    <div class=\"contact-content-wrapper\">
-        <h2 class=\"contact-main-text\">
-            Feel free to
-            <span class=\"contact-bold-wrapper\">
-                <span class=\"contact-bold\">contact</span>
-                <img src=\"{{ 'assets/images/vector-line.svg'|theme }}\" class=\"contact-vector\" alt=\"\">
-            </span> <br> us to learn more
-        </h2>
+            <div class=\"contact-overlay\">
+                <div class=\"contact-content-wrapper\">
+                    {% content 'contact/main-title.htm' %}
 
-        <div class=\"contact-form-grid\">
-            <div class=\"form-item\"><input type=\"text\" placeholder=\"Your Name*\"></div>
-            <div class=\"form-item\"><input type=\"text\" placeholder=\"Phone*\"></div>
-            <div class=\"form-item\"><input type=\"email\" placeholder=\"Email\"></div>
-            <div class=\"form-item\"><input type=\"text\" placeholder=\"From Address*\"></div>
-            <div class=\"form-item\"><input type=\"text\" placeholder=\"To Address*\"></div>
-            <div class=\"form-item\"><input type=\"text\" placeholder=\"Date*\"></div>
+                    <div class=\"contact-form-grid\">
+                        <div class=\"form-item\"><input type=\"text\" placeholder=\"Your Name*\"></div>
+                        <div class=\"form-item\"><input type=\"text\" placeholder=\"Phone*\"></div>
+                        <div class=\"form-item\"><input type=\"email\" placeholder=\"Email\"></div>
+                        <div class=\"form-item\"><input type=\"text\" placeholder=\"From Address*\"></div>
+                        <div class=\"form-item\"><input type=\"text\" placeholder=\"To Address*\"></div>
+                        <div class=\"form-item\"><input type=\"text\" placeholder=\"Date*\"></div>
 
-            <div class=\"form-row-last\">
-                <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
-                <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
+                        <div class=\"form-row-last\">
+                            <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Move Type*\"></div>
+                            <div class=\"form-item form-item-wide\"><input type=\"text\" placeholder=\"Volume*\"></div>
+                        </div>
+                    </div>
+
+                    <button class=\"contact-submit-btn\">Get a Quote</button>
+                </div>
+
+                <div class=\"contact-info-wrapper\">
+                    {% content 'contact/address.htm' %}
+                    {% content 'contact/phone.htm' %}
+                    {% content 'contact/email.htm' %}
+                </div>
             </div>
-        </div>
-
-        <button class=\"contact-submit-btn\">Get a Quote</button>
-    </div>
-
-    <div class=\"contact-right-icon\">
-        <img src=\"{{ 'assets/images/your-icon.svg'|theme }}\" alt=\"icon\">
-    </div>
-    <div class=\"contact-address-label\">Address:</div>
-    <div class=\"contact-address-text\">
-        1234 NW 45th Ave, <br>
-        Fort Lauderdale, FL 33309
-    </div>
-    <a href=\"#\" class=\"contact-map-btn\">
-        <img src=\"{{ 'assets/images/map-button.svg'|theme }}\" alt=\"View on map\">
-    </a>
-
-    <div class=\"contact-right-icon phone-icon\">
-        <img src=\"{{ 'assets/images/phonee-icon.svg'|theme }}\" alt=\"phone icon\">
-    </div>
-    <div class=\"contact-address-label phone-label\">Phone:</div>
-    <div class=\"contact-phone-text\">+7 (777) 777 77 77</div>
-
-    <div class=\"contact-right-icon email-icon\">
-    <img src=\"{{ 'assets/images/email-icon.svg'|theme }}\" alt=\"email icon\">
-</div>
-
-<div class=\"contact-address-label email-label\">Email:</div>
-
-<div class=\"contact-email-text\">examplemail.kz@mail.ru</div>
-
-</div>
-
-</div>
-
         </div>
     </div>
 </section>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/pages/home.htm", "");
@@ -574,13 +514,13 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     public function checkSecurity()
     {
         static $tags = array("content" => 3);
-        static $filters = array("theme" => 122);
+        static $filters = array();
         static $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 ['content'],
-                ['theme'],
+                [],
                 []
             );
         } catch (SecurityError $e) {

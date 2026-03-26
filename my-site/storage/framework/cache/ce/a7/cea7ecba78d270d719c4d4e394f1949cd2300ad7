@@ -1,0 +1,13 @@
+1774554599a:1:{s:17:"contact/phone.htm";a:6:{s:8:"fileName";s:17:"contact/phone.htm";s:7:"content";s:250:"<div class="contact-right-icon phone-icon">
+    <img src="/themes/moving-test/assets/images/phonee-icon.svg" alt="phone icon">
+</div>
+<div class="contact-address-label phone-label">Phone:</div>
+<div class="contact-phone-text">+7 (777) 777 77 77</div>";s:5:"mtime";i:1774553260;s:6:"markup";s:250:"<div class="contact-right-icon phone-icon">
+    <img src="/themes/moving-test/assets/images/phonee-icon.svg" alt="phone icon">
+</div>
+<div class="contact-address-label phone-label">Phone:</div>
+<div class="contact-phone-text">+7 (777) 777 77 77</div>";s:4:"code";N;s:12:"parsedMarkup";s:250:"<div class="contact-right-icon phone-icon">
+    <img src="/themes/moving-test/assets/images/phonee-icon.svg" alt="phone icon">
+</div>
+<div class="contact-address-label phone-label">Phone:</div>
+<div class="contact-phone-text">+7 (777) 777 77 77</div>";}}
