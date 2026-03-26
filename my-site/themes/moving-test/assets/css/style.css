@@ -2975,6 +2975,10 @@ margin: 15px 0 0;
     }
 }
 
+/* ==========================================================================
+    Footer
+   ========================================================================== */
+
 .footer {
     position: relative;
     width: 100%;
@@ -3375,19 +3379,16 @@ a.contact-item:hover {
 }
 
 @media (max-width: 1220px) {
-    /* 1. Ортадағы топтардың арасын азайтамыз (80px -> 40px) */
     .footer-right-groups {
         gap: 40px !important;
-        left: 380px !important; /* Сол жаққа сәл жылжыту */
+        left: 380px !important;
     }
 
-    /* 2. Иконкаларды оң жақ шетке тақау немесе сәл кішірейту */
     .footer-socials {
         right: 20px !important;
         gap: 8px !important;
     }
 
-    /* 3. Оң жақтағы топтың (Contact Us) енін азайту */
     .contact-list {
         max-width: 180px;
     }
@@ -3401,13 +3402,12 @@ a.contact-item:hover {
         width: 100%;
         overflow: hidden;
         pointer-events: none;
-        display: block; /* Көрініп тұруын қамтамасыз ету */
+        display: block;
     }
 
     .v-left {
         background-size: 600px 15px !important;
         width: 400px !important;
-        /* 102px - бұл футердің қара жиегіне дәл келетін нүкте */
         top: 36px;
         position: absolute;
         right: 50%;
@@ -3417,7 +3417,6 @@ a.contact-item:hover {
     .v-right {
         background-size: 800px 60px !important;
         width: 600px !important;
-        /* Оң жақтың "құйрығын" қара жиекке нысанаға алдық */
         top: 17px;
         position: absolute;
         left: 50%;
@@ -3429,19 +3428,17 @@ a.contact-item:hover {
         gap: 20px;
     }
 
-    /* 1. Негізгі жол - барлығын ортаға бағыттаймыз */
     .footer-top-row {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Блоктарды ортаға қою */
-        text-align: center;  /* Мәтіндерді ортаға жаю */
+        align-items: center;
+        text-align: center;
         padding: 60px 20px 0 20px;
-        gap: 50px; /* Секциялар арасындағы кеңістік */
+        gap: 50px;
     }
 
-    /* 2. Сол жақ блок (Title, Subtitle, Button) */
     .footer-left-info {
-        align-items: center; /* Кнопка мен текст ортада */
+        align-items: center;
         width: 100%;
     }
 
@@ -3453,49 +3450,45 @@ a.contact-item:hover {
     .footer-subtitle {
         font-size: 16px;
         margin-bottom: 20px;
-        max-width: 100%; /* Ортада тұрған соң шектеудің керегі аз */
+        max-width: 100%;
     }
 
     .footer-btn {
-        margin: 0 auto; /* Кнопканы ортаға шегелеу */
+        margin: 0 auto;
         margin-top: 10px;
     }
 
-    /* 3. ОРТАДАҒЫ 3 ТОП (Тігінен ортаға тізу) */
     .footer-right-groups {
         position: static;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Топтарды ортаға жинау */
+        align-items: center;
         gap: 40px;
         width: 100%;
     }
 
     .footer-group {
-        align-items: center; /* Әр топтың ішіндегі мәтіндер ортада */
+        align-items: center;
     }
 
     .group-list {
-        align-items: center; /* Тізім элементтері ортада */
+        align-items: center;
         gap: 12px;
     }
 
-    /* Адрес екі жол болса да ортада тұруы керек */
     .contact-item.address {
         text-align: center;
         max-width: 280px;
     }
 
-    /* 4. ИКОНКАЛАР (Әлеуметтік желілер) */
     .footer-socials {
         position: static;
         display: flex;
-        justify-content: center; /* Ортаға қою */
+        justify-content: center;
         gap: 15px;
         width: 100%;
     }
 
-    /* 5. ТӨМЕНГІ СЫЗЫҚ ПЕН COPYRIGHT */
     .footer-bottom {
         margin-top: 60px;
         padding-bottom: 40px;
@@ -3505,12 +3498,12 @@ a.contact-item:hover {
     }
 
     .footer-line {
-        width: calc(100% - 60px); /* Екі жақтан теңдей бос орын */
+        width: calc(100% - 60px);
         margin: 0 auto;
     }
 
     .footer-copyright {
-        padding-left: 0; /* Оң-сол тең болуы үшін 0 жасаймыз */
+        padding-left: 0;
         margin-top: 25px;
         text-align: center;
     }

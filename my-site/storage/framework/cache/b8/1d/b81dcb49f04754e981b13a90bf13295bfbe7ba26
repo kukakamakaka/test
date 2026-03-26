@@ -1,4 +1,4 @@
-1774540834a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:2586:"<footer class="footer">
+1774542130a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:2587:"<footer class="footer">
     <div class="footer-vector-wrapper">
         <div class="f-vector v-left"></div>
         <div class="f-vector v-right"></div>
@@ -58,7 +58,8 @@
         </div>
 
     </div>
-</footer>";s:5:"mtime";i:1774496729;s:6:"markup";s:2586:"<footer class="footer">
+</footer>
+";s:5:"mtime";i:1774541451;s:6:"markup";s:2586:"<footer class="footer">
     <div class="footer-vector-wrapper">
         <div class="f-vector v-left"></div>
         <div class="f-vector v-right"></div>
