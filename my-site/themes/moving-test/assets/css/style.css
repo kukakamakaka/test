@@ -1742,7 +1742,7 @@ body {
 .about-title {
     font-family: 'Nata Sans', sans-serif;
     font-weight: 500;
-    font-size: clamp(32px, 3.5vw, 44px);
+    font-size: clamp(28px, 3.5vw, 44px);
     line-height: 1.1;
     color: #151515;
     margin: 0;
@@ -1758,10 +1758,10 @@ body {
     margin-top: 20px;
     font-family: 'Nata Sans', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: clamp(15px, 1.2vw, 18px);
     line-height: 24px;
     letter-spacing: 0.04em;
-    color:rgba(119, 119, 119, 1);
+    color: rgba(119, 119, 119, 1);
     text-align: left;
     word-wrap: break-word;
     -webkit-font-smoothing: antialiased;
@@ -1808,23 +1808,34 @@ body {
 
     .about-title {
         text-align: center;
-        font-size: clamp(28px, 5vw, 36px) !important;
+        font-size: 28px !important;
         margin-bottom: 15px;
         width: 100%;
         display: block;
     }
 
     .about-description {
-        text-align: left;
-        max-width: 100%;
-        margin: 15px 0 0;
-    }
+text-align: left;
+max-width: 100%;
+margin: 15px 0 0;
+
+}
 
     .about-content {
         margin-top: 0 !important;
         flex: 1 1 auto !important;
         width: 100% !important;
         max-width: 100% !important;
+    }
+}
+
+@media (max-width: 728px) {
+    .about-title {
+        font-size: 24px !important;
+    }
+
+    .about-description {
+        font-size: 15px !important;
     }
 }
 
