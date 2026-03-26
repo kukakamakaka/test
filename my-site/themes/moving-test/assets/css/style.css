@@ -1776,33 +1776,38 @@ body {
 
     .about-container {
         flex-direction: column; /* Енді ғана астына түседі */
-        align-items: center;
-        text-align: center;
-        gap: 40px !important;
+        align-items: flex-start;
+        text-align: left;
+        gap: 25px !important;
         margin-top: 80px !important;
-
-        /* Планшетте де ереже сақталады */
         padding-left: clamp(20px, 4vw, 38px);
         padding-right: clamp(20px, 4vw, 38px);
     }
 
     .about-image-wrapper {
+        /* СУРЕТ ТЕ ОРТАДА БОЛСЫН ДЕСЕҢ ОСЫНЫ ҚОС ✅ */
+        margin-left: auto;
+        margin-right: auto;
+
         width: 100%;
-        max-width: 500px; /* Планшетте тым дәу болмауы үшін */
+        max-width: 500px;
         margin-top: 0;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
 
     .about-title {
         text-align: center;
         font-size: clamp(28px, 5vw, 36px) !important;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        width: 100%; /* Бұл маңызды, бүкіл енді алса ғана ортаға келеді */
+        display: block;
     }
 
     .about-description {
-        text-align: center;
-        margin-top: 20px;
-        max-width: 600px; /* Ортада жинақы тұруы үшін */
+        /* Сипаттама сол жақта қала береді */
+        text-align: left;
+        max-width: 100%;
+        margin: 15px 0 0;
     }
 
     .about-image {
