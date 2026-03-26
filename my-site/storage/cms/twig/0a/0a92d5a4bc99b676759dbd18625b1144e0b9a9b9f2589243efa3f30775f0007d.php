@@ -137,13 +137,12 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Storage<br>Solutions</h3>
         <p class=\"service-card__description\">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
     </p>
 </div>
 
     <a href=\"#\" class=\"service-card__btn\">
         <img src=\"";
-        // line 89
+        // line 88
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
         echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
     </a>
@@ -154,7 +153,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
                 <div class=\"service-card__glow\"></div>
                 <div class=\"service-card__icon-wrapper\">
 <img src=\"";
-        // line 97
+        // line 96
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card1.svg");
         echo "\" alt=\"Service 2\" class=\"service-card__svg\">
                 </div>
@@ -169,7 +168,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
             <a href=\"#\" class=\"service-card__btn\">
         <img src=\"";
-        // line 109
+        // line 108
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
         echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
     </a>
@@ -181,7 +180,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
                 <div class=\"service-card__glow\"></div>
                 <div class=\"service-card__icon-wrapper\">
 <img src=\"";
-        // line 118
+        // line 117
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card2.svg");
         echo "\" alt=\"Service 3\" class=\"service-card__svg\">
                 </div>
@@ -195,7 +194,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
             <a href=\"#\" class=\"service-card__btn\">
         <img src=\"";
-        // line 129
+        // line 128
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
         echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
     </a>
@@ -206,7 +205,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
                 <div class=\"service-card__glow\"></div>
                 <div class=\"service-card__icon-wrapper\">
 <img src=\"";
-        // line 137
+        // line 136
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card3.svg");
         echo "\" alt=\"Service 4\" class=\"service-card__svg\">
                 </div>
@@ -220,7 +219,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
             <a href=\"#\" class=\"service-card__btn\">
         <img src=\"";
-        // line 148
+        // line 147
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
         echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
     </a>
@@ -231,7 +230,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
                 <div class=\"service-card__glow\"></div>
                 <div class=\"service-card__icon-wrapper\">
 <img src=\"";
-        // line 156
+        // line 155
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card5.svg");
         echo "\" alt=\"Service 4\" class=\"service-card__svg\">
                 </div>
@@ -239,13 +238,12 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
             <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Office /<br>Commercial<br>Moving</h3>
 <p class=\"service-card__description\">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
     </p>
             </div>
 
             <a href=\"#\" class=\"service-card__btn\">
         <img src=\"";
-        // line 167
+        // line 165
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow.svg");
         echo "\" alt=\"Arrow\" class=\"service-card__btn-arrow\">
     </a>
@@ -272,7 +270,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
             <span class=\"review-card__rating-value\">4,9/5</span>
             <div class=\"review-card__stars\">
                 <img src=\"";
-        // line 191
+        // line 189
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/stars.svg");
         echo "\" alt=\"Stars\" class=\"review-card__stars-svg\">
             </div>
@@ -283,13 +281,13 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
             <div class=\"review-card__links\">
                 <div class=\"review-icon-circle\">
                     <img src=\"";
-        // line 199
+        // line 197
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/yelp.svg");
         echo "\" alt=\"Yelp\" class=\"review-icon-svg yelp-svg\">
                 </div>
                 <div class=\"review-icon-circle\">
                     <img src=\"";
-        // line 202
+        // line 200
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/google.svg");
         echo "\" alt=\"Google\" class=\"review-icon-svg google-svg\">
                 </div>
@@ -300,7 +298,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"review-card__header\">
         <div class=\"review-card__user-avatar\">
             <img src=\"";
-        // line 210
+        // line 208
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/avatar.svg");
         echo "\" alt=\"User\" class=\"avatar-svg\">
         </div>
@@ -309,7 +307,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     <div class=\"review-card__stars\">
         <img src=\"";
-        // line 216
+        // line 214
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/stars.svg");
         echo "\" alt=\"Stars\" class=\"review-card__stars-svg\">
     </div>
@@ -324,7 +322,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"review-card__header\">
         <div class=\"review-card__user-avatar\">
             <img src=\"";
-        // line 228
+        // line 226
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/avatar.svg");
         echo "\" alt=\"User\" class=\"avatar-svg\">
         </div>
@@ -333,7 +331,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     <div class=\"review-card__stars\">
         <img src=\"";
-        // line 234
+        // line 232
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/stars.svg");
         echo "\" alt=\"Stars\" class=\"review-card__stars-svg\">
     </div>
@@ -355,7 +353,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"section__divider\"></div> <div class=\"about-container\">
         <div class=\"about-image-wrapper\">
     <img src=\"";
-        // line 253
+        // line 251
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Rectangle 2132.svg");
         echo "\" alt=\"About Us\" class=\"about-image\">
 </div>
@@ -378,31 +376,31 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
             <div class=\"movers-track\">
                 <div class=\"mover-card\">
                     <img src=\"";
-        // line 273
+        // line 271
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers.svg");
         echo "\" alt=\"Mover Action\" class=\"mover-img\">
                 </div>
                 <div class=\"mover-card\">
                     <img src=\"";
-        // line 276
+        // line 274
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers.svg");
         echo "\" alt=\"Mover Action\" class=\"mover-img\">
                 </div>
                 <div class=\"mover-card\">
                     <img src=\"";
-        // line 279
+        // line 277
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers1.svg");
         echo "\" alt=\"Mover Action\" class=\"mover-img\">
                 </div>
                 <div class=\"mover-card\">
                     <img src=\"";
-        // line 282
+        // line 280
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers2.svg");
         echo "\" alt=\"Mover Action\" class=\"mover-img\">
                 </div>
                 <div class=\"mover-card\">
                     <img src=\"";
-        // line 285
+        // line 283
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/movers2.svg");
         echo "\" alt=\"Mover Action\" class=\"mover-img\">
                 </div>
@@ -423,7 +421,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"contact-container\">
         <div class=\"contact-banner\">
             <img src=\"";
-        // line 303
+        // line 301
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Rectangle.svg");
         echo "\" alt=\"Contact Background\" class=\"contact-bg-img\">
 
@@ -434,7 +432,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
             <span class=\"contact-bold-wrapper\">
                 <span class=\"contact-bold\">contact</span>
                 <img src=\"";
-        // line 311
+        // line 309
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/vector-line.svg");
         echo "\" class=\"contact-vector\" alt=\"\">
             </span> <br> us to learn more
@@ -459,7 +457,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     <div class=\"contact-right-icon\">
         <img src=\"";
-        // line 333
+        // line 331
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/your-icon.svg");
         echo "\" alt=\"icon\">
     </div>
@@ -470,14 +468,14 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
     <a href=\"#\" class=\"contact-map-btn\">
         <img src=\"";
-        // line 341
+        // line 339
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/map-button.svg");
         echo "\" alt=\"View on map\">
     </a>
 
     <div class=\"contact-right-icon phone-icon\">
         <img src=\"";
-        // line 345
+        // line 343
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/phonee-icon.svg");
         echo "\" alt=\"phone icon\">
     </div>
@@ -486,7 +484,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     <div class=\"contact-right-icon email-icon\">
     <img src=\"";
-        // line 351
+        // line 349
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/email-icon.svg");
         echo "\" alt=\"email icon\">
 </div>
@@ -516,7 +514,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getDebugInfo()
     {
-        return array (  490 => 351,  481 => 345,  474 => 341,  463 => 333,  438 => 311,  427 => 303,  406 => 285,  400 => 282,  394 => 279,  388 => 276,  382 => 273,  359 => 253,  337 => 234,  328 => 228,  313 => 216,  304 => 210,  293 => 202,  287 => 199,  276 => 191,  249 => 167,  235 => 156,  224 => 148,  210 => 137,  199 => 129,  185 => 118,  173 => 109,  158 => 97,  147 => 89,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
+        return array (  488 => 349,  479 => 343,  472 => 339,  461 => 331,  436 => 309,  425 => 301,  404 => 283,  398 => 280,  392 => 277,  386 => 274,  380 => 271,  357 => 251,  335 => 232,  326 => 226,  311 => 214,  302 => 208,  291 => 200,  285 => 197,  274 => 189,  247 => 165,  234 => 155,  223 => 147,  209 => 136,  198 => 128,  184 => 117,  172 => 108,  157 => 96,  146 => 88,  132 => 77,  110 => 58,  97 => 48,  84 => 38,  62 => 19,  43 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -604,7 +602,6 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Storage<br>Solutions</h3>
         <p class=\"service-card__description\">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
     </p>
 </div>
 
@@ -682,7 +679,6 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
             <div class=\"service-card__content\">
     <h3 class=\"service-card__title\">Office /<br>Commercial<br>Moving</h3>
 <p class=\"service-card__description\">
-        Текст для описания вашей компании, нужны данные для сайта ваше описание будет здесь.
     </p>
             </div>
 

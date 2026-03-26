@@ -1026,7 +1026,7 @@ body {
     background-color: #151515;
     width: 100%;
     min-height: auto;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     border-radius: 60px 60px 0 0;
     margin-top: -90px;
     z-index: 20;
@@ -1042,7 +1042,7 @@ body {
     text-align: center;
     margin: 0 auto;
     padding-top: 90px !important;
-    margin-bottom: 25px !important;
+    margin-bottom: 20px !important;
     transform: scaleY(0.9);
     transform-origin: center top;
     padding-left: clamp(20px, 4vw, 38px);
@@ -1056,29 +1056,31 @@ body {
     line-height: 1.5 !important;
     color: #FFFFFF;
     text-align: center;
-    display: block;
+    display: flex !important;
     width: 100%;
+    min-height: 65px;
     transform: scaleY(0.9);
     transform-origin: center top;
-    margin-top: 15px !important;
+    margin-top: -10px !important;
     padding: 0 20px;
     text-transform: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .service-card__description {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 200;
-    font-size: 17px;
-    line-height: 26px;
-    color: rgba(178, 178, 178, 0.73);
-    text-align: center;
-    transform: scaleY(1);
-    transform-origin: center top;
-    max-width: 308px;
-    margin: 5px auto 0;
-    margin-bottom: 20px;
+    font-family: 'Manrope', sans-serif !important;
+    font-weight: 100 !important;
+    color: rgba(178, 178, 178, 0.9) !important;
+    font-size: 17px !important;
+    line-height: 26px !important;
+    text-align: center !important;
+    letter-spacing: 0.01em !important;
+    max-width: 320px !important;
+    margin: 0 auto 20px !important;
     display: block;
     word-wrap: break-word;
+    opacity: 1;
 }
 
 .service-card__content {
@@ -1093,7 +1095,8 @@ body {
 .services-slider-wrapper {
     width: 100%;
     overflow-x: auto;
-    overflow-y: visible;
+    overflow-y: hidden;
+    touch-action: pan-x;
     padding-bottom: 20px;
     padding-top: 20px !important;
     margin-top: 0;
