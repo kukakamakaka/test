@@ -2714,6 +2714,12 @@ body {
     box-sizing: border-box;
 }
 
+.footer-left-info {
+    display: flex;
+    flex-direction: column; /* Элементтерді бірінің астына бірін қою */
+    align-items: flex-start;
+}
+
 .footer-title {
     font-family: 'Nata Sans', sans-serif;
     font-weight: 700;
@@ -2721,21 +2727,234 @@ body {
     line-height: 100%;
     color: #FFFFFF;
     margin: 0;
+    margin-bottom: 13px; /* Астындағы текстке дейінгі қашықтық */
 
-    /* Созылғанда жоғары қарай жылжымауы үшін */
     transform: scaleY(0.9);
     transform-origin: top left;
-
-    /* Тігінен туралау үшін */
     display: block;
 }
 
+.footer-subtitle {
+    font-family: 'Nata Sans', sans-serif;
+    font-weight: 300; /* Light */
+    font-size: 19px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin: 0;
+    opacity: 0.8; /* Сәл жұмсақ түс беру үшін (опционально) */
+
+    transform: scaleY(0.9);
+    transform-origin: top left;
+    display: block;
+
+    /* Leading-trim баламасы */
+    font-variant-caps: normal;
+}
+
+.footer-btn {
+    /* Өлшемдер мен стильдерің сол қалпында қалады */
+    width: 174.97px;
+    height: 45.22px;
+    margin-top: 20px;
+    background: rgba(192, 31, 31, 1);
+    border-radius: 71.4px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 20.23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* 🔥 ЭФФЕКТ ҮШІН МІНДЕТТІ ПАРАМЕТРЛЕР: */
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); /* Тегіс анимация */
+}
+
+/* 1. Hover кезінде (Жоғары көтерілу және үлкею) */
+.footer-btn:hover {
+    background-color: #D12525;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(192, 31, 31, 0.4);
+}
+
+/* 2. Басқан кезде (Active) */
+.footer-btn:active {
+    transform: translateY(-1px) scale(0.98);
+    box-shadow: 0 4px 10px rgba(192, 31, 31, 0.3);
+}
+
+/* 3. "Найзағай" (Shimmer) эффектісі */
+.footer-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4), /* Сәуле сәл жарық болсын */
+        transparent
+    );
+    transition: 0.6s;
+}
+
+/* 4. Hover кезінде сәуленің жүріп өтуі */
+.footer-btn:hover::after {
+    left: 100%;
+}
 
 
+.footer-right-groups {
+    display: flex;
+    gap: 80px; /* Топтардың арасындағы бос орын (Фигмада басқа болса, өзгерт) */
+    position: absolute;
+    left: 425.32px; /* Фигма бойынша сол жақтан нақты орыны */
+    top: 56.29px;   /* Төбеден отступ */
+}
 
+.footer-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+/* "Navigation" тақырыбы */
+.group-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 18px; /* Тізіммен арақашықтық */
 
+    /* 1. Бірінші әріп қана БАС ӘРІП болуы үшін */
+    text-transform: capitalize;
 
+    /* 2. SCALE Y (0.9) - Тігінен сәл жинақтау */
+    transform-origin: top left;
+    display: block; /* Трансформ дұрыс жұмыс істеуі үшін */
+}
+
+/* Тізім стилі (About Us, Gallery, т.б.) */
+.group-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Тізім элементтерінің арасы (Фигма бойынша ретте) */
+}
+
+.group-list a {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(221, 221, 221, 1); /* Фигмадағы түс */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.group-list a:hover {
+    color: #C01F1F; /* Кнопканың түсімен бірдей акцент берсек әдемі болады */
+    padding-left: 5px; /* Кішкене жылжу эффектісі */
+}
+
+/* Контактілерге арналған арнайы стильдер */
+.contact-list {
+    max-width: 250px; /* Адрес екі жолға әдемі түсуі үшін */
+}
+
+.contact-item {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    /* line-height 140% - бұл жолдардың арасын ашады,
+       егер тым алшақ болса 120% қойып көр */
+    line-height: 120%;
+    color: rgba(221, 221, 221, 1);
+    text-decoration: none;
+    margin: 0;
+
+    /* Әр элементтің астындағы бос орынды нөлге жақындатамыз */
+    margin-bottom: 8px;
+
+    transform: scaleY(0.9);
+    transform-origin: top left;
+    display: block;
+    transition: 0.3s ease;
+}
+
+/* 🏢 Адрестің астындағы бос орынды жеке реттеу */
+.contact-item.address {
+    text-transform: uppercase;
+    max-width: 250px;
+    /* Егер адрестің асты тым алшақ болса, margin-ді азайтамыз */
+    margin-bottom: -5px;
+}
+
+/* Email мен Телефонның арасы жақын болуы үшін */
+.contact-item.email {
+    margin-bottom: 5px;
+}
+
+/* ✉️ Электронды пошта мен телефон үшін қалыпты стиль */
+.contact-item.email,
+.contact-item.phone {
+    text-transform: none; /* Үлкен әріптерді өшіреміз */
+}
+
+a.contact-item:hover {
+    color: #C01F1F;
+}
+
+.footer-socials {
+    position: absolute;
+    /* Оң жақтан отступ 38px */
+    right: 38px;
+    /* Төбеден отступ 51.2px */
+    top: 51.2px;
+
+    display: flex;
+    /* Иконкалар арасы 12px */
+    gap: 12px;
+    align-items: center;
+    z-index: 30;
+}
+
+.social-icon {
+    /* Фигмадағы нақты өлшемдерді нүктесіне дейін сақтаймыз */
+    width: 58.094764709472656px;
+    height: 55.040611267089844px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    /* CSS бордерін алып тастаймыз, өйткені ол суреттің ішінде бар */
+    border: none;
+    background: transparent;
+}
+
+.social-icon img {
+    /* Сурет контейнерді толық толтыруы керек,
+       өйткені бордер суреттің өзінде */
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Пропорциясын бұзбай сыйғызу */
+}
+
+/* Hover эффектісі - тек сәл үлкейту */
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
 
 
 
