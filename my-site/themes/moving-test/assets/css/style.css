@@ -1041,7 +1041,8 @@ body {
     color: #FFFFFF;
     text-align: center;
     margin: 0 auto;
-    padding-top: 90px;
+    padding-top: 90px !important;
+    margin-bottom: 25px !important;
     transform: scaleY(0.9);
     transform-origin: center top;
     padding-left: clamp(20px, 4vw, 38px);
@@ -1051,15 +1052,15 @@ body {
 .service-card__title {
     font-family: 'Nata Sans', sans-serif;
     font-weight: 500;
-    font-size: 44px;
-    line-height: 100%;
+    font-size: 27px;
+    line-height: 1.5 !important;
     color: #FFFFFF;
     text-align: center;
     display: block;
     width: 100%;
     transform: scaleY(0.9);
     transform-origin: center top;
-    margin-top: 40px;
+    margin-top: 15px !important;
     padding: 0 20px;
     text-transform: none;
 }
@@ -1089,13 +1090,12 @@ body {
     flex-grow: 1;
 }
 
-
 .services-slider-wrapper {
     width: 100%;
     overflow-x: auto;
     overflow-y: visible;
-    padding-top: 80px;
     padding-bottom: 20px;
+    padding-top: 20px !important;
     margin-top: 0;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
