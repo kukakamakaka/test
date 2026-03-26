@@ -1,33 +1,29 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. ШАПКА СКРОЛЛЫ (Бұрынғыша қалады, бұл дұрыс)
     const header = document.querySelector('.header');
     window.addEventListener('scroll', () => {
         header.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-// 2. МОБИЛЬДІ МӘЗІР (ЖАҢА ТҮЗЕТІЛГЕН НҰСҚА)
 const burger = document.getElementById('burger'); // ID арқылы алу
 const mobileMenu = document.getElementById('mobileMenu');
 
 if (burger && mobileMenu) {
     burger.addEventListener('click', (e) => {
-        e.stopPropagation(); // Басқанда оқиғаның басқа жаққа кетпеуі үшін
+        e.stopPropagation();
         burger.classList.toggle('active');
         mobileMenu.classList.toggle('active');
 
-        // Мәзір ашылғанда артқы фон (body) скролл болмауы үшін
         if (mobileMenu.classList.contains('active')) {
             document.body.style.overflow = 'hidden';
-            document.body.style.touchAction = 'none'; // Мобилкадағы скроллды блоктайды
+            document.body.style.touchAction = 'none';
         } else {
             document.body.style.overflow = 'auto';
             document.body.style.touchAction = 'auto';
         }
     });
 
-    // Мәзірден тыс жерді (экранды) басқанда жабылуы (UX үшін жақсы)
     document.addEventListener('click', (e) => {
         if (mobileMenu.classList.contains('active') && !mobileMenu.contains(e.target) && !burger.contains(e.target)) {
             burger.classList.remove('active');
@@ -37,7 +33,6 @@ if (burger && mobileMenu) {
     });
 }
 
- // 3. МОБИЛЬДІ АККОРДЕОН (ЖАҚСАРТЫЛҒАН НҰСҚА)
 const mobileItems = document.querySelectorAll('.mobile-item');
 
 mobileItems.forEach(item => {
@@ -47,9 +42,8 @@ mobileItems.forEach(item => {
     if (dropdown) {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            e.stopPropagation(); // Оқиғаның жоғары қарай таралмауы үшін
+            e.stopPropagation();
 
-            // БАСҚАЛАРЫН ЖАБУ (Мәзір жинақы тұруы үшін)
             mobileItems.forEach(otherItem => {
                 if (otherItem !== item && otherItem.classList.contains('open')) {
                     otherItem.classList.remove('open');
@@ -58,10 +52,8 @@ mobileItems.forEach(item => {
                 }
             });
 
-            // ҚАЗІРГІ ПУНКТТІ АШУ/ЖАБУ
             const isOpen = item.classList.toggle('open');
 
-            // Плюс/Минус белгісін ауыстыру
             const span = link.querySelector('span');
             if (span) {
                 span.textContent = isOpen ? '−' : '+';
@@ -70,7 +62,6 @@ mobileItems.forEach(item => {
     }
 });
 
-    // 4. ГАЛЕРЕЯ СКРОЛЛ (Өзгеріссіз қалдырдым, бірақ қатеден сақтану үшін тексеріс қостым)
     const gallerySlider = document.querySelector('.gallery__slider');
     const galleryDots = document.querySelectorAll('.gallery__dot');
     const galleryItems = document.querySelectorAll('.gallery__item');
@@ -87,7 +78,6 @@ mobileItems.forEach(item => {
 
         gallerySlider.addEventListener('scroll', updateGalleryDots);
 
-        // Бастапқы позиция (3-ші суретке фокус жасау)
         if (galleryItems.length >= 3) {
             setTimeout(() => {
                 const targetItem = galleryItems[2];
@@ -98,7 +88,7 @@ mobileItems.forEach(item => {
         }
     }
 
-// 5. SERVICES SLIDER (КҮШТІ НҰСҚА)
+// 5. SERVICES SLIDER
 const servicesSlider = document.querySelector('.services-slider-wrapper');
 const servicesTrack = document.querySelector('.services-track');
 const servicesDots = document.querySelectorAll('.services-pagination .dot');
@@ -110,18 +100,14 @@ if (servicesSlider && servicesTrack) {
         if (cards.length >= 3) {
             const targetCard = cards[2]; // 3-ші карточка
 
-            // Нақты ортаға есептеу
             const containerCenter = servicesSlider.offsetWidth / 2;
             const cardCenter = targetCard.offsetLeft + (targetCard.offsetWidth / 2);
             const scrollPos = cardCenter - containerCenter;
 
-            // Snap-ты уақытша алып тастау
             servicesSlider.style.scrollSnapType = 'none';
 
-            // Тікелей жылжыту
             servicesSlider.scrollLeft = scrollPos;
 
-            // Snap-ты 100мс-тан кейін қайта қосу
             setTimeout(() => {
                 servicesSlider.style.scrollSnapType = 'x mandatory';
                 updateServicesDots();
@@ -151,9 +137,7 @@ if (servicesSlider && servicesTrack) {
 
     servicesSlider.addEventListener('scroll', updateServicesDots);
 
-    // Бұл жері маңызды: бет толық жүктелгенше күтеміз
     window.addEventListener('load', setInitialPosition);
-    // Қосымша тексеріс
     setTimeout(setInitialPosition, 500);
 }
 
@@ -166,27 +150,23 @@ if (moversSlider && moversTrack) {
 
     const setMoversPosition = () => {
         if (mCards.length >= 3) {
-            const targetMover = mCards[2]; // 3-ші карточка
+            const targetMover = mCards[2];
 
-            // Нақты ортаға есептеу
             const mContainerCenter = moversSlider.offsetWidth / 2;
             const mCardCenter = targetMover.offsetLeft + (targetMover.offsetWidth / 2);
             const mScrollPos = mCardCenter - mContainerCenter;
 
-            // Snap-ты уақытша алып тастау
             moversSlider.style.scrollSnapType = 'none';
 
-            // Тікелей жылжыту
             moversSlider.scrollLeft = mScrollPos;
 
-            // Snap-ты қайта қосу
             setTimeout(() => {
                 moversSlider.style.scrollSnapType = 'x mandatory';
             }, 100);
         }
     };
 
-    // Services-тегідей бірнеше рет тексеру (сенімді болу үшін)
+    // Services
     window.addEventListener('load', setMoversPosition);
     setTimeout(setMoversPosition, 500);
     window.addEventListener('resize', setMoversPosition);
@@ -212,16 +192,13 @@ if (moversSlider && moversTrack && mDots.length > 0) {
             }
         });
 
-        // Нүктелерді жаңарту
         mDots.forEach((dot, i) => {
             dot.classList.toggle('active', i === activeIndex);
         });
     };
 
-    // Скролл болғанда нүктелерді жаңарту
     moversSlider.addEventListener('scroll', updateMoversDots);
 
-    // Нүктені басқанда сол карточкаға скролл жасау (Optional)
     mDots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
             const targetCard = mCards[index];

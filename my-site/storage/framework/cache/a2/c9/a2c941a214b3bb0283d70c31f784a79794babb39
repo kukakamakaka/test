@@ -1,4 +1,4 @@
-1774542018a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:15008:"title = "Home"
+1774542819a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:15092:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -6,7 +6,7 @@ is_hidden = 0
 [viewBag]
 ==
 
-<section class="hero">
+<section id="hero" class="hero">
     <video autoplay muted loop playsinline class="hero-video">
         <source src="{{ 'assets/video/hero-bg.mp4'|theme }}" type="video/mp4">
     </video>
@@ -28,7 +28,7 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="why-section">
+<section id="why" class="why-section">
     <div class="container">
         <h2 class="why-section__title">Why TI Moving?</h2>
 
@@ -71,9 +71,9 @@ is_hidden = 0
         </div>
 </div>
 
-</section>
+ </section>
 
-<section class="services-section">
+<section id="services" class="services-section">
     <h2 class="services-title">Our Services</h2>
 
     <div class="services-slider-wrapper">
@@ -186,7 +186,7 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="reviews-section">
+<section id="reviews" class="reviews-section">
     <h2 class="reviews-title">Real stories from real clients</h2>
 
     <div class="reviews-container">
@@ -253,7 +253,7 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="about-section">
+<section id="about" class="about-section">
     <div class="section__divider"></div> <div class="about-container">
         <div class="about-image-wrapper">
     <img src="{{ 'assets/images/Rectangle 2132.svg'|theme }}" alt="About Us" class="about-image">
@@ -269,7 +269,7 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="movers-section">
+<section id="gallery" class="movers-section">
     <div class="movers-container">
         <h2 class="movers-title">See Our Movers in Action</h2>
 
@@ -303,7 +303,7 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="contact-section">
+<section id="contact" class="contact-section">
     <div class="contact-container">
         <div class="contact-banner">
             <img src="{{ 'assets/images/Rectangle.svg'|theme }}" alt="Contact Background" class="contact-bg-img">
@@ -367,7 +367,7 @@ is_hidden = 0
 
         </div>
     </div>
-</section>";s:5:"mtime";i:1774518754;s:6:"markup";s:14935:"<section class="hero">
+</section>";s:5:"mtime";i:1774542217;s:6:"markup";s:15019:"<section id="hero" class="hero">
     <video autoplay muted loop playsinline class="hero-video">
         <source src="{{ 'assets/video/hero-bg.mp4'|theme }}" type="video/mp4">
     </video>
@@ -389,7 +389,7 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="why-section">
+<section id="why" class="why-section">
     <div class="container">
         <h2 class="why-section__title">Why TI Moving?</h2>
 
@@ -432,9 +432,9 @@ is_hidden = 0
         </div>
 </div>
 
-</section>
+ </section>
 
-<section class="services-section">
+<section id="services" class="services-section">
     <h2 class="services-title">Our Services</h2>
 
     <div class="services-slider-wrapper">
@@ -547,7 +547,7 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="reviews-section">
+<section id="reviews" class="reviews-section">
     <h2 class="reviews-title">Real stories from real clients</h2>
 
     <div class="reviews-container">
@@ -614,7 +614,7 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="about-section">
+<section id="about" class="about-section">
     <div class="section__divider"></div> <div class="about-container">
         <div class="about-image-wrapper">
     <img src="{{ 'assets/images/Rectangle 2132.svg'|theme }}" alt="About Us" class="about-image">
@@ -630,7 +630,7 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="movers-section">
+<section id="gallery" class="movers-section">
     <div class="movers-container">
         <h2 class="movers-title">See Our Movers in Action</h2>
 
@@ -664,7 +664,7 @@ is_hidden = 0
     </div>
 </section>
 
-<section class="contact-section">
+<section id="contact" class="contact-section">
     <div class="contact-container">
         <div class="contact-banner">
             <img src="{{ 'assets/images/Rectangle.svg'|theme }}" alt="Contact Background" class="contact-bg-img">

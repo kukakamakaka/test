@@ -36,7 +36,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     {
         $macros = $this->macros;
         // line 1
-        echo "<section class=\"hero\">
+        echo "<section id=\"hero\" class=\"hero\">
     <video autoplay muted loop playsinline class=\"hero-video\">
         <source src=\"";
         // line 3
@@ -64,7 +64,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"why-section\">
+<section id=\"why\" class=\"why-section\">
     <div class=\"container\">
         <h2 class=\"why-section__title\">Why TI Moving?</h2>
 
@@ -116,9 +116,9 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         </div>
 </div>
 
-</section>
+ </section>
 
-<section class=\"services-section\">
+<section id=\"services\" class=\"services-section\">
     <h2 class=\"services-title\">Our Services</h2>
 
     <div class=\"services-slider-wrapper\">
@@ -261,7 +261,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"reviews-section\">
+<section id=\"reviews\" class=\"reviews-section\">
     <h2 class=\"reviews-title\">Real stories from real clients</h2>
 
     <div class=\"reviews-container\">
@@ -349,7 +349,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"about-section\">
+<section id=\"about\" class=\"about-section\">
     <div class=\"section__divider\"></div> <div class=\"about-container\">
         <div class=\"about-image-wrapper\">
     <img src=\"";
@@ -368,7 +368,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"movers-section\">
+<section id=\"gallery\" class=\"movers-section\">
     <div class=\"movers-container\">
         <h2 class=\"movers-title\">See Our Movers in Action</h2>
 
@@ -417,7 +417,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"contact-section\">
+<section id=\"contact\" class=\"contact-section\">
     <div class=\"contact-container\">
         <div class=\"contact-banner\">
             <img src=\"";
@@ -519,7 +519,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
 
     public function getSourceContext()
     {
-        return new Source("<section class=\"hero\">
+        return new Source("<section id=\"hero\" class=\"hero\">
     <video autoplay muted loop playsinline class=\"hero-video\">
         <source src=\"{{ 'assets/video/hero-bg.mp4'|theme }}\" type=\"video/mp4\">
     </video>
@@ -541,7 +541,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"why-section\">
+<section id=\"why\" class=\"why-section\">
     <div class=\"container\">
         <h2 class=\"why-section__title\">Why TI Moving?</h2>
 
@@ -584,9 +584,9 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         </div>
 </div>
 
-</section>
+ </section>
 
-<section class=\"services-section\">
+<section id=\"services\" class=\"services-section\">
     <h2 class=\"services-title\">Our Services</h2>
 
     <div class=\"services-slider-wrapper\">
@@ -699,7 +699,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"reviews-section\">
+<section id=\"reviews\" class=\"reviews-section\">
     <h2 class=\"reviews-title\">Real stories from real clients</h2>
 
     <div class=\"reviews-container\">
@@ -766,7 +766,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"about-section\">
+<section id=\"about\" class=\"about-section\">
     <div class=\"section__divider\"></div> <div class=\"about-container\">
         <div class=\"about-image-wrapper\">
     <img src=\"{{ 'assets/images/Rectangle 2132.svg'|theme }}\" alt=\"About Us\" class=\"about-image\">
@@ -782,7 +782,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"movers-section\">
+<section id=\"gallery\" class=\"movers-section\">
     <div class=\"movers-container\">
         <h2 class=\"movers-title\">See Our Movers in Action</h2>
 
@@ -816,7 +816,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
     </div>
 </section>
 
-<section class=\"contact-section\">
+<section id=\"contact\" class=\"contact-section\">
     <div class=\"contact-container\">
         <div class=\"contact-banner\">
             <img src=\"{{ 'assets/images/Rectangle.svg'|theme }}\" alt=\"Contact Background\" class=\"contact-bg-img\">

@@ -53,20 +53,20 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
                 <div class=\"footer-group\">
                     <h4 class=\"group-title\">Navigation</h4>
                     <nav class=\"group-list\">
-                        <a href=\"#\">About Us</a>
-                        <a href=\"#\">Gallery</a>
-                        <a href=\"#\">Reviews</a>
+                        <a href=\"#about\">About Us</a>
+                        <a href=\"#gallery\">Gallery</a>
+                        <a href=\"#reviews\">Reviews</a>
                     </nav>
                 </div>
 
                 <div class=\"footer-group\">
                     <h4 class=\"group-title\">Our Services</h4>
                     <nav class=\"group-list\">
-                        <a href=\"#\">Office / Commercial Moving</a>
-                        <a href=\"#\">Local Moving</a>
-                        <a href=\"#\">Long Distance Moving</a>
-                        <a href=\"#\">Packing Services</a>
-                        <a href=\"#\">Storage Solutions</a>
+                        <a href=\"#services\">Office / Commercial Moving</a>
+                        <a href=\"#services\">Local Moving</a>
+                        <a href=\"#services\">Long Distance Moving</a>
+                        <a href=\"#services\">Packing Services</a>
+                        <a href=\"#services\">Storage Solutions</a>
                     </nav>
                 </div>
 
@@ -139,20 +139,20 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
                 <div class=\"footer-group\">
                     <h4 class=\"group-title\">Navigation</h4>
                     <nav class=\"group-list\">
-                        <a href=\"#\">About Us</a>
-                        <a href=\"#\">Gallery</a>
-                        <a href=\"#\">Reviews</a>
+                        <a href=\"#about\">About Us</a>
+                        <a href=\"#gallery\">Gallery</a>
+                        <a href=\"#reviews\">Reviews</a>
                     </nav>
                 </div>
 
                 <div class=\"footer-group\">
                     <h4 class=\"group-title\">Our Services</h4>
                     <nav class=\"group-list\">
-                        <a href=\"#\">Office / Commercial Moving</a>
-                        <a href=\"#\">Local Moving</a>
-                        <a href=\"#\">Long Distance Moving</a>
-                        <a href=\"#\">Packing Services</a>
-                        <a href=\"#\">Storage Solutions</a>
+                        <a href=\"#services\">Office / Commercial Moving</a>
+                        <a href=\"#services\">Local Moving</a>
+                        <a href=\"#services\">Long Distance Moving</a>
+                        <a href=\"#services\">Packing Services</a>
+                        <a href=\"#services\">Storage Solutions</a>
                     </nav>
                 </div>
 

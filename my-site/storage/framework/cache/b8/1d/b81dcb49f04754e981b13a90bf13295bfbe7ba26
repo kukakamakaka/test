@@ -1,4 +1,4 @@
-1774542130a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:2587:"<footer class="footer">
+1774542917a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:2646:"<footer class="footer">
     <div class="footer-vector-wrapper">
         <div class="f-vector v-left"></div>
         <div class="f-vector v-right"></div>
@@ -15,20 +15,20 @@
                 <div class="footer-group">
                     <h4 class="group-title">Navigation</h4>
                     <nav class="group-list">
-                        <a href="#">About Us</a>
-                        <a href="#">Gallery</a>
-                        <a href="#">Reviews</a>
+                        <a href="#about">About Us</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#reviews">Reviews</a>
                     </nav>
                 </div>
 
                 <div class="footer-group">
                     <h4 class="group-title">Our Services</h4>
                     <nav class="group-list">
-                        <a href="#">Office / Commercial Moving</a>
-                        <a href="#">Local Moving</a>
-                        <a href="#">Long Distance Moving</a>
-                        <a href="#">Packing Services</a>
-                        <a href="#">Storage Solutions</a>
+                        <a href="#services">Office / Commercial Moving</a>
+                        <a href="#services">Local Moving</a>
+                        <a href="#services">Long Distance Moving</a>
+                        <a href="#services">Packing Services</a>
+                        <a href="#services">Storage Solutions</a>
                     </nav>
                 </div>
 
@@ -59,7 +59,7 @@
 
     </div>
 </footer>
-";s:5:"mtime";i:1774541451;s:6:"markup";s:2586:"<footer class="footer">
+";s:5:"mtime";i:1774542308;s:6:"markup";s:2645:"<footer class="footer">
     <div class="footer-vector-wrapper">
         <div class="f-vector v-left"></div>
         <div class="f-vector v-right"></div>
@@ -76,20 +76,20 @@
                 <div class="footer-group">
                     <h4 class="group-title">Navigation</h4>
                     <nav class="group-list">
-                        <a href="#">About Us</a>
-                        <a href="#">Gallery</a>
-                        <a href="#">Reviews</a>
+                        <a href="#about">About Us</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#reviews">Reviews</a>
                     </nav>
                 </div>
 
                 <div class="footer-group">
                     <h4 class="group-title">Our Services</h4>
                     <nav class="group-list">
-                        <a href="#">Office / Commercial Moving</a>
-                        <a href="#">Local Moving</a>
-                        <a href="#">Long Distance Moving</a>
-                        <a href="#">Packing Services</a>
-                        <a href="#">Storage Solutions</a>
+                        <a href="#services">Office / Commercial Moving</a>
+                        <a href="#services">Local Moving</a>
+                        <a href="#services">Long Distance Moving</a>
+                        <a href="#services">Packing Services</a>
+                        <a href="#services">Storage Solutions</a>
                     </nav>
                 </div>
 
