@@ -988,7 +988,7 @@ body {
     }
 
     .why-section {
-        padding-bottom: 60px;
+        padding-bottom: 80px;
     }
 
     .why-card {
@@ -1036,8 +1036,8 @@ body {
 .services-title {
     font-family: 'Manrope', sans-serif !important;
     font-weight: 500;
-    font-size: clamp(32px, 4vw, 45px);
-    line-height: 1;
+    font-size: 44px;
+    line-height: 1.1;
     color: #FFFFFF;
     text-align: center;
     margin: 0 auto;
@@ -1241,34 +1241,69 @@ body {
     background-color: rgba(150, 150, 150, 1);
 }
 
-/* --- Адаптивка --- */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) and (min-width: 769px) {
+    .services-section {
+        margin-top: -60px;
+        padding-bottom: 60px;
+    }
+
+    .services-title {
+        font-size: 28px !important;
+        padding-top: 60px !important;
+        margin-bottom: 30px !important;
+        line-height: 1.2;
+    }
+
+    .services-slider-wrapper {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
     .service-card.empty-card {
         flex: 0 0 320px;
         width: 320px;
-        height: 320px;
+        height: 340px;
+        border-radius: 15px;
     }
+
+    .service-card__icon-container {
+        height: 130px;
+    }
+
     .service-card__icon-wrapper {
-        width: 240px;
-        height: 240px;
+        width: 220px;
+        height: 220px;
+        top: -40px;
     }
 
     .service-card__title {
-        font-size: 22px;
-        margin-top: 40px;
+        font-size: 22px !important;
+        min-height: 50px;
+        margin-top: 5px !important;
+        padding: 0 15px;
     }
 
     .service-card__description {
-        font-size: 15px;
-        max-width: 260px;
-        margin-top: 20px;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        max-width: 260px !important;
+        margin: 5px auto 15px !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
-}
 
-@media (max-width: 1024px) {
-    .service-card__title {
-        font-size: 28px !important; /* Сенің сұрауың бойынша */
-        margin-top: 40px;
+    .service-card__btn {
+        width: 55px;
+        height: 55px;
+        bottom: -22px;
+        border-width: 6px;
+    }
+
+    .service-card__btn-arrow {
+        width: 12px;
+        height: 18px;
     }
 }
 
@@ -1276,50 +1311,59 @@ body {
     .services-section {
         margin-top: -40px;
         border-radius: 40px 40px 0 0;
+        padding-top: 20px;
         padding-bottom: 30px;
     }
 
     .services-title {
-        margin-top: 50px;
-        padding: 0 15px;
         font-size: 24px !important;
+        padding-top: 40px !important;
+        margin-bottom: 10px !important;
     }
 
     .services-slider-wrapper {
-        padding-top: 60px;
-        padding-bottom: 40px;
+        padding-top: 50px;
+        padding-bottom: 30px;
     }
 
     .service-card.empty-card {
         flex: 0 0 280px;
         width: 280px;
-        height: 300px;
+        height: 310px;
+        border-radius: 20px;
     }
 
     .service-card__icon-container {
-        height: 140px;
+        height: 110px;
     }
 
     .service-card__icon-wrapper {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
+        top: -35px;
     }
 
     .service-card__title {
-        font-size: 19px;
-        margin-top: 30px;
+        font-size: 20px !important;
+        line-height: 1.2 !important;
+        min-height: 45px;
+        margin-top: 0 !important;
+        padding: 0 15px;
     }
 
     .service-card__description {
-        font-size: 14px;
-        line-height: 20px;
-        max-width: 240px;
-        margin-top: 15px;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
+    font-size: 14px !important;
+    line-height: 20px !important;
+    margin: 10px auto 15px !important;
+    max-width: 90% !important;
+    width: 100%;
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+    overflow: visible !important;
+    padding: 0 10px;
+    word-wrap: break-word;
+    text-align: center;
+}
 
     .service-card__btn {
         width: 50px;
@@ -1329,12 +1373,12 @@ body {
     }
 
     .service-card__btn-arrow {
-        width: 12px;
-        height: 18px;
+        width: 10px;
+        height: 16px;
     }
 
     .services-pagination {
-        gap: 15px;
+        gap: 12px;
         margin-top: 20px;
     }
 }
