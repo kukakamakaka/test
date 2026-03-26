@@ -2956,7 +2956,44 @@ a.contact-item:hover {
     opacity: 0.8;
 }
 
+.footer-bottom {
+    width: 100%;
+    margin-top: 110px; /* Төбеден (контенттен) отступ */
+    position: relative;
+    z-index: 25;
+}
 
+.footer-line {
+    /* Фигма бойынша өлшемдер */
+    width: 1290px;
+    height: 0px;
+    margin: 0 auto; /* Ортаға қою */
+
+    /* Оң-сол жақтан 38px сақталуы үшін (1290 + 38 + 38 = 1366) */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 1;
+}
+
+.footer-copyright {
+    /* Сызықтың астынан 36.04px отступ */
+    margin-top: 36.04px;
+    /* Сол жақтан 38px "пиздес ровно" */
+    padding-left: 38px;
+}
+
+.copyright-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 1); /* Ақ түс */
+    text-transform: lowercase; /* abc design кіші әріппен */
+    margin: 0;
+
+    /* Тігінен ортаға туралау */
+    vertical-align: middle;
+    display: block;
+}
 
 
 /* 1. ПЛАНШЕТТЕР ҮШІН (1024px-ден төмен) */
