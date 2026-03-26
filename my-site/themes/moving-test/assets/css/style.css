@@ -41,6 +41,15 @@ body {
     padding-right: clamp(20px, 4vw, 38px);
 }
 
+@font-face {
+    font-family: 'Nata Sans';
+    src: url('../fonts/NataSans-Regular.woff2') format('woff2'),
+         url('../fonts/NataSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; /* Шрифт жүктелгенше мәтін көрініп тұруы үшін */
+}
+
 /* ==========================================================================
     Header & Navigation
    ========================================================================== */
@@ -1731,13 +1740,16 @@ body {
 }
 
 .about-content {
-    /* 4. Текст блогы суретке барынша жақын тұруы үшін ✅ */
     flex: 0 1 556px;
     width: 100%;
     max-width: 556px;
     min-width: 320px;
     display: flex;
     flex-direction: column;
+
+    /* МӘТІНДІ ЖОҒАРЫ КӨТЕРУ ✅ */
+    /* Суретте -30px болса, мәтінге де соны немесе сәл азырақ беріп көр */
+    margin-top: -35px;
 }
 
 .about-title {
@@ -1754,16 +1766,18 @@ body {
 }
 
 .about-description {
-    width: 100%; /* Контейнер ішінде 100% жайылады */
+    width: 100%;
     max-width: 556.67px;
-    margin-top: 25px;
+    margin-top: 20px;
     font-family: 'Nata Sans', sans-serif;
-    font-weight: 400;
-    font-size: clamp(15px, 1.2vw, 18px);
-    line-height: 1.5;
-    color: rgba(119, 119, 119, 1);
+    font-weight: 300;
+    font-size: 18px; /* Фигма бойынша */
+    line-height: 24px; /* Фигма бойынша */
+    letter-spacing: 0.04em;
+    color:rgba(119, 119, 119, 1);
     text-align: left;
-    word-wrap: break-word; /* Ұзын сөздерді кеседі */
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
 }
 
 @media (max-width: 1024px) {
@@ -1836,6 +1850,10 @@ body {
         height: auto !important;
         min-height: 0 !important;
         margin-bottom: 0 !important;
+
+        /* МӘСЕЛЕНІҢ ШЕШІМІ ОСЫ ЖЕРДЕ ✅ */
+        /* ПК-дағы -35px-ті мобильді нұсқада алып тастаймыз */
+        margin-top: 0 !important;
     }
 }
 
