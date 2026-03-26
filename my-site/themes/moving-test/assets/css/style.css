@@ -1701,30 +1701,20 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-
-    /* 1. Сол жақ шетті (padding) қатал сақтау үшін ✅ */
     justify-content: flex-start;
-
     max-width: 1366px;
     margin: 130px auto 0;
-
-    /* СЕНІҢ АЛТЫН ЕРЕЖЕҢ (ПК-да және Мобильді де бірдей жұмыс істейді) */
     padding-left: clamp(20px, 4vw, 38px);
     padding-right: clamp(20px, 4vw, 38px);
-
     box-sizing: border-box;
-
-    /* 2. GAP: Экран тарылғанда 100px-ден 20px-ге дейін плавно азаяды ✅ */
     gap: clamp(20px, 6vw, 100px);
 }
 
 .about-image-wrapper {
-    /* 3. Суретке кішіреюге рұқсат (flex-shrink: 1), бірақ макс-ені 595px ✅ */
     flex: 0 1 595px;
     width: 100%;
     max-width: 595px;
-    min-width: 300px; /* Планшетке дейін осыған дейін кішірейе алады */
-
+    min-width: 300px;
     height: auto;
     aspect-ratio: 595 / 430;
     margin-top: -30px;
@@ -1746,9 +1736,6 @@ body {
     min-width: 320px;
     display: flex;
     flex-direction: column;
-
-    /* МӘТІНДІ ЖОҒАРЫ КӨТЕРУ ✅ */
-    /* Суретте -30px болса, мәтінге де соны немесе сәл азырақ беріп көр */
     margin-top: -35px;
 }
 
@@ -1771,8 +1758,8 @@ body {
     margin-top: 20px;
     font-family: 'Nata Sans', sans-serif;
     font-weight: 300;
-    font-size: 18px; /* Фигма бойынша */
-    line-height: 24px; /* Фигма бойынша */
+    font-size: 18px;
+    line-height: 24px;
     letter-spacing: 0.04em;
     color:rgba(119, 119, 119, 1);
     text-align: left;
@@ -1782,18 +1769,16 @@ body {
 
 @media (max-width: 1024px) {
     .about-section {
-        margin-top: calc(clamp(40px, 6vw, 87.72px) * -1);
+        margin-top: -40px !important;
         padding-bottom: 0 !important;
     }
 
     .about-container {
         flex-direction: column;
-        align-items: center; /* Контейнер ішінде бәрін ортаға жинау */
+        align-items: center;
         text-align: center;
-        gap: 20px !important; /* Арақашықтықты азайттық */
-        margin-top: 60px !important;
-
-        /* Шеткі оступтарды сақтау */
+        gap: 20px !important;
+        margin-top: 100px !important;
         padding-left: clamp(20px, 4vw, 38px);
         padding-right: clamp(20px, 4vw, 38px);
     }
@@ -1801,18 +1786,11 @@ body {
     .about-image-wrapper {
         margin-left: auto;
         margin-right: auto;
-
-        /* 1. ШИРИНА: Енді шектеусіз 100% жасаймыз ✅
-           Бұл суреттің мәтінмен бірдей деңгейде шетке дейін жайылуын қамтамасыз етеді.
-           Оступтар тек сенің контейнердегі padding-іңмен ғана шектеледі. */
         width: 100% !important;
         max-width: 100% !important;
-
-        /* 2. ВЫСОТА: Сен таңдаған 260px ✅ */
         height: 260px !important;
         min-height: 260px !important;
         max-height: 260px !important;
-
         aspect-ratio: auto !important;
         margin-top: 0;
         margin-bottom: 25px;
@@ -1832,34 +1810,43 @@ body {
         text-align: center;
         font-size: clamp(28px, 5vw, 36px) !important;
         margin-bottom: 15px;
-        width: 100%; /* Бұл маңызды, бүкіл енді алса ғана ортаға келеді */
+        width: 100%;
         display: block;
     }
 
     .about-description {
-        /* Сипаттама сол жақта қала береді */
         text-align: left;
         max-width: 100%;
         margin: 15px 0 0;
     }
 
     .about-content {
+        margin-top: 0 !important;
         flex: 1 1 auto !important;
         width: 100% !important;
         max-width: 100% !important;
-        height: auto !important;
-        min-height: 0 !important;
-        margin-bottom: 0 !important;
+    }
+}
 
-        /* МӘСЕЛЕНІҢ ШЕШІМІ ОСЫ ЖЕРДЕ ✅ */
-        /* ПК-дағы -35px-ті мобильді нұсқада алып тастаймыз */
+/* между 1187px и 1024px для текста  */
+@media (max-width: 1187px) and (min-width: 1025px) {
+    .about-container {
+        margin-top: 160px !important;
+        align-items: center;
+    }
+
+    .about-content {
+        margin-top: 0 !important;
+    }
+
+    .about-image-wrapper {
         margin-top: 0 !important;
     }
 }
 
 @media (max-width: 480px) {
     .about-container {
-        padding-left: 20px; /* clamp-тың ең кіші мәні */
+        padding-left: 20px;
         padding-right: 20px;
         margin-top: 60px !important;
     }
