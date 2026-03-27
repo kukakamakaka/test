@@ -2795,162 +2795,95 @@ body {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 650px) {
+    /* Контейнердің биіктігін сәл ұзарту, бәрі сыюы үшін */
     .contact-banner {
-        height: auto !important;
-        min-height: unset !important;
-        display: flex !important;
-        flex-direction: column !important;
+        height: 600px !important;
     }
 
     .contact-overlay {
-        position: relative !important;
-        flex-grow: 1 !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        padding: 60px 20px 80px 20px !important;
-        background: rgba(24, 24, 24, 0.65) !important;
+        padding-left: 40px !important;
+        padding-top: 60px !important; /* Форманың төбесінен орын */
+
     }
 
-    .contact-content-wrapper {
-        align-items: center !important;
-        max-width: 100% !important;
-    }
-
-    .contact-map-btn {
-        margin-top: 5px !important;
-    }
-
-    .contact-main-text {
-        text-align: center !important;
-        font-size: clamp(28px, 6vw, 38px) !important;
-        margin-bottom: 30px;
-    }
-
+    /* ФОРМА: 2 бағанға көшіреміз, әйтпесе 3 баған сыймайды */
     .contact-form-grid {
         display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        width: 100% !important;
-        max-width: 550px !important;
-        gap: 12px !important;
-    }
-
-    .contact-right-icon, .phone-icon, .email-icon {
-        position: relative !important;
-        left: auto !important;
-        right: auto !important;
-        top: auto !important;
-
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    .contact-right-icon img, .phone-icon img, .email-icon img {
-        width: 30px !important;
-        height: 30px !important;
-        display: block;
-    }
-
-    .contact-right-icon {
-        margin-top: 30px !important;
-    }
-
-    .phone-icon, .email-icon {
-        margin-top: 60px !important;
-    }
-
-    .contact-address-label, .phone-label, .email-label,
-    .contact-address-text, .contact-phone-text, .contact-email-text,
-    .contact-map-btn {
-        position: relative !important;
-        left: auto !important;
-        right: auto !important;
-        top: auto !important;
-
-        display: block !important;
-        width: 100% !important;
-        text-align: center !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        margin-top: 10px !important;
-    }
-
-    .contact-map-btn {
-        position: relative !important;
-        left: auto !important;
-        right: auto !important;
-        top: auto !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        width: 100% !important;
-        margin: 15px auto 0 auto !important;
-    }
-
-    .contact-map-btn img {
-        width: 129.40px !important;
-        height: auto !important;
-        display: block !important;
+        grid-template-columns: 1fr 1fr !important; /* 2 баған, тең бөлінген */
+        gap: 15px !important;                       /* Инпуттар арасындағы бос орын */
+        width: 400px !important;                    /* Форманың жалпы ені */
+        margin-top: 15px !important;
     }
 
     .form-item {
-        width: 100% !important;
-        height: 50px !important;
+        width: 100% !important;                     /* Бағанның еніне толық сыю үшін */
+        height: 48px !important;
+        position: static !important;
     }
 
     .form-row-last {
-        grid-column: 1 / 3;
+        grid-column: 1 / 3 !important;              /* 2 бағанды толық алып тұру */
         display: flex !important;
-        gap: 12px;
+        flex-direction: column !important;          /* Егер олар қатар сыймаса, астына түсіру */
+        gap: 10px !important;
+        width: 100% !important;
     }
 
+    /* Егер ішіндегі арнайы кең инпут болса */
     .form-item-wide {
-        flex: 1;
-        width: auto !important;
+        width: 100% !important;
     }
 
     .contact-submit-btn {
-        width: 100% !important;
-        max-width: 550px;
-        height: 55px !important;
-        margin-top: 20px;
-    }
-
-    .contact-info-wrapper {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        width: 100%;
-    }
-
-    [class*="phone-icon"], [class*="email-icon"] {
-        margin-top: 40px !important;
-        position: relative !important;
-        left: auto !important;
-        top: auto !important;
-        display: flex !important;
-        justify-content: center !important;
-    }
-
-    [class*="-label"], [class*="-text"], .contact-phone-text, .contact-email-text {
-        position: relative !important;
-        left: auto !important;
-        right: auto !important;
-        top: auto !important;
-        text-align: center !important;
-        display: block !important;
+        grid-column: 1 / 3 !important;              /* Батырманы ортаға немесе толық енге қою */
         width: 100% !important;
         margin-top: 10px !important;
+        max-width: 190px !important;
+    }
+
+    /* ОҢ ЖАҚТАҒЫ ЭЛЕМЕНТТЕРДІ ТҮЗЕУ (Address, Phone, Email) */
+    /* Барлық блоктарды оң жаққа 40px қалдырып шегереміз */
+    .contact-right-icon,
+    .contact-address-label,
+    .contact-address-text,
+    .contact-map-btn,
+    .phone-icon,
+    .phone-label,
+    .contact-phone-text,
+    .email-icon,
+    .email-label,
+    .contact-email-text {
+        left: auto !important;
+        right: 40px !important;
+        text-align: right !important;
+        transform: none !important;
+    }
+
+    /* Әр блок арасындағы биіктікті (top) "ровно" реттеу */
+
+    /* 1. Address Block */
+    .contact-right-icon { top: 110px !important; }
+    .contact-address-label { top: 150px !important; }
+    .contact-address-text { top: 175px !important; width: 200px !important; }
+    .contact-map-btn { top: 235px !important; }
+
+    /* 2. Phone Block */
+    .phone-icon { top: 285px !important; }
+    .phone-label { top: 325px !important; }
+    .contact-phone-text { top: 350px !important; }
+
+    /* 3. Email Block */
+    .email-icon { top: 405px !important; }
+    .email-label { top: 445px !important; }
+    .contact-email-text { top: 470px !important; }
+
+    /* Иконкаларды оң жақ шетке бағыттау */
+    .contact-right-icon, .phone-icon, .email-icon {
+        display: flex !important;
+        justify-content: flex-end !important;
     }
 }
-
 @media (max-width: 650px) {
     .contact-form-grid {
         grid-template-columns: 1fr !important;
