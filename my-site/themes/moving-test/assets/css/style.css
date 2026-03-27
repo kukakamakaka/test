@@ -2846,18 +2846,11 @@ body {
     }
 
     .contact-submit-btn {
-    grid-column: 1 / 3 !important;
-    /* 100% енді алады, бірақ шектеуі экранға байланысты өзгереді */
-    width: 100% !important;
-
-    /* Экран 991px болғанда 570px болады, экран 650px-ге жақындағанда 430px-ге дейін ақырын кішірейеді */
-    max-width: clamp(430px, 60vw, 530px) !important;
-
-    margin-top: 20px !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
+        grid-column: 1 / 3 !important;              /* Батырманы ортаға немесе толық енге қою */
+        width: 100% !important;
+        margin-top: 20px !important;
+        max-width: 430px !important;
+    }
 
     /* ОҢ ЖАҚТАҒЫ ЭЛЕМЕНТТЕРДІ ТҮЗЕУ (Address, Phone, Email) */
     /* Барлық блоктарды оң жаққа 40px қалдырып шегереміз */
