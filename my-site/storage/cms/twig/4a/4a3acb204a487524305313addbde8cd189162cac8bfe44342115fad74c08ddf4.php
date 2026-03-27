@@ -47,7 +47,7 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
             <div class=\"footer-left-info\">
                 <h2 class=\"footer-title\">Have a Questions?</h2>
                 <p class=\"footer-subtitle\">We’re here to Help</p>
-                <button class=\"footer-btn\" id=\"openQuote\">Get a Quote</button>
+                <a href=\"#contact\" class=\"footer-btn\">Get a Quote</a>
             </div>
 
             <div class=\"footer-right-groups\">
@@ -85,13 +85,13 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
             </div>
 
             <div class=\"footer-socials\">
-                <a href=\"#\" class=\"social-icon fb\">
+                <a href=\"#\" class=\"social-icon insta\">
                     <img src=\"";
         // line 46
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/instagram.svg");
         echo "\" alt=\"Instagram\">
                 </a>
-                <a href=\"#\" class=\"social-icon insta\">
+                <a href=\"#\" class=\"social-icon fb\">
                     <img src=\"";
         // line 49
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/facebook.svg");
@@ -110,21 +110,6 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
         unset($context['__cms_content_params']);
         echo "</p>
             </div>
-        </div>
-    </div>
-
-    <div id=\"quoteModal\" class=\"modal\">
-        <div class=\"modal-content\">
-            <span class=\"close-modal\">&times;</span>
-            <h2 class=\"modal-title\">Get a Quote</h2>
-            <p class=\"modal-subtitle\">Leave your details and we will call you back</p>
-
-            <form class=\"modal-form\">
-                <input type=\"text\" placeholder=\"Your Name\" required>
-                <input type=\"tel\" placeholder=\"Phone Number\" required>
-                <textarea placeholder=\"Tell us about your move...\"></textarea>
-                <button type=\"submit\" class=\"modal-submit-btn\">Send Request</button>
-            </form>
         </div>
     </div>
 </footer>";
@@ -158,7 +143,7 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
             <div class=\"footer-left-info\">
                 <h2 class=\"footer-title\">Have a Questions?</h2>
                 <p class=\"footer-subtitle\">We’re here to Help</p>
-                <button class=\"footer-btn\" id=\"openQuote\">Get a Quote</button>
+                <a href=\"#contact\" class=\"footer-btn\">Get a Quote</a>
             </div>
 
             <div class=\"footer-right-groups\">
@@ -191,10 +176,10 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
             </div>
 
             <div class=\"footer-socials\">
-                <a href=\"#\" class=\"social-icon fb\">
+                <a href=\"#\" class=\"social-icon insta\">
                     <img src=\"{{ 'assets/images/instagram.svg'|theme }}\" alt=\"Instagram\">
                 </a>
-                <a href=\"#\" class=\"social-icon insta\">
+                <a href=\"#\" class=\"social-icon fb\">
                     <img src=\"{{ 'assets/images/facebook.svg'|theme }}\" alt=\"Facebook\">
                 </a>
             </div>
@@ -205,21 +190,6 @@ class __TwigTemplate_291ddf3c58e68147e80b4387b34fad8b357d828bf9b68d429a577965ffb
             <div class=\"footer-copyright\">
                 <p class=\"copyright-text\">{% content 'footer/copyright.txt' %}</p>
             </div>
-        </div>
-    </div>
-
-    <div id=\"quoteModal\" class=\"modal\">
-        <div class=\"modal-content\">
-            <span class=\"close-modal\">&times;</span>
-            <h2 class=\"modal-title\">Get a Quote</h2>
-            <p class=\"modal-subtitle\">Leave your details and we will call you back</p>
-
-            <form class=\"modal-form\">
-                <input type=\"text\" placeholder=\"Your Name\" required>
-                <input type=\"tel\" placeholder=\"Phone Number\" required>
-                <textarea placeholder=\"Tell us about your move...\"></textarea>
-                <button type=\"submit\" class=\"modal-submit-btn\">Send Request</button>
-            </form>
         </div>
     </div>
 </footer>", "/Users/onege/Desktop/october — копия 2/my-site/themes/moving-test/partials/site/footer.htm", "");

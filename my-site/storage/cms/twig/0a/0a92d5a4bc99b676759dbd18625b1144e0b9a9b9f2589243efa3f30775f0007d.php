@@ -56,7 +56,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         unset($context['__cms_content_params']);
         // line 10
         echo "
-            <a href=\"#\" class=\"btn-hero-quote\">Get a Quote</a>
+            <a href=\"#contact\" class=\"btn-hero-quote hero-btn\">Get a Quote</a>
         </div>
     </div>
 
@@ -366,7 +366,7 @@ class __TwigTemplate_183431c35404e15d9cc7a3be1dc94259444aa79d28755ce48151b3da136
         <div class=\"hero__content\">
             {% content 'hero/info.htm' %}
 
-            <a href=\"#\" class=\"btn-hero-quote\">Get a Quote</a>
+            <a href=\"#contact\" class=\"btn-hero-quote hero-btn\">Get a Quote</a>
         </div>
     </div>
 

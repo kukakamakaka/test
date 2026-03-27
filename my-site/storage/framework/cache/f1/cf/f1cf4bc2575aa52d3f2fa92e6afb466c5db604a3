@@ -1,4 +1,4 @@
-1774554362a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:4357:"<header class="header">
+1774586691a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:3898:"<header class="header">
     <div class="container">
         <div class="nav-wrapper">
             <a href="/" class="logo">
@@ -10,11 +10,7 @@
                     <a href="#services" class="menu__link">Services</a>
                     <div class="dropdown">
                         <ul class="dropdown__list">
-                            <li><a href="#services">Local Moving</a></li>
-                            <li><a href="#services">Long Distance Moving</a></li>
-                            <li><a href="#services">Office / Commercial Moving</a></li>
-                            <li><a href="#services">Packing Services</a></li>
-                            <li><a href="#services">Storage Solutions</a></li>
+                            {% content 'header/services-list.htm' %}
                         </ul>
                     </div>
                 </div>
@@ -26,13 +22,13 @@
 
             <div class="actions">
                 <div class="desktop-only">
-                    <a href="tel:+77777777777" class="phone">
+                    <a href="tel:{{ content('header/phone-clean.txt')|striptags|trim }}" class="phone">
                         <img src="{{ 'assets/images/Group 1597878739.svg'|theme }}" alt="Phone Icon">
-                        <span>+ 7 (777) 777–77–77</span>
+                        <span>{% content 'header/phone-display.txt' %}</span>
                     </a>
 
-                    <a href="#contact" class="btn-quote">
-                        Get a Quote
+                    <a href="#contact" class="btn-quote hero-btn">
+                        {% content 'header/btn-text.txt' %}
                     </a>
                 </div>
 
@@ -63,11 +59,7 @@
                         Services <span class="toggle-icon">+</span>
                     </div>
                     <ul class="mobile-dropdown">
-                        <li><a href="#services">Local Moving</a></li>
-                        <li><a href="#services">Long Distance Moving</a></li>
-                        <li><a href="#services">Office / Commercial Moving</a></li>
-                        <li><a href="#services">Packing Services</a></li>
-                        <li><a href="#services">Storage Solutions</a></li>
+                        {% content 'header/services-list.htm' %}
                     </ul>
                 </li>
                 <li class="mobile-item"><a href="#about" class="mobile-link">About Us</a></li>
@@ -77,17 +69,18 @@
             </ul>
 
             <div class="mobile-footer">
-                <a href="tel:+77777777777" class="mobile-phone">
+                <a href="tel:{{ content('header/phone-clean.txt')|striptags|trim }}" class="mobile-phone">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                     </svg>
-                    + 7 (777) 777-77-77
+                    {% content 'header/phone-display.txt' %}
                 </a>
-                <a href="#contact" class="mobile-btn">Get a Quote</a>
+                <a href="#contact" class="mobile-btn hero-btn">{% content 'header/btn-text.txt' %}</a>
             </div>
         </div>
     </div>
-</header>";s:5:"mtime";i:1774338521;s:6:"markup";s:4357:"<header class="header">
+</header>
+";s:5:"mtime";i:1774585896;s:6:"markup";s:3897:"<header class="header">
     <div class="container">
         <div class="nav-wrapper">
             <a href="/" class="logo">
@@ -99,11 +92,7 @@
                     <a href="#services" class="menu__link">Services</a>
                     <div class="dropdown">
                         <ul class="dropdown__list">
-                            <li><a href="#services">Local Moving</a></li>
-                            <li><a href="#services">Long Distance Moving</a></li>
-                            <li><a href="#services">Office / Commercial Moving</a></li>
-                            <li><a href="#services">Packing Services</a></li>
-                            <li><a href="#services">Storage Solutions</a></li>
+                            {% content 'header/services-list.htm' %}
                         </ul>
                     </div>
                 </div>
@@ -115,13 +104,13 @@
 
             <div class="actions">
                 <div class="desktop-only">
-                    <a href="tel:+77777777777" class="phone">
+                    <a href="tel:{{ content('header/phone-clean.txt')|striptags|trim }}" class="phone">
                         <img src="{{ 'assets/images/Group 1597878739.svg'|theme }}" alt="Phone Icon">
-                        <span>+ 7 (777) 777–77–77</span>
+                        <span>{% content 'header/phone-display.txt' %}</span>
                     </a>
 
-                    <a href="#contact" class="btn-quote">
-                        Get a Quote
+                    <a href="#contact" class="btn-quote hero-btn">
+                        {% content 'header/btn-text.txt' %}
                     </a>
                 </div>
 
@@ -152,11 +141,7 @@
                         Services <span class="toggle-icon">+</span>
                     </div>
                     <ul class="mobile-dropdown">
-                        <li><a href="#services">Local Moving</a></li>
-                        <li><a href="#services">Long Distance Moving</a></li>
-                        <li><a href="#services">Office / Commercial Moving</a></li>
-                        <li><a href="#services">Packing Services</a></li>
-                        <li><a href="#services">Storage Solutions</a></li>
+                        {% content 'header/services-list.htm' %}
                     </ul>
                 </li>
                 <li class="mobile-item"><a href="#about" class="mobile-link">About Us</a></li>
@@ -166,13 +151,13 @@
             </ul>
 
             <div class="mobile-footer">
-                <a href="tel:+77777777777" class="mobile-phone">
+                <a href="tel:{{ content('header/phone-clean.txt')|striptags|trim }}" class="mobile-phone">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                     </svg>
-                    + 7 (777) 777-77-77
+                    {% content 'header/phone-display.txt' %}
                 </a>
-                <a href="#contact" class="mobile-btn">Get a Quote</a>
+                <a href="#contact" class="mobile-btn hero-btn">{% content 'header/btn-text.txt' %}</a>
             </div>
         </div>
     </div>

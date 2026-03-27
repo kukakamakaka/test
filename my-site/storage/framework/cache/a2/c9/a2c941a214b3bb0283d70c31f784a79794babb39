@@ -1,4 +1,4 @@
-1774554599a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5585:"title = "Home"
+1774586887a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:5601:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -16,7 +16,7 @@ is_hidden = 0
         <div class="hero__content">
             {% content 'hero/info.htm' %}
 
-            <a href="#" class="btn-hero-quote">Get a Quote</a>
+            <a href="#contact" class="btn-hero-quote hero-btn">Get a Quote</a>
         </div>
     </div>
 
@@ -159,7 +159,7 @@ is_hidden = 0
         </div>
     </div>
 </section>
-";s:5:"mtime";i:1774553182;s:6:"markup";s:5511:"<section id="hero" class="hero">
+";s:5:"mtime";i:1774585642;s:6:"markup";s:5527:"<section id="hero" class="hero">
     <video autoplay muted loop playsinline class="hero-video">
         {% content 'hero/bg.htm' %}
     </video>
@@ -169,7 +169,7 @@ is_hidden = 0
         <div class="hero__content">
             {% content 'hero/info.htm' %}
 
-            <a href="#" class="btn-hero-quote">Get a Quote</a>
+            <a href="#contact" class="btn-hero-quote hero-btn">Get a Quote</a>
         </div>
     </div>
 

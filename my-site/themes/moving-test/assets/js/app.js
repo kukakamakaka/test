@@ -212,40 +212,8 @@ if (moversSlider && moversTrack && mDots.length > 0) {
     });
 }
 
-// MODAL LOGIC (Тек класс арқылы басқару)
-    const modal = document.getElementById('quoteModal');
-    const closeBtn = document.querySelector('.close-modal');
-    const quoteButtons = document.querySelectorAll('#openQuote, .footer-btn, .hero-btn, .contact-submit-btn');
 
-    if (modal) {
-        const openModal = (e) => {
-            e.preventDefault();
-            modal.classList.add('show'); // CSS-тегі opacity: 1 мен visibility: visible іске қосылады
-            document.body.style.overflow = 'hidden'; // Артқы жақтың скроллын жабу
-        };
 
-        const closeModal = () => {
-            modal.classList.remove('show');
-            document.body.style.overflow = 'auto'; // Скроллды қайта қосу
-        };
-
-        // Барлық батырмаларға тыңдаушы қосу
-        quoteButtons.forEach(btn => {
-            btn.addEventListener('click', openModal);
-        });
-
-        // Жабу батырмасы
-        if (closeBtn) {
-            closeBtn.addEventListener('click', closeModal);
-        }
-
-        // Фонды (модалканың сыртын) басқанда жабу
-        window.addEventListener('click', (event) => {
-            if (event.target === modal) {
-                closeModal();
-            }
-        });
-    }
 
 
 });

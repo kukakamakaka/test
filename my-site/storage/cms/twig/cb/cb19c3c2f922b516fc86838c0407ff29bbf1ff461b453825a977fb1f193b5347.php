@@ -51,12 +51,13 @@ class __TwigTemplate_fa112b8dd83b1a0256559a0aab183605f3fa696a7cd54daf20044cc599a
                     <a href=\"#services\" class=\"menu__link\">Services</a>
                     <div class=\"dropdown\">
                         <ul class=\"dropdown__list\">
-                            <li><a href=\"#services\">Local Moving</a></li>
-                            <li><a href=\"#services\">Long Distance Moving</a></li>
-                            <li><a href=\"#services\">Office / Commercial Moving</a></li>
-                            <li><a href=\"#services\">Packing Services</a></li>
-                            <li><a href=\"#services\">Storage Solutions</a></li>
-                        </ul>
+                            ";
+        // line 13
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("header/services-list.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 14
+        echo "                        </ul>
                     </div>
                 </div>
                 <a href=\"#about\" class=\"menu__link\">About Us</a>
@@ -67,17 +68,30 @@ class __TwigTemplate_fa112b8dd83b1a0256559a0aab183605f3fa696a7cd54daf20044cc599a
 
             <div class=\"actions\">
                 <div class=\"desktop-only\">
-                    <a href=\"tel:+77777777777\" class=\"phone\">
+                    <a href=\"tel:";
+        // line 25
+        echo twig_escape_filter($this->env, twig_trim_filter(strip_tags($this->extensions['Cms\Twig\Extension']->contentFunction("header/phone-clean.txt"))), "html", null, true);
+        echo "\" class=\"phone\">
                         <img src=\"";
-        // line 30
+        // line 26
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/Group 1597878739.svg");
         echo "\" alt=\"Phone Icon\">
-                        <span>+ 7 (777) 777–77–77</span>
+                        <span>";
+        // line 27
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("header/phone-display.txt"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</span>
                     </a>
 
-                    <a href=\"#contact\" class=\"btn-quote\">
-                        Get a Quote
-                    </a>
+                    <a href=\"#contact\" class=\"btn-quote hero-btn\">
+                        ";
+        // line 31
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("header/btn-text.txt"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 32
+        echo "                    </a>
                 </div>
 
                 <button class=\"search-btn\">
@@ -107,12 +121,13 @@ class __TwigTemplate_fa112b8dd83b1a0256559a0aab183605f3fa696a7cd54daf20044cc599a
                         Services <span class=\"toggle-icon\">+</span>
                     </div>
                     <ul class=\"mobile-dropdown\">
-                        <li><a href=\"#services\">Local Moving</a></li>
-                        <li><a href=\"#services\">Long Distance Moving</a></li>
-                        <li><a href=\"#services\">Office / Commercial Moving</a></li>
-                        <li><a href=\"#services\">Packing Services</a></li>
-                        <li><a href=\"#services\">Storage Solutions</a></li>
-                    </ul>
+                        ";
+        // line 62
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("header/services-list.htm"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 63
+        echo "                    </ul>
                 </li>
                 <li class=\"mobile-item\"><a href=\"#about\" class=\"mobile-link\">About Us</a></li>
                 <li class=\"mobile-item\"><a href=\"#gallery\" class=\"mobile-link\">Gallery</a></li>
@@ -121,13 +136,26 @@ class __TwigTemplate_fa112b8dd83b1a0256559a0aab183605f3fa696a7cd54daf20044cc599a
             </ul>
 
             <div class=\"mobile-footer\">
-                <a href=\"tel:+77777777777\" class=\"mobile-phone\">
+                <a href=\"tel:";
+        // line 72
+        echo twig_escape_filter($this->env, twig_trim_filter(strip_tags($this->extensions['Cms\Twig\Extension']->contentFunction("header/phone-clean.txt"))), "html", null, true);
+        echo "\" class=\"mobile-phone\">
                     <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
                         <path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>
                     </svg>
-                    + 7 (777) 777-77-77
-                </a>
-                <a href=\"#contact\" class=\"mobile-btn\">Get a Quote</a>
+                    ";
+        // line 76
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("header/phone-display.txt"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        // line 77
+        echo "                </a>
+                <a href=\"#contact\" class=\"mobile-btn hero-btn\">";
+        // line 78
+        $context['__cms_content_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->contentFunction("header/btn-text.txt"        , $context['__cms_content_params']        );
+        unset($context['__cms_content_params']);
+        echo "</a>
             </div>
         </div>
     </div>
@@ -146,7 +174,7 @@ class __TwigTemplate_fa112b8dd83b1a0256559a0aab183605f3fa696a7cd54daf20044cc599a
 
     public function getDebugInfo()
     {
-        return array (  73 => 30,  45 => 5,  39 => 1,);
+        return array (  155 => 78,  152 => 77,  148 => 76,  141 => 72,  130 => 63,  126 => 62,  94 => 32,  90 => 31,  81 => 27,  77 => 26,  73 => 25,  60 => 14,  56 => 13,  45 => 5,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -163,11 +191,7 @@ class __TwigTemplate_fa112b8dd83b1a0256559a0aab183605f3fa696a7cd54daf20044cc599a
                     <a href=\"#services\" class=\"menu__link\">Services</a>
                     <div class=\"dropdown\">
                         <ul class=\"dropdown__list\">
-                            <li><a href=\"#services\">Local Moving</a></li>
-                            <li><a href=\"#services\">Long Distance Moving</a></li>
-                            <li><a href=\"#services\">Office / Commercial Moving</a></li>
-                            <li><a href=\"#services\">Packing Services</a></li>
-                            <li><a href=\"#services\">Storage Solutions</a></li>
+                            {% content 'header/services-list.htm' %}
                         </ul>
                     </div>
                 </div>
@@ -179,13 +203,13 @@ class __TwigTemplate_fa112b8dd83b1a0256559a0aab183605f3fa696a7cd54daf20044cc599a
 
             <div class=\"actions\">
                 <div class=\"desktop-only\">
-                    <a href=\"tel:+77777777777\" class=\"phone\">
+                    <a href=\"tel:{{ content('header/phone-clean.txt')|striptags|trim }}\" class=\"phone\">
                         <img src=\"{{ 'assets/images/Group 1597878739.svg'|theme }}\" alt=\"Phone Icon\">
-                        <span>+ 7 (777) 777–77–77</span>
+                        <span>{% content 'header/phone-display.txt' %}</span>
                     </a>
 
-                    <a href=\"#contact\" class=\"btn-quote\">
-                        Get a Quote
+                    <a href=\"#contact\" class=\"btn-quote hero-btn\">
+                        {% content 'header/btn-text.txt' %}
                     </a>
                 </div>
 
@@ -216,11 +240,7 @@ class __TwigTemplate_fa112b8dd83b1a0256559a0aab183605f3fa696a7cd54daf20044cc599a
                         Services <span class=\"toggle-icon\">+</span>
                     </div>
                     <ul class=\"mobile-dropdown\">
-                        <li><a href=\"#services\">Local Moving</a></li>
-                        <li><a href=\"#services\">Long Distance Moving</a></li>
-                        <li><a href=\"#services\">Office / Commercial Moving</a></li>
-                        <li><a href=\"#services\">Packing Services</a></li>
-                        <li><a href=\"#services\">Storage Solutions</a></li>
+                        {% content 'header/services-list.htm' %}
                     </ul>
                 </li>
                 <li class=\"mobile-item\"><a href=\"#about\" class=\"mobile-link\">About Us</a></li>
@@ -230,13 +250,13 @@ class __TwigTemplate_fa112b8dd83b1a0256559a0aab183605f3fa696a7cd54daf20044cc599a
             </ul>
 
             <div class=\"mobile-footer\">
-                <a href=\"tel:+77777777777\" class=\"mobile-phone\">
+                <a href=\"tel:{{ content('header/phone-clean.txt')|striptags|trim }}\" class=\"mobile-phone\">
                     <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
                         <path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"></path>
                     </svg>
-                    + 7 (777) 777-77-77
+                    {% content 'header/phone-display.txt' %}
                 </a>
-                <a href=\"#contact\" class=\"mobile-btn\">Get a Quote</a>
+                <a href=\"#contact\" class=\"mobile-btn hero-btn\">{% content 'header/btn-text.txt' %}</a>
             </div>
         </div>
     </div>
@@ -245,15 +265,15 @@ class __TwigTemplate_fa112b8dd83b1a0256559a0aab183605f3fa696a7cd54daf20044cc599a
     
     public function checkSecurity()
     {
-        static $tags = array();
-        static $filters = array("theme" => 5);
-        static $functions = array();
+        static $tags = array("content" => 13);
+        static $filters = array("theme" => 5, "escape" => 25, "trim" => 25, "striptags" => 25);
+        static $functions = array("content" => 25);
 
         try {
             $this->sandbox->checkSecurity(
-                [],
-                ['theme'],
-                []
+                ['content'],
+                ['theme', 'escape', 'trim', 'striptags'],
+                ['content']
             );
         } catch (SecurityError $e) {
             $e->setSourceContext($this->source);
