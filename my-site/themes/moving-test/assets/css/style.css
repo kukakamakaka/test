@@ -2765,6 +2765,147 @@ body {
     white-space: nowrap;
 }
 
+@media (max-width: 759px) {
+    /* 1. БАННЕР ЖӘНЕ ФОН */
+    .contact-banner {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        border-radius: 20px !important; /* Бұрыш осында */
+        overflow: hidden !important; /* Ішіндегілер сыртқа шықпауы үшін МІНДЕТТІ */
+        position: relative !important;
+    }
+
+    /* 2. ФОНДЫҚ СУРЕТ - БҰРЫШТАРЫ КЕСІЛУІ КЕРЕК */
+    .contact-bg-img {
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 20px !important;
+        object-fit: cover !important;
+    }
+
+    /* 3. ҚАРА ҚАБАТ (OVERLAY) - БҰЛ ДА БҰРЫШТЫ ҚАЙТАЛАУЫ ТИІС */
+    .contact-overlay {
+        position: relative !important;
+        width: 100% !important;
+        min-height: 100vh !important;
+        padding: 40px 15px !important;
+        background: rgba(24, 24, 24, 0.85) !important;
+        border-radius: 20px !important; /* ОСЫ ЖЕРГЕ ДЕ ҚОСУ КЕРЕК */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .contact-content-wrapper {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .contact-main-text {
+        font-size: 26px !important;
+        text-align: center !important;
+        margin-bottom: 10px !important;
+    }
+
+    .contact-form-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important; /* Бүкіл экран ені */
+        gap: 12px !important;
+        margin-top: 25px !important;
+    }
+
+    .form-item,
+    .contact-submit-btn,
+    .form-item-wide,
+    .form-row-last,
+    .contact-form-grid > div {
+        /* 280px-ті өшіріп, пайыз қосамыз */
+        width: 92% !important; /* Экранның 92%-ын алады, шетінде сәл орын қалады */
+        min-width: 0 !important;
+        max-width: 500px !important; /* Планшетте тым жайылып кетпеуі үшін шектеу */
+
+        position: static !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .form-row-last {
+        height: auto !important; /* Екі инпут сыюы үшін биіктікті босатамыз */
+        gap: 12px !important;
+    }
+
+    .form-row-last .form-item {
+        width: 100% !important; /* Ата-аналық 280px-ті толық алады */
+    }
+
+    /* 4. ИНПУТТАРДЫҢ СТИЛІ */
+    .form-item input {
+        width: 100% !important;
+        height: 100% !important;
+        background: rgba(255, 255, 255, 0.15) !important;
+        border-radius: 8px !important;
+        padding-left: 15px !important;
+    }
+
+    .contact-submit-btn {
+        background: #C01F1F !important;
+        border-radius: 300px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 15px !important;
+        padding: 0 !important;
+    }
+
+    .contact-info-group-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-top: 30px !important;
+    }
+
+    .contact-address-label, .phone-label, .email-label,
+    .contact-address-text, .contact-phone-text, .contact-email-text,
+    .contact-right-icon, .phone-icon, .email-icon {
+        position: static !important;
+        width: 280px !important; /* Формамен бірдей ен */
+        text-align: center !important;
+        margin: 5px auto !important;
+        display: block !important;
+    }
+
+    /* Иконкалардың өлшемі */
+    .contact-right-icon, .phone-icon, .email-icon {
+        width: 25px !important;
+        height: 25px !important;
+        margin-top: 20px !important;
+    }
+
+    .contact-right-icon img, .phone-icon img, .email-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Лабельдер (Address, Phone, Email) */
+    .contact-address-label, .phone-label, .email-label {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        color: rgba(255, 255, 255, 0.6) !important;
+        text-transform: uppercase;
+    }
+
+    .contact-map-btn {
+        position: static !important;
+        margin: 10px auto !important;
+        width: 130px !important;
+    }
+}
+
 @media (max-width: 1250px) {
 
     /* Барлық мәтіндік блоктарды оң жақ шетке бағыттаймыз */
@@ -2895,174 +3036,7 @@ body {
     }
 }
 
-@media (max-width: 759px) {
-    /* Негізгі баннер */
-    .contact-banner {
-        width: 100% !important;
-        border-radius: 20px !important;
-        height: auto !important;
-        min-height: 100vh !important;
-        min-height: -webkit-fill-available !important; /* iOS браузерлері үшін */
-        position: relative !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        overflow: visible !important;
-    }
 
-    /* Фондық сурет (Егер ол жеке тег болса) */
-    .contact-bg-img {
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        border-radius: 20px !important;
-        object-fit: cover !important; /* Сурет созылмай, толық жабуы үшін */
-        z-index: 1 !important;
-    }
-
-    /* Қара қабат (Overlay) - міне осы 100% болуы керек */
-    .contact-overlay {
-        position: relative !important; /* relative-тан absolute-қа қайтардық */
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        height: auto !important;
-        min-height: 100vh !important;
-        background: rgba(24, 24, 24, 0.85) !important;
-        padding: 20px 15px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        z-index: 2 !important;
-        overflow: visible !important;
-        border-radius: 20px !important;
-        justify-content: center !important; /* Бәрін ортаға жинаймыз */}
-
-    .contact-main-text {
-        font-size: 22px !important;
-        margin-bottom: 10px !important;
-        text-align: center !important;
-        width: 100% !important;
-    }
-
-    .contact-form-grid {
-        display: flex !important; /* Grid-ті Flex-ке ауыстырып көрейік, басқару оңай */
-        flex-direction: column !important;
-        gap: 8px !important; /* БАРЛЫҚ инпуттар арасы */
-        width: 100% !important;
-        max-width: 320px !important;
-        margin: 0 auto 30px auto !important;
-        margin-bottom: 15px !important;
-    }
-
-    .form-item {
-        position: static !important; /* Absolute-ты түбімен өшіреміз */
-        width: 100% !important;
-        height: auto !important; /* Нақты 40px-ті алып тастаймыз */
-        margin-bottom: 0 !important;
-    }
-
-    .form-item input, .form-item select, .form-item textarea {
-        height: 38px !important; /* Инпуттарды сәл аласа қылдық */
-        font-size: 13px !important;display: block !important;
-        position: static !important;
-    }
-
-    .form-item:last-child {
-        margin-bottom: 0 !important;
-    }
-
-    .form-row {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 12px !important; /* Міне, нақты осы арасын ашады */
-        height: auto !important;
-        width: 100% !important;
-    }
-
-    .form-item-group, [class*="group"], [class*="row"] {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 12px !important;
-        height: auto !important;
-    }
-
-    .contact-submit-btn {
-    height: 40px !important;
-    position: static !important;
-    width: 90% !important; /* Ені 100%-дан аз болғанда ғана margin: auto көрінеді */
-
-    /* Үстінен 5px, астынан 5px, ал ОҢ ЖӘНЕ СОЛ жағынан AUTO (ортаға қояды) */
-    margin: 5px auto !important;
-
-    /* Егер ішіндегі текст ортада болмаса: */
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
-
-    /* 2. КОНТАКТІЛЕРДІ ЖАЛПАҒЫНАН ТІЗУ (ЖАҢА ЛОГИКА) */
-
-    /* Осы үш блоктың ораушысы (wrapper) болса жақсы,
-       болмаса осы элементтерді Flex арқылы бір қатарға жинаймыз */
-    .contact-right-icon, .phone-icon, .email-icon,
-    .contact-address-label, .phone-label, .email-label,
-    .contact-address-text, .contact-phone-text, .contact-email-text {
-        position: static !important;
-        width: auto !important; /* Енін шектемейміз */
-        margin: 0 !important;
-    }
-
-    /* Үш блокты (Address, Phone, Email) бір қатарға тізу үшін
-       контейнер жасау керек. Егер ол жоқ болса,overlay-ге мынаны қосамыз: */
-
-    /* Біз әр топты (Адрес, Телефон, Пошта) жеке блок ретінде қарастырамыз */
-    /* Төмендегі стильдер әр топтың ішіндегі элементтерді реттейді: */
-
-    contact-info-group-wrapper {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        width: 100% !important;
-        margin-top: 20px !important;
-    }
-
-    /* Әр контакт бағанасы (Адрес, Телефон немесе Пошта) */
-    .contact-info-column {
-        display: flex !important;
-        flex-direction: column !important; /* Ішіндегілер асты-үсті болып тұрады */
-        align-items: center !important;
-        flex: 1 !important;
-        min-width: 0 !important;
-    }
-
-    /* Мәтіндерді барынша жинақы қылу, сыюы үшін */
-    .contact-address-label, .phone-label, .email-label {
-        font-size: 12px !important;
-        margin-top: 8px !important;
-        font-weight: bold !important;
-    }
-
-    .contact-address-text, .contact-phone-text, .contact-email-text {
-        font-size: 11px !important;
-        text-align: center !important;
-        line-height: 1.2 !important;
-        word-break: break-word !important; /* Ұзын сөздерді бөлу үшін */
-    }
-
-    /* Иконкалар */
-    .contact-right-icon img, .phone-icon img, .email-icon img {
-        width: 18px !important;
-        height: 18px !important;
-    }
-
-    .contact-map-btn {
-        position: static !important;
-        margin-top: 5px !important;
-        width: 70px !important;
-        display: block !important;
-    }
-}
 
 /* ==========================================================================
     Footer
